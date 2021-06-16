@@ -1,0 +1,674 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3277D2002677BDCA00F84C30 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3277D1FF2677BDCA00F84C30 /* AppDelegate.swift */; };
+		3277D2022677BDCB00F84C30 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3277D2012677BDCB00F84C30 /* SceneDelegate.swift */; };
+		3277D2042677BDCB00F84C30 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3277D2032677BDCB00F84C30 /* ViewController.swift */; };
+		3277D2072677BDCB00F84C30 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3277D2052677BDCB00F84C30 /* Main.storyboard */; };
+		3277D2092677BDCD00F84C30 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3277D2082677BDCD00F84C30 /* Assets.xcassets */; };
+		3277D20C2677BDCD00F84C30 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3277D20A2677BDCD00F84C30 /* LaunchScreen.storyboard */; };
+		3277D2172677BDCE00F84C30 /* kafoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3277D2162677BDCE00F84C30 /* kafoTests.swift */; };
+		3277D2222677BDCE00F84C30 /* kafoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3277D2212677BDCE00F84C30 /* kafoUITests.swift */; };
+		3277D2392677BFED00F84C30 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3277D2382677BFED00F84C30 /* LoginViewController.swift */; };
+		3277D24D2677C05C00F84C30 /* LoginVIewController + TextFiledDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3277D24C2677C05C00F84C30 /* LoginVIewController + TextFiledDelegate.swift */; };
+		3277D2562677C08F00F84C30 /* LoginView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3277D2542677C08F00F84C30 /* LoginView.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3277D2132677BDCE00F84C30 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3277D1F42677BDCA00F84C30 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3277D1FB2677BDCA00F84C30;
+			remoteInfo = kafo;
+		};
+		3277D21E2677BDCE00F84C30 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3277D1F42677BDCA00F84C30 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3277D1FB2677BDCA00F84C30;
+			remoteInfo = kafo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3277D1FC2677BDCA00F84C30 /* kafo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = kafo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3277D1FF2677BDCA00F84C30 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3277D2012677BDCB00F84C30 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		3277D2032677BDCB00F84C30 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3277D2062677BDCB00F84C30 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3277D2082677BDCD00F84C30 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3277D20B2677BDCD00F84C30 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3277D20D2677BDCD00F84C30 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3277D2122677BDCE00F84C30 /* kafoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = kafoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3277D2162677BDCE00F84C30 /* kafoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = kafoTests.swift; sourceTree = "<group>"; };
+		3277D2182677BDCE00F84C30 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3277D21D2677BDCE00F84C30 /* kafoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = kafoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3277D2212677BDCE00F84C30 /* kafoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = kafoUITests.swift; sourceTree = "<group>"; };
+		3277D2232677BDCE00F84C30 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3277D2382677BFED00F84C30 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		3277D24C2677C05C00F84C30 /* LoginVIewController + TextFiledDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "LoginVIewController + TextFiledDelegate.swift"; sourceTree = "<group>"; };
+		3277D2552677C08F00F84C30 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LoginView.storyboard; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3277D1F92677BDCA00F84C30 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3277D20F2677BDCE00F84C30 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3277D21A2677BDCE00F84C30 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3277D1F32677BDCA00F84C30 = {
+			isa = PBXGroup;
+			children = (
+				3277D1FE2677BDCA00F84C30 /* kafo */,
+				3277D2152677BDCE00F84C30 /* kafoTests */,
+				3277D2202677BDCE00F84C30 /* kafoUITests */,
+				3277D1FD2677BDCA00F84C30 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3277D1FD2677BDCA00F84C30 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3277D1FC2677BDCA00F84C30 /* kafo.app */,
+				3277D2122677BDCE00F84C30 /* kafoTests.xctest */,
+				3277D21D2677BDCE00F84C30 /* kafoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3277D1FE2677BDCA00F84C30 /* kafo */ = {
+			isa = PBXGroup;
+			children = (
+				3277D2322677BEE400F84C30 /* Presentaion */,
+				3277D1FF2677BDCA00F84C30 /* AppDelegate.swift */,
+				3277D2012677BDCB00F84C30 /* SceneDelegate.swift */,
+				3277D2032677BDCB00F84C30 /* ViewController.swift */,
+				3277D2052677BDCB00F84C30 /* Main.storyboard */,
+				3277D2082677BDCD00F84C30 /* Assets.xcassets */,
+				3277D20A2677BDCD00F84C30 /* LaunchScreen.storyboard */,
+				3277D20D2677BDCD00F84C30 /* Info.plist */,
+			);
+			path = kafo;
+			sourceTree = "<group>";
+		};
+		3277D2152677BDCE00F84C30 /* kafoTests */ = {
+			isa = PBXGroup;
+			children = (
+				3277D2162677BDCE00F84C30 /* kafoTests.swift */,
+				3277D2182677BDCE00F84C30 /* Info.plist */,
+			);
+			path = kafoTests;
+			sourceTree = "<group>";
+		};
+		3277D2202677BDCE00F84C30 /* kafoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3277D2212677BDCE00F84C30 /* kafoUITests.swift */,
+				3277D2232677BDCE00F84C30 /* Info.plist */,
+			);
+			path = kafoUITests;
+			sourceTree = "<group>";
+		};
+		3277D2322677BEE400F84C30 /* Presentaion */ = {
+			isa = PBXGroup;
+			children = (
+				3277D2332677BF2F00F84C30 /* Auth */,
+			);
+			path = Presentaion;
+			sourceTree = "<group>";
+		};
+		3277D2332677BF2F00F84C30 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				3277D2342677BF4900F84C30 /* Login */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		3277D2342677BF4900F84C30 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				3277D2372677BF9900F84C30 /* LoginFirebaseManager */,
+				3277D2362677BF8300F84C30 /* ViewModel */,
+				3277D2352677BF7900F84C30 /* View */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		3277D2352677BF7900F84C30 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3277D24B2677C05C00F84C30 /* Extensions */,
+				3277D2382677BFED00F84C30 /* LoginViewController.swift */,
+				3277D2542677C08F00F84C30 /* LoginView.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3277D2362677BF8300F84C30 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		3277D2372677BF9900F84C30 /* LoginFirebaseManager */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = LoginFirebaseManager;
+			sourceTree = "<group>";
+		};
+		3277D24B2677C05C00F84C30 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				3277D24C2677C05C00F84C30 /* LoginVIewController + TextFiledDelegate.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3277D1FB2677BDCA00F84C30 /* kafo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3277D2262677BDCE00F84C30 /* Build configuration list for PBXNativeTarget "kafo" */;
+			buildPhases = (
+				3277D1F82677BDCA00F84C30 /* Sources */,
+				3277D1F92677BDCA00F84C30 /* Frameworks */,
+				3277D1FA2677BDCA00F84C30 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = kafo;
+			productName = kafo;
+			productReference = 3277D1FC2677BDCA00F84C30 /* kafo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3277D2112677BDCE00F84C30 /* kafoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3277D2292677BDCE00F84C30 /* Build configuration list for PBXNativeTarget "kafoTests" */;
+			buildPhases = (
+				3277D20E2677BDCE00F84C30 /* Sources */,
+				3277D20F2677BDCE00F84C30 /* Frameworks */,
+				3277D2102677BDCE00F84C30 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3277D2142677BDCE00F84C30 /* PBXTargetDependency */,
+			);
+			name = kafoTests;
+			productName = kafoTests;
+			productReference = 3277D2122677BDCE00F84C30 /* kafoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3277D21C2677BDCE00F84C30 /* kafoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3277D22C2677BDCE00F84C30 /* Build configuration list for PBXNativeTarget "kafoUITests" */;
+			buildPhases = (
+				3277D2192677BDCE00F84C30 /* Sources */,
+				3277D21A2677BDCE00F84C30 /* Frameworks */,
+				3277D21B2677BDCE00F84C30 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3277D21F2677BDCE00F84C30 /* PBXTargetDependency */,
+			);
+			name = kafoUITests;
+			productName = kafoUITests;
+			productReference = 3277D21D2677BDCE00F84C30 /* kafoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3277D1F42677BDCA00F84C30 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					3277D1FB2677BDCA00F84C30 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					3277D2112677BDCE00F84C30 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 3277D1FB2677BDCA00F84C30;
+					};
+					3277D21C2677BDCE00F84C30 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 3277D1FB2677BDCA00F84C30;
+					};
+				};
+			};
+			buildConfigurationList = 3277D1F72677BDCA00F84C30 /* Build configuration list for PBXProject "kafo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3277D1F32677BDCA00F84C30;
+			productRefGroup = 3277D1FD2677BDCA00F84C30 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3277D1FB2677BDCA00F84C30 /* kafo */,
+				3277D2112677BDCE00F84C30 /* kafoTests */,
+				3277D21C2677BDCE00F84C30 /* kafoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3277D1FA2677BDCA00F84C30 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3277D20C2677BDCD00F84C30 /* LaunchScreen.storyboard in Resources */,
+				3277D2092677BDCD00F84C30 /* Assets.xcassets in Resources */,
+				3277D2072677BDCB00F84C30 /* Main.storyboard in Resources */,
+				3277D2562677C08F00F84C30 /* LoginView.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3277D2102677BDCE00F84C30 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3277D21B2677BDCE00F84C30 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3277D1F82677BDCA00F84C30 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3277D24D2677C05C00F84C30 /* LoginVIewController + TextFiledDelegate.swift in Sources */,
+				3277D2392677BFED00F84C30 /* LoginViewController.swift in Sources */,
+				3277D2042677BDCB00F84C30 /* ViewController.swift in Sources */,
+				3277D2002677BDCA00F84C30 /* AppDelegate.swift in Sources */,
+				3277D2022677BDCB00F84C30 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3277D20E2677BDCE00F84C30 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3277D2172677BDCE00F84C30 /* kafoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3277D2192677BDCE00F84C30 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3277D2222677BDCE00F84C30 /* kafoUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3277D2142677BDCE00F84C30 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3277D1FB2677BDCA00F84C30 /* kafo */;
+			targetProxy = 3277D2132677BDCE00F84C30 /* PBXContainerItemProxy */;
+		};
+		3277D21F2677BDCE00F84C30 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3277D1FB2677BDCA00F84C30 /* kafo */;
+			targetProxy = 3277D21E2677BDCE00F84C30 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3277D2052677BDCB00F84C30 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3277D2062677BDCB00F84C30 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3277D20A2677BDCD00F84C30 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3277D20B2677BDCD00F84C30 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		3277D2542677C08F00F84C30 /* LoginView.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3277D2552677C08F00F84C30 /* Base */,
+			);
+			name = LoginView.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3277D2242677BDCE00F84C30 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3277D2252677BDCE00F84C30 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3277D2272677BDCE00F84C30 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FL6L6BVPSN;
+				INFOPLIST_FILE = kafo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = anas.kafo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3277D2282677BDCE00F84C30 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FL6L6BVPSN;
+				INFOPLIST_FILE = kafo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = anas.kafo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		3277D22A2677BDCE00F84C30 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FL6L6BVPSN;
+				INFOPLIST_FILE = kafoTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = anas.kafoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/kafo.app/kafo";
+			};
+			name = Debug;
+		};
+		3277D22B2677BDCE00F84C30 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FL6L6BVPSN;
+				INFOPLIST_FILE = kafoTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = anas.kafoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/kafo.app/kafo";
+			};
+			name = Release;
+		};
+		3277D22D2677BDCE00F84C30 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FL6L6BVPSN;
+				INFOPLIST_FILE = kafoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = anas.kafoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = kafo;
+			};
+			name = Debug;
+		};
+		3277D22E2677BDCE00F84C30 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FL6L6BVPSN;
+				INFOPLIST_FILE = kafoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = anas.kafoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = kafo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3277D1F72677BDCA00F84C30 /* Build configuration list for PBXProject "kafo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3277D2242677BDCE00F84C30 /* Debug */,
+				3277D2252677BDCE00F84C30 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3277D2262677BDCE00F84C30 /* Build configuration list for PBXNativeTarget "kafo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3277D2272677BDCE00F84C30 /* Debug */,
+				3277D2282677BDCE00F84C30 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3277D2292677BDCE00F84C30 /* Build configuration list for PBXNativeTarget "kafoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3277D22A2677BDCE00F84C30 /* Debug */,
+				3277D22B2677BDCE00F84C30 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3277D22C2677BDCE00F84C30 /* Build configuration list for PBXNativeTarget "kafoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3277D22D2677BDCE00F84C30 /* Debug */,
+				3277D22E2677BDCE00F84C30 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3277D1F42677BDCA00F84C30 /* Project object */;
+}

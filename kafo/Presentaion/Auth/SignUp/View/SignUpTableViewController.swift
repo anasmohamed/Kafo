@@ -8,12 +8,34 @@
 import UIKit
 
 class SignUpTableViewController: UITableViewController {
-
+    @IBOutlet weak var passwordTextField: UITextField!
+    
+    @IBOutlet weak var confiremPasswordTextField: UITextField!
+    @IBOutlet weak var lastNameTextField: UITextField!
+    @IBOutlet weak var deteOfBirthTextField: UITextField!
+    @IBOutlet weak var mobileNameTextField: UITextField!
     @IBOutlet weak var regiterBtn: UIButton!
+    @IBOutlet weak var emailTextFiled: UITextField!
+    @IBOutlet weak var firstNameTextField: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.backgroundView = UIImageView(image: UIImage(named: "background3"))
         setupRegisterBtn()
+        let emailImage = UIImage(named:"envelope-3")
+        addLeftImageTo(txtField: emailTextFiled, andImage: emailImage!)
+        let userImage = UIImage(named:"user-12")
+        let callImage = UIImage(named:"call-2")
+        let calenderImage = UIImage(named:"calendar")
+
+        let passwordImage = UIImage(named:"padlock")
+        addLeftImageTo(txtField: passwordTextField, andImage: passwordImage!)
+        addLeftImageTo(txtField: confiremPasswordTextField, andImage: passwordImage!)
+        addLeftImageTo(txtField: lastNameTextField, andImage: userImage!)
+        addLeftImageTo(txtField: firstNameTextField, andImage: userImage!)
+        addLeftImageTo(txtField: mobileNameTextField, andImage: callImage!)
+        addLeftImageTo(txtField: deteOfBirthTextField, andImage: calenderImage!)
+
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -26,7 +48,12 @@ class SignUpTableViewController: UITableViewController {
         regiterBtn.layer.borderColor = UIColor.yellow.cgColor
     }
     // MARK: - Table view data source
-
+    func addLeftImageTo(txtField: UITextField, andImage img: UIImage) {
+          let leftImageView = UIImageView(frame: CGRect(x: 0.0, y: 0.0, width: img.size.width, height: img.size.height))
+          leftImageView.image = img
+          txtField.leftView = leftImageView
+          txtField.leftViewMode = .always
+      }
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
         return 1

@@ -11,6 +11,8 @@
 		3269983C2680DA0F0074E586 /* MainViewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3269983A2680DA0F0074E586 /* MainViewTableViewCell.swift */; };
 		3269983D2680DA0F0074E586 /* MainViewTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3269983B2680DA0F0074E586 /* MainViewTableViewCell.xib */; };
 		326998422680DE8B0074E586 /* MainCustomerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 326998412680DE8B0074E586 /* MainCustomerViewController.swift */; };
+		32699850268112DE0074E586 /* CompanyDetailsView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3269984E268112DE0074E586 /* CompanyDetailsView.storyboard */; };
+		32699851268112DE0074E586 /* CompanyDetailsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3269984F268112DE0074E586 /* CompanyDetailsTableViewController.swift */; };
 		326A3685267EA49000B87D37 /* SignUpView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 326A3684267EA49000B87D37 /* SignUpView.storyboard */; };
 		326A368D267EA6DD00B87D37 /* SignUpTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 326A368C267EA6DD00B87D37 /* SignUpTableViewController.swift */; };
 		3277D2002677BDCA00F84C30 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3277D1FF2677BDCA00F84C30 /* AppDelegate.swift */; };
@@ -52,6 +54,8 @@
 		3269983A2680DA0F0074E586 /* MainViewTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewTableViewCell.swift; sourceTree = "<group>"; };
 		3269983B2680DA0F0074E586 /* MainViewTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewTableViewCell.xib; sourceTree = "<group>"; };
 		326998412680DE8B0074E586 /* MainCustomerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCustomerViewController.swift; sourceTree = "<group>"; };
+		3269984E268112DE0074E586 /* CompanyDetailsView.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CompanyDetailsView.storyboard; sourceTree = "<group>"; };
+		3269984F268112DE0074E586 /* CompanyDetailsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompanyDetailsTableViewController.swift; sourceTree = "<group>"; };
 		326A3684267EA49000B87D37 /* SignUpView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignUpView.storyboard; sourceTree = "<group>"; };
 		326A368C267EA6DD00B87D37 /* SignUpTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpTableViewController.swift; sourceTree = "<group>"; };
 		3277D1FC2677BDCA00F84C30 /* kafo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = kafo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -102,6 +106,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3269984C268112840074E586 /* CompanyDetails */ = {
+			isa = PBXGroup;
+			children = (
+				3269984D268112980074E586 /* View */,
+			);
+			path = CompanyDetails;
+			sourceTree = "<group>";
+		};
+		3269984D268112980074E586 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3269984F268112DE0074E586 /* CompanyDetailsTableViewController.swift */,
+				3269984E268112DE0074E586 /* CompanyDetailsView.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		326A3682267EA42F00B87D37 /* SignUp */ = {
 			isa = PBXGroup;
 			children = (
@@ -272,6 +293,7 @@
 		329B60A8267FECF0008AB2DE /* Customer */ = {
 			isa = PBXGroup;
 			children = (
+				3269984C268112840074E586 /* CompanyDetails */,
 				329B60A9267FED1A008AB2DE /* PersonalBodyguardDetails */,
 				329B609C267FE93E008AB2DE /* Main */,
 			);
@@ -405,6 +427,7 @@
 				329B60AC267FED7D008AB2DE /* PersonalBodyguardView.storyboard in Resources */,
 				3269983D2680DA0F0074E586 /* MainViewTableViewCell.xib in Resources */,
 				329B60A0267FE9C4008AB2DE /* MainCustomerView.storyboard in Resources */,
+				32699850268112DE0074E586 /* CompanyDetailsView.storyboard in Resources */,
 				3277D2562677C08F00F84C30 /* LoginView.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -431,6 +454,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				329B6095267FD87D008AB2DE /* Checkbox.swift in Sources */,
+				32699851268112DE0074E586 /* CompanyDetailsTableViewController.swift in Sources */,
 				3277D24D2677C05C00F84C30 /* LoginVIewController + TextFiledDelegate.swift in Sources */,
 				3277D2392677BFED00F84C30 /* LoginViewController.swift in Sources */,
 				3277D2042677BDCB00F84C30 /* ViewController.swift in Sources */,

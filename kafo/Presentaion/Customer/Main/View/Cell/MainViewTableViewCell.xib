@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="150" id="KGk-i7-Jjw" customClass="MainViewTableViewCell" customModule="kafo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="355" height="150"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="355" height="150"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yf0-UU-0qE">
+                        <rect key="frame" x="0.0" y="0.0" width="355" height="150"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sLQ-jK-cFg">
+                                <rect key="frame" x="10" y="10" width="335" height="130"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="7wQ-eQ-TBx">
+                                        <rect key="frame" x="0.0" y="0.0" width="112" height="130"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="112" id="G35-0C-K74"/>
+                                        </constraints>
+                                    </imageView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="C6f-kF-PUJ">
+                                        <rect key="frame" x="122" y="10" width="203" height="110"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GHAYA SECURITY SERVICE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VJF-lb-jYQ">
+                                                <rect key="frame" x="8" y="46.5" width="187" height="17"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstItem="VJF-lb-jYQ" firstAttribute="leading" secondItem="C6f-kF-PUJ" secondAttribute="leading" constant="8" id="Eht-66-dp3"/>
+                                            <constraint firstAttribute="trailing" secondItem="VJF-lb-jYQ" secondAttribute="trailing" constant="8" id="bbX-GX-hXF"/>
+                                            <constraint firstItem="VJF-lb-jYQ" firstAttribute="centerX" secondItem="C6f-kF-PUJ" secondAttribute="centerX" id="y3F-ec-PzQ"/>
+                                            <constraint firstItem="VJF-lb-jYQ" firstAttribute="centerY" secondItem="C6f-kF-PUJ" secondAttribute="centerY" id="zPw-BU-xdb"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="7wQ-eQ-TBx" secondAttribute="bottom" id="48i-J6-VyV"/>
+                                    <constraint firstAttribute="trailing" secondItem="C6f-kF-PUJ" secondAttribute="trailing" constant="10" id="NGb-b4-CZB"/>
+                                    <constraint firstItem="7wQ-eQ-TBx" firstAttribute="top" secondItem="sLQ-jK-cFg" secondAttribute="top" id="NLb-pB-JfZ"/>
+                                    <constraint firstAttribute="bottom" secondItem="C6f-kF-PUJ" secondAttribute="bottom" constant="10" id="TTd-kh-BYs"/>
+                                    <constraint firstItem="C6f-kF-PUJ" firstAttribute="leading" secondItem="7wQ-eQ-TBx" secondAttribute="trailing" constant="10" id="Wfc-hV-4bG"/>
+                                    <constraint firstItem="C6f-kF-PUJ" firstAttribute="top" secondItem="sLQ-jK-cFg" secondAttribute="top" constant="10" id="eDK-CU-UdO"/>
+                                    <constraint firstItem="7wQ-eQ-TBx" firstAttribute="leading" secondItem="sLQ-jK-cFg" secondAttribute="leading" id="iAf-NV-MI6"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="sLQ-jK-cFg" secondAttribute="trailing" constant="10" id="5wk-zQ-Xfu"/>
+                            <constraint firstItem="sLQ-jK-cFg" firstAttribute="leading" secondItem="yf0-UU-0qE" secondAttribute="leading" constant="10" id="6EG-B4-Xfe"/>
+                            <constraint firstItem="sLQ-jK-cFg" firstAttribute="top" secondItem="yf0-UU-0qE" secondAttribute="top" constant="10" id="KdY-He-OQs"/>
+                            <constraint firstAttribute="bottom" secondItem="sLQ-jK-cFg" secondAttribute="bottom" constant="10" id="Oqk-J9-yP0"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="yf0-UU-0qE" secondAttribute="trailing" id="R0g-IP-1wF"/>
+                    <constraint firstItem="yf0-UU-0qE" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="XLD-Nn-aKV"/>
+                    <constraint firstAttribute="bottom" secondItem="yf0-UU-0qE" secondAttribute="bottom" id="XXD-k7-xXu"/>
+                    <constraint firstItem="yf0-UU-0qE" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="deF-Mo-eaL"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="companyNameLblView" destination="C6f-kF-PUJ" id="UKE-bW-0c2"/>
+                <outlet property="containerView" destination="yf0-UU-0qE" id="Ufb-Ol-wkc"/>
+                <outlet property="mainView" destination="sLQ-jK-cFg" id="P2L-Ps-O57"/>
+            </connections>
+            <point key="canvasLocation" x="157.24637681159422" y="149.33035714285714"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

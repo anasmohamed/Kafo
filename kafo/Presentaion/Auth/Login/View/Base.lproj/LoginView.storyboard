@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Cey-p4-R7w">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="jgd-MI-iTL">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
@@ -48,7 +48,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="مؤسسة كفو للحراسات الأمنية" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kJ7-Gg-v33">
                                 <rect key="frame" x="10" y="326" width="394" height="33.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="28"/>
-                                <color key="textColor" systemColor="systemYellowColor"/>
+                                <color key="textColor" red="1" green="1" blue="0.059385926569999997" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo4" highlighted="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WEb-Q3-WAz">
@@ -110,12 +110,88 @@
             </objects>
             <point key="canvasLocation" x="34.782608695652179" y="124.55357142857142"/>
         </scene>
+        <!--Customer Or Worker View Controller-->
+        <scene sceneID="XGi-8s-Jwu">
+            <objects>
+                <viewController id="jgd-MI-iTL" customClass="CustomerOrWorkerViewController" customModule="kafo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fT7-8q-4yb">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background3" translatesAutoresizingMaskIntoConstraints="NO" id="LnE-gt-Rky">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PfU-Ck-7sK">
+                                <rect key="frame" x="30" y="496.5" width="354" height="50"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Ngg-oo-jcS"/>
+                                </constraints>
+                                <state key="normal" title="Worker">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CEU-p1-Yqb">
+                                <rect key="frame" x="30" y="426.5" width="354" height="50"/>
+                                <color key="backgroundColor" red="1" green="1" blue="0.059385926573426576" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="iqs-9e-CYA"/>
+                                </constraints>
+                                <state key="normal" title="Customer">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo4" highlighted="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XBx-UN-T9C">
+                                <rect key="frame" x="86" y="59" width="242" height="239"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="242" id="0V3-jZ-pFP"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="239" id="1Vv-Fd-SRC"/>
+                                    <constraint firstAttribute="height" constant="239" id="4Ge-2Z-myY"/>
+                                    <constraint firstAttribute="width" constant="242" id="sem-jW-Z7A"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="مؤسسة كفو للحراسات الأمنية" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kl8-Hf-Uc4">
+                                <rect key="frame" x="10" y="333" width="414" height="33.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <color key="textColor" red="1" green="1" blue="0.059385926569999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="E81-Bq-xqE"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="CEU-p1-Yqb" firstAttribute="leading" secondItem="E81-Bq-xqE" secondAttribute="leading" constant="30" id="53d-JF-8UR"/>
+                            <constraint firstItem="Kl8-Hf-Uc4" firstAttribute="leading" secondItem="E81-Bq-xqE" secondAttribute="leading" constant="10" id="AyE-vK-Ene"/>
+                            <constraint firstItem="XBx-UN-T9C" firstAttribute="top" secondItem="E81-Bq-xqE" secondAttribute="top" constant="15" id="EB7-IR-UI0"/>
+                            <constraint firstItem="LnE-gt-Rky" firstAttribute="top" secondItem="E81-Bq-xqE" secondAttribute="top" id="EI3-gy-3b5"/>
+                            <constraint firstItem="PfU-Ck-7sK" firstAttribute="leading" secondItem="CEU-p1-Yqb" secondAttribute="leading" id="cel-j5-r8L"/>
+                            <constraint firstItem="PfU-Ck-7sK" firstAttribute="trailing" secondItem="CEU-p1-Yqb" secondAttribute="trailing" id="fPd-hQ-1Ta"/>
+                            <constraint firstItem="E81-Bq-xqE" firstAttribute="bottom" secondItem="LnE-gt-Rky" secondAttribute="bottom" id="fgl-Lx-pEP"/>
+                            <constraint firstItem="E81-Bq-xqE" firstAttribute="trailing" secondItem="CEU-p1-Yqb" secondAttribute="trailing" constant="30" id="h9b-qP-xWi"/>
+                            <constraint firstItem="Kl8-Hf-Uc4" firstAttribute="trailing" secondItem="E81-Bq-xqE" secondAttribute="trailing" constant="10" id="idY-g0-9av"/>
+                            <constraint firstItem="CEU-p1-Yqb" firstAttribute="top" secondItem="Kl8-Hf-Uc4" secondAttribute="bottom" constant="60" id="lyC-mk-pS7"/>
+                            <constraint firstItem="Kl8-Hf-Uc4" firstAttribute="top" secondItem="XBx-UN-T9C" secondAttribute="bottom" constant="35" id="nQC-rG-Or3"/>
+                            <constraint firstItem="PfU-Ck-7sK" firstAttribute="top" secondItem="CEU-p1-Yqb" secondAttribute="bottom" constant="20" id="qMH-P6-jWq"/>
+                            <constraint firstItem="XBx-UN-T9C" firstAttribute="centerX" secondItem="fT7-8q-4yb" secondAttribute="centerX" id="ufM-3e-zss"/>
+                            <constraint firstItem="LnE-gt-Rky" firstAttribute="trailing" secondItem="E81-Bq-xqE" secondAttribute="trailing" id="vQb-Lg-JhC"/>
+                            <constraint firstItem="LnE-gt-Rky" firstAttribute="leading" secondItem="E81-Bq-xqE" secondAttribute="leading" id="xU5-ZV-5VT"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="customerBtn" destination="CEU-p1-Yqb" id="W9D-c6-l2y"/>
+                        <outlet property="workerBtn" destination="PfU-Ck-7sK" id="NFk-5l-HwN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZV7-u7-eD8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1731.8840579710147" y="124.55357142857142"/>
+        </scene>
     </scenes>
     <resources>
         <image name="background3" width="320" height="480"/>
         <image name="logo4" width="827" height="952"/>
-        <systemColor name="systemYellowColor">
-            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
     </resources>
 </document>

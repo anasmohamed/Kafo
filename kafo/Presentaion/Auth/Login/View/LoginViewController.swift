@@ -14,6 +14,7 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var signInBtn: UIButton!
     @IBOutlet weak var createAccountStackView: UIStackView!
     @IBOutlet weak var containerView: UIView!
+    @IBOutlet weak var newUserBtn: UIButton!
     
 //    var loginViewModel = LoginViewModel()
     
@@ -45,6 +46,9 @@ class LoginViewController: UIViewController {
 
         
     }
+    
+    @IBAction func newUserBtnDidTapped(_ sender: Any) {
+    }
     @objc func handleTap(_ sender: UITapGestureRecognizer? = nil) {
 //        let signupStoryboard = UIStoryboard.init(name: "Signup", bundle: nil)
 //        let signupViewController = signupStoryboard.instantiateViewController(withIdentifier: "SignupViewController") as! SignupViewController
@@ -59,6 +63,7 @@ class LoginViewController: UIViewController {
         signInBtn.layer.cornerRadius = 20
         signInBtn.layer.borderWidth = 2
         signInBtn.layer.borderColor = UIColor.yellow.cgColor
+        newUserBtn.layer.cornerRadius = 20
     }
     func handeIsUserLogin()
     {

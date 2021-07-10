@@ -26,6 +26,10 @@
 		3277D2392677BFED00F84C30 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3277D2382677BFED00F84C30 /* LoginViewController.swift */; };
 		3277D24D2677C05C00F84C30 /* LoginVIewController + TextFiledDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3277D24C2677C05C00F84C30 /* LoginVIewController + TextFiledDelegate.swift */; };
 		3277D2562677C08F00F84C30 /* LoginView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3277D2542677C08F00F84C30 /* LoginView.storyboard */; };
+		328A564A2699D1EF00BFD9C2 /* ServicesView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 328A56492699D1EF00BFD9C2 /* ServicesView.storyboard */; };
+		328A56522699EA5200BFD9C2 /* ServicesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 328A56512699EA5200BFD9C2 /* ServicesTableViewController.swift */; };
+		328A565C2699F1C600BFD9C2 /* LocationView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 328A565B2699F1C600BFD9C2 /* LocationView.storyboard */; };
+		328A56672699F73F00BFD9C2 /* LocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 328A56662699F73F00BFD9C2 /* LocationViewController.swift */; };
 		329B6095267FD87D008AB2DE /* Checkbox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329B6094267FD87D008AB2DE /* Checkbox.swift */; };
 		329B60A0267FE9C4008AB2DE /* MainCustomerView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 329B609F267FE9C4008AB2DE /* MainCustomerView.storyboard */; };
 		329B60AC267FED7D008AB2DE /* PersonalBodyguardView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 329B60AB267FED7D008AB2DE /* PersonalBodyguardView.storyboard */; };
@@ -75,6 +79,10 @@
 		3277D2382677BFED00F84C30 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		3277D24C2677C05C00F84C30 /* LoginVIewController + TextFiledDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "LoginVIewController + TextFiledDelegate.swift"; sourceTree = "<group>"; };
 		3277D2552677C08F00F84C30 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LoginView.storyboard; sourceTree = "<group>"; };
+		328A56492699D1EF00BFD9C2 /* ServicesView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ServicesView.storyboard; sourceTree = "<group>"; };
+		328A56512699EA5200BFD9C2 /* ServicesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicesTableViewController.swift; sourceTree = "<group>"; };
+		328A565B2699F1C600BFD9C2 /* LocationView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LocationView.storyboard; sourceTree = "<group>"; };
+		328A56662699F73F00BFD9C2 /* LocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationViewController.swift; sourceTree = "<group>"; };
 		329B6094267FD87D008AB2DE /* Checkbox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Checkbox.swift; sourceTree = "<group>"; };
 		329B609F267FE9C4008AB2DE /* MainCustomerView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainCustomerView.storyboard; sourceTree = "<group>"; };
 		329B60AB267FED7D008AB2DE /* PersonalBodyguardView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PersonalBodyguardView.storyboard; sourceTree = "<group>"; };
@@ -197,6 +205,8 @@
 		3277D2322677BEE400F84C30 /* Presentaion */ = {
 			isa = PBXGroup;
 			children = (
+				328A565A2699F1A800BFD9C2 /* Location */,
+				328A56472699D18E00BFD9C2 /* Services */,
 				329B60A8267FECF0008AB2DE /* Customer */,
 				3277D2332677BF2F00F84C30 /* Auth */,
 			);
@@ -253,6 +263,32 @@
 				3277D24C2677C05C00F84C30 /* LoginVIewController + TextFiledDelegate.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		328A56472699D18E00BFD9C2 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				328A56482699D19900BFD9C2 /* View */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		328A56482699D19900BFD9C2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				328A56492699D1EF00BFD9C2 /* ServicesView.storyboard */,
+				328A56512699EA5200BFD9C2 /* ServicesTableViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		328A565A2699F1A800BFD9C2 /* Location */ = {
+			isa = PBXGroup;
+			children = (
+				328A565B2699F1C600BFD9C2 /* LocationView.storyboard */,
+				328A56662699F73F00BFD9C2 /* LocationViewController.swift */,
+			);
+			path = Location;
 			sourceTree = "<group>";
 		};
 		329B6086267FD831008AB2DE /* Common */ = {
@@ -420,11 +456,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				328A565C2699F1C600BFD9C2 /* LocationView.storyboard in Resources */,
 				3277D20C2677BDCD00F84C30 /* LaunchScreen.storyboard in Resources */,
 				3277D2092677BDCD00F84C30 /* Assets.xcassets in Resources */,
 				326A3685267EA49000B87D37 /* SignUpView.storyboard in Resources */,
 				3277D2072677BDCB00F84C30 /* Main.storyboard in Resources */,
 				329B60AC267FED7D008AB2DE /* PersonalBodyguardView.storyboard in Resources */,
+				328A564A2699D1EF00BFD9C2 /* ServicesView.storyboard in Resources */,
 				3269983D2680DA0F0074E586 /* MainViewTableViewCell.xib in Resources */,
 				329B60A0267FE9C4008AB2DE /* MainCustomerView.storyboard in Resources */,
 				32699850268112DE0074E586 /* CompanyDetailsView.storyboard in Resources */,
@@ -459,6 +497,8 @@
 				3277D2392677BFED00F84C30 /* LoginViewController.swift in Sources */,
 				3277D2042677BDCB00F84C30 /* ViewController.swift in Sources */,
 				326998332680CD9B0074E586 /* PersonalBodyguardTableViewController.swift in Sources */,
+				328A56522699EA5200BFD9C2 /* ServicesTableViewController.swift in Sources */,
+				328A56672699F73F00BFD9C2 /* LocationViewController.swift in Sources */,
 				3277D2002677BDCA00F84C30 /* AppDelegate.swift in Sources */,
 				326A368D267EA6DD00B87D37 /* SignUpTableViewController.swift in Sources */,
 				3277D2022677BDCB00F84C30 /* SceneDelegate.swift in Sources */,

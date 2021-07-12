@@ -1,5 +1,5 @@
 //
-//  KafoServiceViewController.swift
+//  BodyGuardGenderViewController.swift
 //  kafo
 //
 //  Created by no one on 12/07/2021.
@@ -7,31 +7,35 @@
 
 import UIKit
 
-class KafoServiceViewController: UITableViewController {
+class BodyGuardGenderViewController: UITableViewController {
 
-    @IBOutlet weak var personalBodygaurdUIView: UIView!
-    @IBOutlet weak var guardingFacilityUIView: UIView!
+    @IBOutlet weak var maleUIView: UIView!
+    @IBOutlet weak var femaleUIVIew: UIView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-         viewShadow(view: personalBodygaurdUIView)
-        viewShadow(view: guardingFacilityUIView)
+         viewShadow(view: maleUIView)
+        viewShadow(view: femaleUIVIew)
         
         
-        let gesture = UITapGestureRecognizer(target: self, action:  #selector(self.clickAction(sender:)))
-        self.personalBodygaurdUIView.addGestureRecognizer(gesture)
+        let maleGesture = UITapGestureRecognizer(target: self, action:  #selector(self.gestureClickAction(sender:)))
+        self.maleUIView.addGestureRecognizer(maleGesture)
+        
+        let femaleGesture = UITapGestureRecognizer(target: self, action:  #selector(self.gestureClickAction(sender:)))
+        self.femaleUIVIew.addGestureRecognizer(femaleGesture)
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
-    @objc func clickAction(sender : UITapGestureRecognizer) {
+    @objc func gestureClickAction(sender : UITapGestureRecognizer) {
         // Do what you want
-        let locationViewStoryboard = UIStoryboard(name: "LocationView", bundle: nil)
-        let locationViewController = locationViewStoryboard.instantiateViewController(identifier: "LocationViewController") as! LocationViewController
-        self.navigationController?.pushViewController(locationViewController, animated: true)
+        let numberOfHoursViewStoryboard = UIStoryboard(name: "NumberOfHoursView", bundle: nil)
+        let numberOfHoursViewController = numberOfHoursViewStoryboard.instantiateViewController(identifier: "NumberOfHoursViewController") as! NumberOfHoursViewController
+        self.navigationController?.pushViewController(numberOfHoursViewController, animated: true)
     }
+   
     // MARK: - Table view data source
     func viewShadow(view:UIView)  {
         view.layer.cornerRadius = 7

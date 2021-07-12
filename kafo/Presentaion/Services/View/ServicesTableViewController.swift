@@ -38,9 +38,9 @@ class ServicesTableViewController: UITableViewController {
     }
     @objc func kafoServiceClickAction(sender : UITapGestureRecognizer) {
         // Do what you want
-        let locationViewStoryboard = UIStoryboard(name: "KafoServiceView", bundle: nil)
-        let locationViewController = locationViewStoryboard.instantiateViewController(identifier: "KafoServiceViewController") as! KafoServiceViewController
-        self.navigationController?.pushViewController(locationViewController, animated: true)
+        let kafoServiceViewStoryboard = UIStoryboard(name: "KafoServiceView", bundle: nil)
+        let kafoServiceViewController = kafoServiceViewStoryboard.instantiateViewController(identifier: "KafoServiceViewController") as! KafoServiceViewController
+        self.navigationController?.pushViewController(kafoServiceViewController, animated: true)
     }
     // MARK: - Table view data source
     func viewShadow(view:UIView)  {

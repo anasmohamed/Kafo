@@ -1,5 +1,5 @@
 //
-//  BodyGuardGenderViewController.swift
+//  KafoServiceViewController.swift
 //  kafo
 //
 //  Created by no one on 12/07/2021.
@@ -7,39 +7,30 @@
 
 import UIKit
 
-class BodyGuardGenderViewController: UITableViewController {
+class KafoServiceViewController: UITableViewController {
 
-    @IBOutlet weak var maleUIView: UIView!
-    @IBOutlet weak var femaleUIVIew: UIView!
+    @IBOutlet weak var personalBodygaurdUIView: UIView!
+    @IBOutlet weak var guardingFacilityUIView: UIView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-         viewShadow(view: maleUIView)
-        viewShadow(view: femaleUIVIew)
+         viewShadow(view: personalBodygaurdUIView)
+        viewShadow(view: guardingFacilityUIView)
         
         
-        let maleGesture = UITapGestureRecognizer(target: self, action:  #selector(self.maleGestureClickAction(sender:)))
-        self.maleUIView.addGestureRecognizer(maleGesture)
-        
-        let femaleGesture = UITapGestureRecognizer(target: self, action:  #selector(self.femaleGestureClickAction(sender:)))
-        self.femaleUIVIew.addGestureRecognizer(femaleGesture)
+        let gesture = UITapGestureRecognizer(target: self, action:  #selector(self.clickAction(sender:)))
+        self.personalBodygaurdUIView.addGestureRecognizer(gesture)
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
-    @objc func maleGestureClickAction(sender : UITapGestureRecognizer) {
+    @objc func clickAction(sender : UITapGestureRecognizer) {
         // Do what you want
-        let locationViewStoryboard = UIStoryboard(name: "LocationView", bundle: nil)
-        let locationViewController = locationViewStoryboard.instantiateViewController(identifier: "LocationViewController") as! LocationViewController
-        self.navigationController?.pushViewController(locationViewController, animated: true)
-    }
-    @objc func femaleGestureClickAction(sender : UITapGestureRecognizer) {
-        // Do what you want
-        let locationViewStoryboard = UIStoryboard(name: "LocationView", bundle: nil)
-        let locationViewController = locationViewStoryboard.instantiateViewController(identifier: "LocationViewController") as! LocationViewController
-        self.navigationController?.pushViewController(locationViewController, animated: true)
+        let bodyguardGenderViewStoryboard = UIStoryboard(name: "BodyguardGenderView", bundle: nil)
+        let bodyguardGenderViewController = bodyguardGenderViewStoryboard.instantiateViewController(identifier: "BodyGuardGenderViewController") as! BodyGuardGenderViewController
+        self.navigationController?.pushViewController(bodyguardGenderViewController, animated: true)
     }
     // MARK: - Table view data source
     func viewShadow(view:UIView)  {

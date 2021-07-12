@@ -17,8 +17,10 @@
 		326A368D267EA6DD00B87D37 /* SignUpTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 326A368C267EA6DD00B87D37 /* SignUpTableViewController.swift */; };
 		327689B5269CA4B700CC61C0 /* KafoServiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327689B4269CA4B700CC61C0 /* KafoServiceViewController.swift */; };
 		327689BD269CA4D400CC61C0 /* KafoServiceView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 327689BC269CA4D400CC61C0 /* KafoServiceView.storyboard */; };
-		327689C5269CBFDB00CC61C0 /* BodyguardGender.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 327689C4269CBFDB00CC61C0 /* BodyguardGender.storyboard */; };
+		327689C5269CBFDB00CC61C0 /* BodyguardGenderView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 327689C4269CBFDB00CC61C0 /* BodyguardGenderView.storyboard */; };
 		327689CA269CC10100CC61C0 /* BodyGuardGenderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327689C9269CC10100CC61C0 /* BodyGuardGenderViewController.swift */; };
+		327689D2269CC84500CC61C0 /* NumberOfHoursView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 327689D1269CC84500CC61C0 /* NumberOfHoursView.storyboard */; };
+		327689D7269CCA1D00CC61C0 /* NumberOfHoursViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327689D6269CCA1D00CC61C0 /* NumberOfHoursViewController.swift */; };
 		3277D2002677BDCA00F84C30 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3277D1FF2677BDCA00F84C30 /* AppDelegate.swift */; };
 		3277D2022677BDCB00F84C30 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3277D2012677BDCB00F84C30 /* SceneDelegate.swift */; };
 		3277D2042677BDCB00F84C30 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3277D2032677BDCB00F84C30 /* ViewController.swift */; };
@@ -72,8 +74,10 @@
 		326A368C267EA6DD00B87D37 /* SignUpTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpTableViewController.swift; sourceTree = "<group>"; };
 		327689B4269CA4B700CC61C0 /* KafoServiceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KafoServiceViewController.swift; sourceTree = "<group>"; };
 		327689BC269CA4D400CC61C0 /* KafoServiceView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = KafoServiceView.storyboard; sourceTree = "<group>"; };
-		327689C4269CBFDB00CC61C0 /* BodyguardGender.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BodyguardGender.storyboard; sourceTree = "<group>"; };
+		327689C4269CBFDB00CC61C0 /* BodyguardGenderView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BodyguardGenderView.storyboard; sourceTree = "<group>"; };
 		327689C9269CC10100CC61C0 /* BodyGuardGenderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BodyGuardGenderViewController.swift; sourceTree = "<group>"; };
+		327689D1269CC84500CC61C0 /* NumberOfHoursView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = NumberOfHoursView.storyboard; sourceTree = "<group>"; };
+		327689D6269CCA1D00CC61C0 /* NumberOfHoursViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberOfHoursViewController.swift; sourceTree = "<group>"; };
 		3277D1FC2677BDCA00F84C30 /* kafo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = kafo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3277D1FF2677BDCA00F84C30 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3277D2012677BDCB00F84C30 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -177,8 +181,7 @@
 		327689B1269CA2A100CC61C0 /* KafoService */ = {
 			isa = PBXGroup;
 			children = (
-				327689B4269CA4B700CC61C0 /* KafoServiceViewController.swift */,
-				327689BC269CA4D400CC61C0 /* KafoServiceView.storyboard */,
+				327689CF269CC80F00CC61C0 /* View */,
 			);
 			path = KafoService;
 			sourceTree = "<group>";
@@ -186,8 +189,7 @@
 		327689B2269CA2B800CC61C0 /* KafoServiceGender */ = {
 			isa = PBXGroup;
 			children = (
-				327689C4269CBFDB00CC61C0 /* BodyguardGender.storyboard */,
-				327689C9269CC10100CC61C0 /* BodyGuardGenderViewController.swift */,
+				327689D0269CC81F00CC61C0 /* View */,
 			);
 			path = KafoServiceGender;
 			sourceTree = "<group>";
@@ -195,8 +197,36 @@
 		327689B3269CA2D800CC61C0 /* KafoSerivceNumberOfHours */ = {
 			isa = PBXGroup;
 			children = (
+				327689CE269CC80800CC61C0 /* View */,
 			);
 			path = KafoSerivceNumberOfHours;
+			sourceTree = "<group>";
+		};
+		327689CE269CC80800CC61C0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				327689D1269CC84500CC61C0 /* NumberOfHoursView.storyboard */,
+				327689D6269CCA1D00CC61C0 /* NumberOfHoursViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		327689CF269CC80F00CC61C0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				327689BC269CA4D400CC61C0 /* KafoServiceView.storyboard */,
+				327689B4269CA4B700CC61C0 /* KafoServiceViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		327689D0269CC81F00CC61C0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				327689C9269CC10100CC61C0 /* BodyGuardGenderViewController.swift */,
+				327689C4269CBFDB00CC61C0 /* BodyguardGenderView.storyboard */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		3277D1F32677BDCA00F84C30 = {
@@ -544,11 +574,12 @@
 				3277D2072677BDCB00F84C30 /* Main.storyboard in Resources */,
 				329B60AC267FED7D008AB2DE /* PersonalBodyguardView.storyboard in Resources */,
 				328A564A2699D1EF00BFD9C2 /* ServicesView.storyboard in Resources */,
-				327689C5269CBFDB00CC61C0 /* BodyguardGender.storyboard in Resources */,
+				327689C5269CBFDB00CC61C0 /* BodyguardGenderView.storyboard in Resources */,
 				32DDC4F2269C78F200969823 /* ListOfBodyGuards.storyboard in Resources */,
 				3269983D2680DA0F0074E586 /* MainViewTableViewCell.xib in Resources */,
 				329B60A0267FE9C4008AB2DE /* MainCustomerView.storyboard in Resources */,
 				32699850268112DE0074E586 /* CompanyDetailsView.storyboard in Resources */,
+				327689D2269CC84500CC61C0 /* NumberOfHoursView.storyboard in Resources */,
 				327689BD269CA4D400CC61C0 /* KafoServiceView.storyboard in Resources */,
 				3277D2562677C08F00F84C30 /* LoginView.storyboard in Resources */,
 			);
@@ -590,6 +621,7 @@
 				326A368D267EA6DD00B87D37 /* SignUpTableViewController.swift in Sources */,
 				3277D2022677BDCB00F84C30 /* SceneDelegate.swift in Sources */,
 				32B25E59267C184500ED2082 /* CustomerOrWorkerViewController.swift in Sources */,
+				327689D7269CCA1D00CC61C0 /* NumberOfHoursViewController.swift in Sources */,
 				326998422680DE8B0074E586 /* MainCustomerViewController.swift in Sources */,
 				327689B5269CA4B700CC61C0 /* KafoServiceViewController.swift in Sources */,
 				3269983C2680DA0F0074E586 /* MainViewTableViewCell.swift in Sources */,

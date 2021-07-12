@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Number Of Hours View Controller-->
+        <scene sceneID="kJH-oy-x9t">
+            <objects>
+                <viewController storyboardIdentifier="NumberOfHoursViewController" id="xwj-9B-onF" customClass="NumberOfHoursViewController" customModule="kafo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="djz-dF-aye">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lW3-A6-EAs">
+                                <rect key="frame" x="20" y="425.5" width="374" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="uNo-a8-qge"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter the number of hours" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="79B-AQ-r5A">
+                                <rect key="frame" x="20" y="389.5" width="199.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XgH-u7-yc1">
+                                <rect key="frame" x="40" y="525" width="334" height="50"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Y1F-7u-Cqm"/>
+                                </constraints>
+                                <state key="normal" title="Checkout">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="BvR-n4-RsW"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="BvR-n4-RsW" firstAttribute="trailing" secondItem="lW3-A6-EAs" secondAttribute="trailing" constant="20" id="3LY-60-uKz"/>
+                            <constraint firstItem="lW3-A6-EAs" firstAttribute="centerY" secondItem="djz-dF-aye" secondAttribute="centerY" id="9lq-ci-j0f"/>
+                            <constraint firstItem="79B-AQ-r5A" firstAttribute="leading" secondItem="BvR-n4-RsW" secondAttribute="leading" constant="20" id="APs-oh-sUC"/>
+                            <constraint firstItem="lW3-A6-EAs" firstAttribute="leading" secondItem="BvR-n4-RsW" secondAttribute="leading" constant="20" id="FXF-48-sxn"/>
+                            <constraint firstItem="lW3-A6-EAs" firstAttribute="top" secondItem="79B-AQ-r5A" secondAttribute="bottom" constant="15" id="Mqa-8O-fIo"/>
+                            <constraint firstItem="BvR-n4-RsW" firstAttribute="trailing" secondItem="XgH-u7-yc1" secondAttribute="trailing" constant="40" id="g7t-FQ-J1v"/>
+                            <constraint firstItem="XgH-u7-yc1" firstAttribute="leading" secondItem="BvR-n4-RsW" secondAttribute="leading" constant="40" id="jCg-4v-Jf8"/>
+                            <constraint firstItem="lW3-A6-EAs" firstAttribute="centerX" secondItem="djz-dF-aye" secondAttribute="centerX" id="pVC-77-G7n"/>
+                            <constraint firstItem="XgH-u7-yc1" firstAttribute="top" secondItem="lW3-A6-EAs" secondAttribute="bottom" constant="54.5" id="rIQ-2Q-CRz"/>
+                            <constraint firstItem="XgH-u7-yc1" firstAttribute="centerX" secondItem="djz-dF-aye" secondAttribute="centerX" id="uCd-Tc-itD"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="checkoutBtn" destination="XgH-u7-yc1" id="MJL-wM-x4y"/>
+                        <outlet property="numberOfHoursTextField" destination="lW3-A6-EAs" id="I9W-nL-zUU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ExA-7e-e39" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="100.00000000000001" y="97.767857142857139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

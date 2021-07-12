@@ -29,6 +29,9 @@ class LocationViewController: UIViewController {
     }
     
     @IBAction func nearbyLocationBtnDidTapped(_ sender: Any) {
+        let locationViewStoryboard = UIStoryboard(name: "ListOfBodyGuards", bundle: nil)
+        let locationViewController = locationViewStoryboard.instantiateViewController(identifier: "ListOfBodyGuardsViewController") as! ListOfBodyGuardsViewController
+        self.navigationController?.pushViewController(locationViewController, animated: true)
     }
     
     /*

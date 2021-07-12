@@ -11,7 +11,7 @@
         <!--Location View Controller-->
         <scene sceneID="PCo-19-5Cg">
             <objects>
-                <viewController id="lQg-Lr-ank" customClass="LocationViewController" customModule="kafo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LocationViewController" id="lQg-Lr-ank" customClass="LocationViewController" customModule="kafo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="n4a-yB-rtD">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

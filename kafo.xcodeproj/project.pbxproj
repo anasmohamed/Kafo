@@ -15,6 +15,10 @@
 		32699851268112DE0074E586 /* CompanyDetailsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3269984F268112DE0074E586 /* CompanyDetailsTableViewController.swift */; };
 		326A3685267EA49000B87D37 /* SignUpView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 326A3684267EA49000B87D37 /* SignUpView.storyboard */; };
 		326A368D267EA6DD00B87D37 /* SignUpTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 326A368C267EA6DD00B87D37 /* SignUpTableViewController.swift */; };
+		327689B5269CA4B700CC61C0 /* KafoServiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327689B4269CA4B700CC61C0 /* KafoServiceViewController.swift */; };
+		327689BD269CA4D400CC61C0 /* KafoServiceView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 327689BC269CA4D400CC61C0 /* KafoServiceView.storyboard */; };
+		327689C5269CBFDB00CC61C0 /* BodyguardGender.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 327689C4269CBFDB00CC61C0 /* BodyguardGender.storyboard */; };
+		327689CA269CC10100CC61C0 /* BodyGuardGenderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327689C9269CC10100CC61C0 /* BodyGuardGenderViewController.swift */; };
 		3277D2002677BDCA00F84C30 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3277D1FF2677BDCA00F84C30 /* AppDelegate.swift */; };
 		3277D2022677BDCB00F84C30 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3277D2012677BDCB00F84C30 /* SceneDelegate.swift */; };
 		3277D2042677BDCB00F84C30 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3277D2032677BDCB00F84C30 /* ViewController.swift */; };
@@ -34,6 +38,10 @@
 		329B60A0267FE9C4008AB2DE /* MainCustomerView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 329B609F267FE9C4008AB2DE /* MainCustomerView.storyboard */; };
 		329B60AC267FED7D008AB2DE /* PersonalBodyguardView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 329B60AB267FED7D008AB2DE /* PersonalBodyguardView.storyboard */; };
 		32B25E59267C184500ED2082 /* CustomerOrWorkerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B25E58267C184500ED2082 /* CustomerOrWorkerViewController.swift */; };
+		32DDC4F2269C78F200969823 /* ListOfBodyGuards.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32DDC4F1269C78F200969823 /* ListOfBodyGuards.storyboard */; };
+		32DDC4F9269C79BB00969823 /* ListOfGuardsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32DDC4F7269C79BB00969823 /* ListOfGuardsTableViewCell.swift */; };
+		32DDC4FA269C79BB00969823 /* ListOfGuardsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 32DDC4F8269C79BB00969823 /* ListOfGuardsTableViewCell.xib */; };
+		32DDC4FF269C7CDE00969823 /* ListOfBodyGuardsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32DDC4FE269C7CDE00969823 /* ListOfBodyGuardsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +70,10 @@
 		3269984F268112DE0074E586 /* CompanyDetailsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompanyDetailsTableViewController.swift; sourceTree = "<group>"; };
 		326A3684267EA49000B87D37 /* SignUpView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignUpView.storyboard; sourceTree = "<group>"; };
 		326A368C267EA6DD00B87D37 /* SignUpTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpTableViewController.swift; sourceTree = "<group>"; };
+		327689B4269CA4B700CC61C0 /* KafoServiceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KafoServiceViewController.swift; sourceTree = "<group>"; };
+		327689BC269CA4D400CC61C0 /* KafoServiceView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = KafoServiceView.storyboard; sourceTree = "<group>"; };
+		327689C4269CBFDB00CC61C0 /* BodyguardGender.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BodyguardGender.storyboard; sourceTree = "<group>"; };
+		327689C9269CC10100CC61C0 /* BodyGuardGenderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BodyGuardGenderViewController.swift; sourceTree = "<group>"; };
 		3277D1FC2677BDCA00F84C30 /* kafo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = kafo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3277D1FF2677BDCA00F84C30 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3277D2012677BDCB00F84C30 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -87,6 +99,10 @@
 		329B609F267FE9C4008AB2DE /* MainCustomerView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainCustomerView.storyboard; sourceTree = "<group>"; };
 		329B60AB267FED7D008AB2DE /* PersonalBodyguardView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PersonalBodyguardView.storyboard; sourceTree = "<group>"; };
 		32B25E58267C184500ED2082 /* CustomerOrWorkerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerOrWorkerViewController.swift; sourceTree = "<group>"; };
+		32DDC4F1269C78F200969823 /* ListOfBodyGuards.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ListOfBodyGuards.storyboard; sourceTree = "<group>"; };
+		32DDC4F7269C79BB00969823 /* ListOfGuardsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListOfGuardsTableViewCell.swift; sourceTree = "<group>"; };
+		32DDC4F8269C79BB00969823 /* ListOfGuardsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListOfGuardsTableViewCell.xib; sourceTree = "<group>"; };
+		32DDC4FE269C7CDE00969823 /* ListOfBodyGuardsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListOfBodyGuardsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,6 +164,41 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		327689B0269CA28F00CC61C0 /* KafoService */ = {
+			isa = PBXGroup;
+			children = (
+				327689B3269CA2D800CC61C0 /* KafoSerivceNumberOfHours */,
+				327689B2269CA2B800CC61C0 /* KafoServiceGender */,
+				327689B1269CA2A100CC61C0 /* KafoService */,
+			);
+			path = KafoService;
+			sourceTree = "<group>";
+		};
+		327689B1269CA2A100CC61C0 /* KafoService */ = {
+			isa = PBXGroup;
+			children = (
+				327689B4269CA4B700CC61C0 /* KafoServiceViewController.swift */,
+				327689BC269CA4D400CC61C0 /* KafoServiceView.storyboard */,
+			);
+			path = KafoService;
+			sourceTree = "<group>";
+		};
+		327689B2269CA2B800CC61C0 /* KafoServiceGender */ = {
+			isa = PBXGroup;
+			children = (
+				327689C4269CBFDB00CC61C0 /* BodyguardGender.storyboard */,
+				327689C9269CC10100CC61C0 /* BodyGuardGenderViewController.swift */,
+			);
+			path = KafoServiceGender;
+			sourceTree = "<group>";
+		};
+		327689B3269CA2D800CC61C0 /* KafoSerivceNumberOfHours */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = KafoSerivceNumberOfHours;
+			sourceTree = "<group>";
+		};
 		3277D1F32677BDCA00F84C30 = {
 			isa = PBXGroup;
 			children = (
@@ -205,6 +256,8 @@
 		3277D2322677BEE400F84C30 /* Presentaion */ = {
 			isa = PBXGroup;
 			children = (
+				327689B0269CA28F00CC61C0 /* KafoService */,
+				32DDC4EF269C765700969823 /* ListOfBodyGuards */,
 				328A565A2699F1A800BFD9C2 /* Location */,
 				328A56472699D18E00BFD9C2 /* Services */,
 				329B60A8267FECF0008AB2DE /* Customer */,
@@ -353,6 +406,33 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		32DDC4EF269C765700969823 /* ListOfBodyGuards */ = {
+			isa = PBXGroup;
+			children = (
+				32DDC4F0269C766B00969823 /* View */,
+			);
+			path = ListOfBodyGuards;
+			sourceTree = "<group>";
+		};
+		32DDC4F0269C766B00969823 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				32DDC4F6269C798100969823 /* Cell */,
+				32DDC4F1269C78F200969823 /* ListOfBodyGuards.storyboard */,
+				32DDC4FE269C7CDE00969823 /* ListOfBodyGuardsViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		32DDC4F6269C798100969823 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				32DDC4F7269C79BB00969823 /* ListOfGuardsTableViewCell.swift */,
+				32DDC4F8269C79BB00969823 /* ListOfGuardsTableViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -456,6 +536,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				32DDC4FA269C79BB00969823 /* ListOfGuardsTableViewCell.xib in Resources */,
 				328A565C2699F1C600BFD9C2 /* LocationView.storyboard in Resources */,
 				3277D20C2677BDCD00F84C30 /* LaunchScreen.storyboard in Resources */,
 				3277D2092677BDCD00F84C30 /* Assets.xcassets in Resources */,
@@ -463,9 +544,12 @@
 				3277D2072677BDCB00F84C30 /* Main.storyboard in Resources */,
 				329B60AC267FED7D008AB2DE /* PersonalBodyguardView.storyboard in Resources */,
 				328A564A2699D1EF00BFD9C2 /* ServicesView.storyboard in Resources */,
+				327689C5269CBFDB00CC61C0 /* BodyguardGender.storyboard in Resources */,
+				32DDC4F2269C78F200969823 /* ListOfBodyGuards.storyboard in Resources */,
 				3269983D2680DA0F0074E586 /* MainViewTableViewCell.xib in Resources */,
 				329B60A0267FE9C4008AB2DE /* MainCustomerView.storyboard in Resources */,
 				32699850268112DE0074E586 /* CompanyDetailsView.storyboard in Resources */,
+				327689BD269CA4D400CC61C0 /* KafoServiceView.storyboard in Resources */,
 				3277D2562677C08F00F84C30 /* LoginView.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -494,8 +578,11 @@
 				329B6095267FD87D008AB2DE /* Checkbox.swift in Sources */,
 				32699851268112DE0074E586 /* CompanyDetailsTableViewController.swift in Sources */,
 				3277D24D2677C05C00F84C30 /* LoginVIewController + TextFiledDelegate.swift in Sources */,
+				32DDC4FF269C7CDE00969823 /* ListOfBodyGuardsViewController.swift in Sources */,
 				3277D2392677BFED00F84C30 /* LoginViewController.swift in Sources */,
+				327689CA269CC10100CC61C0 /* BodyGuardGenderViewController.swift in Sources */,
 				3277D2042677BDCB00F84C30 /* ViewController.swift in Sources */,
+				32DDC4F9269C79BB00969823 /* ListOfGuardsTableViewCell.swift in Sources */,
 				326998332680CD9B0074E586 /* PersonalBodyguardTableViewController.swift in Sources */,
 				328A56522699EA5200BFD9C2 /* ServicesTableViewController.swift in Sources */,
 				328A56672699F73F00BFD9C2 /* LocationViewController.swift in Sources */,
@@ -504,6 +591,7 @@
 				3277D2022677BDCB00F84C30 /* SceneDelegate.swift in Sources */,
 				32B25E59267C184500ED2082 /* CustomerOrWorkerViewController.swift in Sources */,
 				326998422680DE8B0074E586 /* MainCustomerViewController.swift in Sources */,
+				327689B5269CA4B700CC61C0 /* KafoServiceViewController.swift in Sources */,
 				3269983C2680DA0F0074E586 /* MainViewTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

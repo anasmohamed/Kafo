@@ -17,13 +17,31 @@ class ServicesTableViewController: UITableViewController {
          viewShadow(view: compniesServiceView)
         viewShadow(view: kafoServiceView)
         viewShadow(view: instantServiceView)
+        
+        
+        let gesture = UITapGestureRecognizer(target: self, action:  #selector(self.clickAction(sender:)))
+        self.instantServiceView.addGestureRecognizer(gesture)
+        
+        let kafoServicesGesture = UITapGestureRecognizer(target: self, action:  #selector(self.kafoServiceClickAction(sender:)))
+        self.kafoServiceView.addGestureRecognizer(kafoServicesGesture)
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
-
+    @objc func clickAction(sender : UITapGestureRecognizer) {
+        // Do what you want
+        let locationViewStoryboard = UIStoryboard(name: "LocationView", bundle: nil)
+        let locationViewController = locationViewStoryboard.instantiateViewController(identifier: "LocationViewController") as! LocationViewController
+        self.navigationController?.pushViewController(locationViewController, animated: true)
+    }
+    @objc func kafoServiceClickAction(sender : UITapGestureRecognizer) {
+        // Do what you want
+        let locationViewStoryboard = UIStoryboard(name: "KafoServiceView", bundle: nil)
+        let locationViewController = locationViewStoryboard.instantiateViewController(identifier: "KafoServiceViewController") as! KafoServiceViewController
+        self.navigationController?.pushViewController(locationViewController, animated: true)
+    }
     // MARK: - Table view data source
     func viewShadow(view:UIView)  {
         view.layer.cornerRadius = 7
@@ -43,7 +61,9 @@ class ServicesTableViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
+        if indexPath.row == 0 {
+          
+        }
     }
     /*
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {

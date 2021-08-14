@@ -6,11 +6,12 @@
 //
 
 import UIKit
-
+import SideMenu
 class ServicesTableViewController: UITableViewController {
     @IBOutlet weak var compniesServiceView: UIView!
     @IBOutlet weak var kafoServiceView: UIView!
     @IBOutlet weak var instantServiceView: UIView!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -109,7 +110,13 @@ class ServicesTableViewController: UITableViewController {
         return true
     }
     */
+    @IBAction func menuBtnDidTapped(_ sender: Any) {
+        let leftSideMenuStoryboard = UIStoryboard(name: "LeftSideMenuView", bundle: nil)
 
+        let sideMenuViewController = leftSideMenuStoryboard.instantiateViewController(identifier: "LeftSideMenuNavigationController") as! UINavigationController
+        self.present(sideMenuViewController, animated: true)
+    }
+    
     /*
     // MARK: - Navigation
 

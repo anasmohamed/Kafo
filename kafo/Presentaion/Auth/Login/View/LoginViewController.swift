@@ -22,6 +22,7 @@ class LoginViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationController?.navigationBar.isHidden = true
         setupButton()
         let emailImage = UIImage(named:"envelope-3")
                addLeftImageTo(txtField: emailTextField, andImage: emailImage!)
@@ -37,18 +38,32 @@ class LoginViewController: UIViewController {
 //        createAccountStackView.addGestureRecognizer(tap)
         // Do any additional setup after loading the view.
     }
-   
-    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-//        containerView.cornerRadiusAndShodow()
-//        self.addKeyboardObserver()
+        navigationController?.setNavigationBarHidden(true, animated: animated)
+        setGradientBackground()
+    }
 
-        
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        navigationController?.setNavigationBarHidden(false, animated: animated)
     }
     
+//    override func viewWillAppear(_ animated: Bool) {
+//        super.viewWillAppear(animated)
+////        containerView.cornerRadiusAndShodow()
+////        self.addKeyboardObserver()
+//
+//
+//    }
+    
     @IBAction func newUserBtnDidTapped(_ sender: Any) {
+        navigateToSignUpViewController()
+
+//        navigateToMainViewController()
     }
+    
+    
     @objc func handleTap(_ sender: UITapGestureRecognizer? = nil) {
 //        let signupStoryboard = UIStoryboard.init(name: "Signup", bundle: nil)
 //        let signupViewController = signupStoryboard.instantiateViewController(withIdentifier: "SignupViewController") as! SignupViewController
@@ -56,13 +71,16 @@ class LoginViewController: UIViewController {
         
         
     }
-    override func viewWillDisappear(_ animated: Bool) {
-//        self.removeKeyboardObserver()
+    
+    
+    @IBAction func signinBtnDidTapped(_ sender: Any) {
+        navigateToServiceViewController()
     }
+    
     func setupButton()  {
         signInBtn.layer.cornerRadius = 20
         signInBtn.layer.borderWidth = 2
-        signInBtn.layer.borderColor = UIColor.yellow.cgColor
+//        signInBtn.layer.borderColor = UIColor.yellow.cgColor
         newUserBtn.layer.cornerRadius = 20
     }
     func handeIsUserLogin()
@@ -140,11 +158,34 @@ class LoginViewController: UIViewController {
         
         self.present(homeViewController, animated: true, completion: nil)
     }
+    func navigateToSignUpViewController() {
+        let signupViewStoryboard = UIStoryboard.init(name: "SignUpView", bundle: nil)
+        let signupViewController = signupViewStoryboard.instantiateViewController(withIdentifier: "FirstViewController")
+        signupViewController.modalPresentationStyle = .fullScreen
+        
+        self.present(signupViewController, animated: true, completion: nil)
+    }
+    func navigateToServiceViewController() {
+        let servicesViewStoryboard = UIStoryboard.init(name: "ServicesView", bundle: nil)
+        let servicesViewController = servicesViewStoryboard.instantiateViewController(withIdentifier: "ServicesTableViewController")
+//        servicesViewController.modalPresentationStyle = .fullScreen
+        self.navigationController?.pushViewController(servicesViewController, animated: true)
+    }
     func login() {
 //        loginViewModel.login()
     }
     
-    
+    func setGradientBackground() {
+        let colorTop =  UIColor(red: 0.0/255.0, green: 0.0/255.0, blue: 55.0/255.0, alpha: 1.0).cgColor
+        let colorBottom = UIColor(red: 0.0/255.0, green: 140.0/255.0, blue:255.0/255.0, alpha: 1.0).cgColor
+                    
+        let gradientLayer = CAGradientLayer()
+        gradientLayer.colors = [colorTop, colorBottom]
+        gradientLayer.locations = [0.0, 1.0]
+        gradientLayer.frame = self.view.bounds
+                
+        self.view.layer.insertSublayer(gradientLayer, at:0)
+    }
 //
 //    func setDelegates() {
 //        emailTextField.delegate = self

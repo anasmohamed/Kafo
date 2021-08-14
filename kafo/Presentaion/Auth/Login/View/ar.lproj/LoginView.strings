@@ -1,0 +1,33 @@
+
+/* Class = "UIButton"; normalTitle = "NEW USER"; ObjectID = "1lS-Ib-9Th"; */
+"1lS-Ib-9Th.normalTitle" = "مستخدم جديد";
+
+/* Class = "UIButton"; normalTitle = "LOGIN"; ObjectID = "3Gd-fz-BiD"; */
+"3Gd-fz-BiD.normalTitle" = "دخول";
+
+/* Class = "UIButton"; normalTitle = "Forget My Password"; ObjectID = "7qd-wn-6q5"; */
+"7qd-wn-6q5.normalTitle" = "نسيت كلمة المرور";
+
+/* Class = "UIButton"; normalTitle = "Customer"; ObjectID = "CEU-p1-Yqb"; */
+"CEU-p1-Yqb.normalTitle" = "Customer";
+
+/* Class = "UILabel"; text = "مؤسسة كفو للحراسات الأمنية"; ObjectID = "Kl8-Hf-Uc4"; */
+"Kl8-Hf-Uc4.text" = "مؤسسة كفو للحراسات الأمنية";
+
+/* Class = "UIButton"; normalTitle = "Continue as a Guest"; ObjectID = "NeG-19-DU8"; */
+"NeG-19-DU8.normalTitle" = "استمرار كزائر";
+
+/* Class = "UIButton"; normalTitle = "Worker"; ObjectID = "PfU-Ck-7sK"; */
+"PfU-Ck-7sK.normalTitle" = "Worker";
+
+/* Class = "UINavigationItem"; title = "Login"; ObjectID = "UHT-u0-XUR"; */
+"UHT-u0-XUR.title" = "Login";
+
+/* Class = "UITextField"; placeholder = "Password"; ObjectID = "dvc-Rl-AC9"; */
+"dvc-Rl-AC9.placeholder" = " كلمة المرور";
+
+/* Class = "UITextField"; placeholder = "Email"; ObjectID = "jvW-W7-JUG"; */
+"jvW-W7-JUG.placeholder" = "البريد الإلكترونى";
+
+/* Class = "UILabel"; text = "مؤسسة كفو للحراسات الأمنية"; ObjectID = "kJ7-Gg-v33"; */
+"kJ7-Gg-v33.text" = "مؤسسة كفو للحراسات الأمنية";

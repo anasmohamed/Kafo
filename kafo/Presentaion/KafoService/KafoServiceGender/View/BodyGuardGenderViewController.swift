@@ -18,10 +18,10 @@ class BodyGuardGenderViewController: UITableViewController {
         viewShadow(view: femaleUIVIew)
         
         
-        let maleGesture = UITapGestureRecognizer(target: self, action:  #selector(self.gestureClickAction(sender:)))
+        let maleGesture = UITapGestureRecognizer(target: self, action:  #selector(self.maleGestureClickAction(sender:)))
         self.maleUIView.addGestureRecognizer(maleGesture)
         
-        let femaleGesture = UITapGestureRecognizer(target: self, action:  #selector(self.gestureClickAction(sender:)))
+        let femaleGesture = UITapGestureRecognizer(target: self, action:  #selector(self.femaleGestureClickAction(sender:)))
         self.femaleUIVIew.addGestureRecognizer(femaleGesture)
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -29,12 +29,21 @@ class BodyGuardGenderViewController: UITableViewController {
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
-    @objc func gestureClickAction(sender : UITapGestureRecognizer) {
+    @objc func femaleGestureClickAction(sender : UITapGestureRecognizer) {
         // Do what you want
         let numberOfHoursViewStoryboard = UIStoryboard(name: "NumberOfHoursView", bundle: nil)
         let numberOfHoursViewController = numberOfHoursViewStoryboard.instantiateViewController(identifier: "NumberOfHoursViewController") as! NumberOfHoursViewController
+        numberOfHoursViewController.isMale = false
         self.navigationController?.pushViewController(numberOfHoursViewController, animated: true)
     }
+    @objc func maleGestureClickAction(sender : UITapGestureRecognizer) {
+        // Do what you want
+        let numberOfHoursViewStoryboard = UIStoryboard(name: "NumberOfHoursView", bundle: nil)
+        let numberOfHoursViewController = numberOfHoursViewStoryboard.instantiateViewController(identifier: "NumberOfHoursViewController") as! NumberOfHoursViewController
+        numberOfHoursViewController.isMale = true
+        self.navigationController?.pushViewController(numberOfHoursViewController, animated: true)
+    }
+   
    
     // MARK: - Table view data source
     func viewShadow(view:UIView)  {

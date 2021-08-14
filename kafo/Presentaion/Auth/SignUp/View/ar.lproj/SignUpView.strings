@@ -1,0 +1,54 @@
+
+/* Class = "UIButton"; normalTitle = "Security"; ObjectID = "1JM-qY-shZ"; */
+"1JM-qY-shZ.normalTitle" = "حارس أمن";
+
+/* Class = "UITextField"; placeholder = "Confirm Password"; ObjectID = "1ac-DY-oaC"; */
+"1ac-DY-oaC.placeholder" = "Confirm Password";
+
+/* Class = "UITextField"; placeholder = "Password"; ObjectID = "43u-2b-G6p"; */
+"43u-2b-G6p.placeholder" = "Password";
+
+/* Class = "UILabel"; text = "مؤسسة كفو للحراسات الأمنية"; ObjectID = "AZN-mz-P0g"; */
+"AZN-mz-P0g.text" = "مؤسسة كفو للحراسات الأمنية";
+
+/* Class = "UIButton"; normalTitle = "Client"; ObjectID = "Bm7-tf-HzQ"; */
+"Bm7-tf-HzQ.normalTitle" = "عميل";
+
+/* Class = "UIButton"; normalTitle = "مؤسسة"; ObjectID = "DnX-2t-pDP"; */
+"DnX-2t-pDP.normalTitle" = "مؤسسة";
+
+/* Class = "UIButton"; normalTitle = "فردى"; ObjectID = "HEt-JB-1Gr"; */
+"HEt-JB-1Gr.normalTitle" = "فردى";
+
+/* Class = "UILabel"; text = "مؤسسة كفو للحرسات الأمنية"; ObjectID = "Hld-L3-dE6"; */
+"Hld-L3-dE6.text" = "مؤسسة كفو للحرسات الأمنية";
+
+/* Class = "UIButton"; normalTitle = "Register"; ObjectID = "L2v-Cb-pCu"; */
+"L2v-Cb-pCu.normalTitle" = "Register";
+
+/* Class = "UITextField"; placeholder = "Date Of Birth"; ObjectID = "S1M-ZQ-4XP"; */
+"S1M-ZQ-4XP.placeholder" = "Date Of Birth";
+
+/* Class = "UITextField"; placeholder = "Email Address"; ObjectID = "Tdf-Q2-pra"; */
+"Tdf-Q2-pra.placeholder" = "Email Address";
+
+/* Class = "UILabel"; text = "Female"; ObjectID = "lwP-7A-eyY"; */
+"lwP-7A-eyY.text" = "Female";
+
+/* Class = "UITextField"; placeholder = "Last Name"; ObjectID = "mIv-fd-CBb"; */
+"mIv-fd-CBb.placeholder" = "Last Name";
+
+/* Class = "UILabel"; text = "Male"; ObjectID = "ndQ-zB-vWX"; */
+"ndQ-zB-vWX.text" = "Male";
+
+/* Class = "UILabel"; text = "مؤسسة كفو للحرسات الأمنية"; ObjectID = "tFJ-za-WLH"; */
+"tFJ-za-WLH.text" = "مؤسسة كفو للحرسات الأمنية";
+
+/* Class = "UILabel"; text = "I accept terms and conditions"; ObjectID = "uKD-M3-Yvm"; */
+"uKD-M3-Yvm.text" = "I accept terms and conditions";
+
+/* Class = "UITextField"; placeholder = "First Name"; ObjectID = "vgX-1O-VNn"; */
+"vgX-1O-VNn.placeholder" = "First Name";
+
+/* Class = "UITextField"; placeholder = "Mobile Number"; ObjectID = "vgf-D3-Esn"; */
+"vgf-D3-Esn.placeholder" = "Mobile Number";

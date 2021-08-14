@@ -7,7 +7,25 @@
 		<key>kafo.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>0</integer>
+			<integer>4</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>3277D1FB2677BDCA00F84C30</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>3277D2112677BDCE00F84C30</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>3277D21C2677BDCE00F84C30</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>

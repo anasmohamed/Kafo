@@ -9,13 +9,16 @@ import UIKit
 
 class ListOfGuardsTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var distanseLbl: UILabel!
     @IBOutlet weak var bodyguardNameUIView: UIView!
     @IBOutlet weak var bodyguardNameLbl: UILabel!
+    @IBOutlet weak var bodyGaurdImageView: UIImageView!
     override func awakeFromNib() {
         super.awakeFromNib()
-        bodyguardNameUIView.layer.borderWidth = 2
-        bodyguardNameUIView.layer.cornerRadius = 7
-        bodyguardNameUIView.layer.borderColor = UIColor.init(red: 176.0/255.0, green: 173.0/255.0, blue: 108.0/255.0, alpha: 1).cgColor
+        bodyGaurdImageView.layer.cornerRadius = bodyGaurdImageView.frame.height / 2
+    
+        bodyGaurdImageView.layer.borderWidth = 2
+        bodyGaurdImageView.layer.borderColor = UIColor.black.cgColor
 
         // Initialization code
     }

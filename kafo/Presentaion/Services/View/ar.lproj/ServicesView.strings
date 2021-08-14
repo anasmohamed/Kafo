@@ -1,0 +1,15 @@
+
+/* Class = "UILabel"; text = "Kafo Security Service"; ObjectID = "EKm-tz-Fm2"; */
+"EKm-tz-Fm2.text" = "خدمات كفو الأمنية";
+
+/* Class = "UIBarButtonItem"; title = "Item"; ObjectID = "M9m-BB-HJs"; */
+"M9m-BB-HJs.title" = "Item";
+
+/* Class = "UILabel"; text = "Dear Customer in which service we can assist you"; ObjectID = "Vme-Mh-7iU"; */
+"Vme-Mh-7iU.text" = "مرحبا بك فى كفو, بأى خدمة استطيع مساعدتك";
+
+/* Class = "UILabel"; text = "Other Companies"; ObjectID = "YPR-V3-yqQ"; */
+"YPR-V3-yqQ.text" = "خدمات تسويق أخرى";
+
+/* Class = "UILabel"; text = "Instant Service"; ObjectID = "tkr-kp-x2z"; */
+"tkr-kp-x2z.text" = "خدمات الحرسات الفورية";

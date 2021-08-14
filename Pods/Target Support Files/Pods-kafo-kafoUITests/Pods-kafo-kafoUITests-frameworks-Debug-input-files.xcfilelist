@@ -1,0 +1,4 @@
+${PODS_ROOT}/Target Support Files/Pods-kafo-kafoUITests/Pods-kafo-kafoUITests-frameworks.sh
+${BUILT_PRODUCTS_DIR}/SideMenu/SideMenu.framework
+${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework
+${BUILT_PRODUCTS_DIR}/SwiftyMenu/SwiftyMenu.framework

@@ -3,24 +3,31 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0B72EBFA3E547C991EFBB924 /* Pods_kafo_kafoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A965F922173A0C423BE26C0F /* Pods_kafo_kafoUITests.framework */; };
+		323B672C26C72ACD005CA819 /* LocationView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 323B672E26C72ACD005CA819 /* LocationView.storyboard */; };
+		323B673726C7329D005CA819 /* ListOfGuardsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 323B673926C7329D005CA819 /* ListOfGuardsTableViewCell.xib */; };
+		323B673F26C7355F005CA819 /* BodyguardGenderView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 323B674126C7355F005CA819 /* BodyguardGenderView.storyboard */; };
+		323B674726C7363A005CA819 /* KafoServiceView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 323B674926C7363A005CA819 /* KafoServiceView.storyboard */; };
+		323B675226C73C20005CA819 /* NumberOfHoursView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 323B675426C73C20005CA819 /* NumberOfHoursView.storyboard */; };
 		326998332680CD9B0074E586 /* PersonalBodyguardTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 326998322680CD9B0074E586 /* PersonalBodyguardTableViewController.swift */; };
 		3269983C2680DA0F0074E586 /* MainViewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3269983A2680DA0F0074E586 /* MainViewTableViewCell.swift */; };
 		3269983D2680DA0F0074E586 /* MainViewTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3269983B2680DA0F0074E586 /* MainViewTableViewCell.xib */; };
 		326998422680DE8B0074E586 /* MainCustomerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 326998412680DE8B0074E586 /* MainCustomerViewController.swift */; };
 		32699850268112DE0074E586 /* CompanyDetailsView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3269984E268112DE0074E586 /* CompanyDetailsView.storyboard */; };
 		32699851268112DE0074E586 /* CompanyDetailsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3269984F268112DE0074E586 /* CompanyDetailsTableViewController.swift */; };
-		326A3685267EA49000B87D37 /* SignUpView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 326A3684267EA49000B87D37 /* SignUpView.storyboard */; };
 		326A368D267EA6DD00B87D37 /* SignUpTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 326A368C267EA6DD00B87D37 /* SignUpTableViewController.swift */; };
+		3276298826C4974B00F0AC4F /* ServicesView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3276298A26C4974B00F0AC4F /* ServicesView.storyboard */; };
+		3276299426C49CF800F0AC4F /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3276299326C49CF800F0AC4F /* FirstViewController.swift */; };
+		3276299926C49D1100F0AC4F /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3276299826C49D1100F0AC4F /* SecondViewController.swift */; };
 		327689B5269CA4B700CC61C0 /* KafoServiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327689B4269CA4B700CC61C0 /* KafoServiceViewController.swift */; };
-		327689BD269CA4D400CC61C0 /* KafoServiceView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 327689BC269CA4D400CC61C0 /* KafoServiceView.storyboard */; };
-		327689C5269CBFDB00CC61C0 /* BodyguardGenderView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 327689C4269CBFDB00CC61C0 /* BodyguardGenderView.storyboard */; };
 		327689CA269CC10100CC61C0 /* BodyGuardGenderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327689C9269CC10100CC61C0 /* BodyGuardGenderViewController.swift */; };
-		327689D2269CC84500CC61C0 /* NumberOfHoursView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 327689D1269CC84500CC61C0 /* NumberOfHoursView.storyboard */; };
 		327689D7269CCA1D00CC61C0 /* NumberOfHoursViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327689D6269CCA1D00CC61C0 /* NumberOfHoursViewController.swift */; };
+		3277461026C06F4B00B7A9C8 /* LeftSideMenuView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3277460F26C06F4B00B7A9C8 /* LeftSideMenuView.storyboard */; };
+		3277461526C089C000B7A9C8 /* LeftSideMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3277461426C089C000B7A9C8 /* LeftSideMenuViewController.swift */; };
 		3277D2002677BDCA00F84C30 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3277D1FF2677BDCA00F84C30 /* AppDelegate.swift */; };
 		3277D2022677BDCB00F84C30 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3277D2012677BDCB00F84C30 /* SceneDelegate.swift */; };
 		3277D2042677BDCB00F84C30 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3277D2032677BDCB00F84C30 /* ViewController.swift */; };
@@ -32,9 +39,9 @@
 		3277D2392677BFED00F84C30 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3277D2382677BFED00F84C30 /* LoginViewController.swift */; };
 		3277D24D2677C05C00F84C30 /* LoginVIewController + TextFiledDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3277D24C2677C05C00F84C30 /* LoginVIewController + TextFiledDelegate.swift */; };
 		3277D2562677C08F00F84C30 /* LoginView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3277D2542677C08F00F84C30 /* LoginView.storyboard */; };
-		328A564A2699D1EF00BFD9C2 /* ServicesView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 328A56492699D1EF00BFD9C2 /* ServicesView.storyboard */; };
+		327A636A26C2F5C0003B3EDE /* ProfileView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 327A636926C2F5C0003B3EDE /* ProfileView.storyboard */; };
+		327A636F26C2F6D8003B3EDE /* ProfileTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327A636E26C2F6D8003B3EDE /* ProfileTableViewController.swift */; };
 		328A56522699EA5200BFD9C2 /* ServicesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 328A56512699EA5200BFD9C2 /* ServicesTableViewController.swift */; };
-		328A565C2699F1C600BFD9C2 /* LocationView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 328A565B2699F1C600BFD9C2 /* LocationView.storyboard */; };
 		328A56672699F73F00BFD9C2 /* LocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 328A56662699F73F00BFD9C2 /* LocationViewController.swift */; };
 		329B6095267FD87D008AB2DE /* Checkbox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329B6094267FD87D008AB2DE /* Checkbox.swift */; };
 		329B60A0267FE9C4008AB2DE /* MainCustomerView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 329B609F267FE9C4008AB2DE /* MainCustomerView.storyboard */; };
@@ -42,8 +49,11 @@
 		32B25E59267C184500ED2082 /* CustomerOrWorkerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B25E58267C184500ED2082 /* CustomerOrWorkerViewController.swift */; };
 		32DDC4F2269C78F200969823 /* ListOfBodyGuards.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32DDC4F1269C78F200969823 /* ListOfBodyGuards.storyboard */; };
 		32DDC4F9269C79BB00969823 /* ListOfGuardsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32DDC4F7269C79BB00969823 /* ListOfGuardsTableViewCell.swift */; };
-		32DDC4FA269C79BB00969823 /* ListOfGuardsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 32DDC4F8269C79BB00969823 /* ListOfGuardsTableViewCell.xib */; };
 		32DDC4FF269C7CDE00969823 /* ListOfBodyGuardsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32DDC4FE269C7CDE00969823 /* ListOfBodyGuardsViewController.swift */; };
+		32F5E12626C5924400C097DF /* SignUpView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32F5E12826C5924400C097DF /* SignUpView.storyboard */; };
+		32F5E13226C59DC100C097DF /* Gridiant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F5E13126C59DC100C097DF /* Gridiant.swift */; };
+		3CB276E24993B449C8A5ED60 /* Pods_kafoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E852DB847189408DE9F18D44 /* Pods_kafoTests.framework */; };
+		7BD75D4CE0F366396D624A8E /* Pods_kafo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10CBAC4709A94C2A221702BC /* Pods_kafo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,20 +74,36 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		10CBAC4709A94C2A221702BC /* Pods_kafo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_kafo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		323B672D26C72ACD005CA819 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LocationView.storyboard; sourceTree = "<group>"; };
+		323B673326C72AD1005CA819 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/LocationView.strings; sourceTree = "<group>"; };
+		323B673826C7329D005CA819 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/ListOfGuardsTableViewCell.xib; sourceTree = "<group>"; };
+		323B673B26C732A3005CA819 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/ListOfGuardsTableViewCell.strings; sourceTree = "<group>"; };
+		323B674026C7355F005CA819 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/BodyguardGenderView.storyboard; sourceTree = "<group>"; };
+		323B674626C73564005CA819 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/BodyguardGenderView.strings; sourceTree = "<group>"; };
+		323B674826C7363A005CA819 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/KafoServiceView.storyboard; sourceTree = "<group>"; };
+		323B674E26C7363E005CA819 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/KafoServiceView.strings; sourceTree = "<group>"; };
+		323B675326C73C20005CA819 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/NumberOfHoursView.storyboard; sourceTree = "<group>"; };
+		323B675626C73C28005CA819 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/NumberOfHoursView.strings; sourceTree = "<group>"; };
 		326998322680CD9B0074E586 /* PersonalBodyguardTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalBodyguardTableViewController.swift; sourceTree = "<group>"; };
 		3269983A2680DA0F0074E586 /* MainViewTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewTableViewCell.swift; sourceTree = "<group>"; };
 		3269983B2680DA0F0074E586 /* MainViewTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewTableViewCell.xib; sourceTree = "<group>"; };
 		326998412680DE8B0074E586 /* MainCustomerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCustomerViewController.swift; sourceTree = "<group>"; };
 		3269984E268112DE0074E586 /* CompanyDetailsView.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CompanyDetailsView.storyboard; sourceTree = "<group>"; };
 		3269984F268112DE0074E586 /* CompanyDetailsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompanyDetailsTableViewController.swift; sourceTree = "<group>"; };
-		326A3684267EA49000B87D37 /* SignUpView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignUpView.storyboard; sourceTree = "<group>"; };
 		326A368C267EA6DD00B87D37 /* SignUpTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpTableViewController.swift; sourceTree = "<group>"; };
+		3276298926C4974B00F0AC4F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/ServicesView.storyboard; sourceTree = "<group>"; };
+		3276298F26C4975400F0AC4F /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/ServicesView.strings; sourceTree = "<group>"; };
+		3276299326C49CF800F0AC4F /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		3276299826C49D1100F0AC4F /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		327689B4269CA4B700CC61C0 /* KafoServiceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KafoServiceViewController.swift; sourceTree = "<group>"; };
-		327689BC269CA4D400CC61C0 /* KafoServiceView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = KafoServiceView.storyboard; sourceTree = "<group>"; };
-		327689C4269CBFDB00CC61C0 /* BodyguardGenderView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BodyguardGenderView.storyboard; sourceTree = "<group>"; };
 		327689C9269CC10100CC61C0 /* BodyGuardGenderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BodyGuardGenderViewController.swift; sourceTree = "<group>"; };
-		327689D1269CC84500CC61C0 /* NumberOfHoursView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = NumberOfHoursView.storyboard; sourceTree = "<group>"; };
 		327689D6269CCA1D00CC61C0 /* NumberOfHoursViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberOfHoursViewController.swift; sourceTree = "<group>"; };
+		327745FF26C0642900B7A9C8 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/LoginView.strings; sourceTree = "<group>"; };
+		3277460026C0642900B7A9C8 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Main.strings; sourceTree = "<group>"; };
+		3277460126C0642900B7A9C8 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		3277460F26C06F4B00B7A9C8 /* LeftSideMenuView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LeftSideMenuView.storyboard; sourceTree = "<group>"; };
+		3277461426C089C000B7A9C8 /* LeftSideMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftSideMenuViewController.swift; sourceTree = "<group>"; };
 		3277D1FC2677BDCA00F84C30 /* kafo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = kafo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3277D1FF2677BDCA00F84C30 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3277D2012677BDCB00F84C30 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -95,9 +121,9 @@
 		3277D2382677BFED00F84C30 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		3277D24C2677C05C00F84C30 /* LoginVIewController + TextFiledDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "LoginVIewController + TextFiledDelegate.swift"; sourceTree = "<group>"; };
 		3277D2552677C08F00F84C30 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LoginView.storyboard; sourceTree = "<group>"; };
-		328A56492699D1EF00BFD9C2 /* ServicesView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ServicesView.storyboard; sourceTree = "<group>"; };
+		327A636926C2F5C0003B3EDE /* ProfileView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ProfileView.storyboard; sourceTree = "<group>"; };
+		327A636E26C2F6D8003B3EDE /* ProfileTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTableViewController.swift; sourceTree = "<group>"; };
 		328A56512699EA5200BFD9C2 /* ServicesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicesTableViewController.swift; sourceTree = "<group>"; };
-		328A565B2699F1C600BFD9C2 /* LocationView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LocationView.storyboard; sourceTree = "<group>"; };
 		328A56662699F73F00BFD9C2 /* LocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationViewController.swift; sourceTree = "<group>"; };
 		329B6094267FD87D008AB2DE /* Checkbox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Checkbox.swift; sourceTree = "<group>"; };
 		329B609F267FE9C4008AB2DE /* MainCustomerView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainCustomerView.storyboard; sourceTree = "<group>"; };
@@ -105,8 +131,18 @@
 		32B25E58267C184500ED2082 /* CustomerOrWorkerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerOrWorkerViewController.swift; sourceTree = "<group>"; };
 		32DDC4F1269C78F200969823 /* ListOfBodyGuards.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ListOfBodyGuards.storyboard; sourceTree = "<group>"; };
 		32DDC4F7269C79BB00969823 /* ListOfGuardsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListOfGuardsTableViewCell.swift; sourceTree = "<group>"; };
-		32DDC4F8269C79BB00969823 /* ListOfGuardsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListOfGuardsTableViewCell.xib; sourceTree = "<group>"; };
 		32DDC4FE269C7CDE00969823 /* ListOfBodyGuardsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListOfBodyGuardsViewController.swift; sourceTree = "<group>"; };
+		32F5E12726C5924400C097DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/SignUpView.storyboard; sourceTree = "<group>"; };
+		32F5E12D26C5924C00C097DF /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/SignUpView.strings; sourceTree = "<group>"; };
+		32F5E13126C59DC100C097DF /* Gridiant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gridiant.swift; sourceTree = "<group>"; };
+		46F0118B6043FB520B1263E9 /* Pods-kafo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kafo.debug.xcconfig"; path = "Target Support Files/Pods-kafo/Pods-kafo.debug.xcconfig"; sourceTree = "<group>"; };
+		5C8DDD3CD63E84AA43B16114 /* Pods-kafoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kafoTests.debug.xcconfig"; path = "Target Support Files/Pods-kafoTests/Pods-kafoTests.debug.xcconfig"; sourceTree = "<group>"; };
+		66DF3D11DF0DA6660F42825A /* Pods-kafo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kafo.release.xcconfig"; path = "Target Support Files/Pods-kafo/Pods-kafo.release.xcconfig"; sourceTree = "<group>"; };
+		95C1D6BCCC8F08224335244C /* Pods-kafo-kafoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kafo-kafoUITests.release.xcconfig"; path = "Target Support Files/Pods-kafo-kafoUITests/Pods-kafo-kafoUITests.release.xcconfig"; sourceTree = "<group>"; };
+		A965F922173A0C423BE26C0F /* Pods_kafo_kafoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_kafo_kafoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E12F105B309F201C6749E92E /* Pods-kafoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kafoTests.release.xcconfig"; path = "Target Support Files/Pods-kafoTests/Pods-kafoTests.release.xcconfig"; sourceTree = "<group>"; };
+		E5A951C69020BBDE04AA4848 /* Pods-kafo-kafoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kafo-kafoUITests.debug.xcconfig"; path = "Target Support Files/Pods-kafo-kafoUITests/Pods-kafo-kafoUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		E852DB847189408DE9F18D44 /* Pods_kafoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_kafoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +150,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7BD75D4CE0F366396D624A8E /* Pods_kafo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -121,6 +158,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3CB276E24993B449C8A5ED60 /* Pods_kafoTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -128,6 +166,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0B72EBFA3E547C991EFBB924 /* Pods_kafo_kafoUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -162,8 +201,10 @@
 		326A3683267EA44100B87D37 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				326A3684267EA49000B87D37 /* SignUpView.storyboard */,
+				32F5E12826C5924400C097DF /* SignUpView.storyboard */,
 				326A368C267EA6DD00B87D37 /* SignUpTableViewController.swift */,
+				3276299326C49CF800F0AC4F /* FirstViewController.swift */,
+				3276299826C49D1100F0AC4F /* SecondViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -205,7 +246,7 @@
 		327689CE269CC80800CC61C0 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				327689D1269CC84500CC61C0 /* NumberOfHoursView.storyboard */,
+				323B675426C73C20005CA819 /* NumberOfHoursView.storyboard */,
 				327689D6269CCA1D00CC61C0 /* NumberOfHoursViewController.swift */,
 			);
 			path = View;
@@ -214,7 +255,7 @@
 		327689CF269CC80F00CC61C0 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				327689BC269CA4D400CC61C0 /* KafoServiceView.storyboard */,
+				323B674926C7363A005CA819 /* KafoServiceView.storyboard */,
 				327689B4269CA4B700CC61C0 /* KafoServiceViewController.swift */,
 			);
 			path = View;
@@ -224,7 +265,32 @@
 			isa = PBXGroup;
 			children = (
 				327689C9269CC10100CC61C0 /* BodyGuardGenderViewController.swift */,
-				327689C4269CBFDB00CC61C0 /* BodyguardGenderView.storyboard */,
+				323B674126C7355F005CA819 /* BodyguardGenderView.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3277460C26C06F0100B7A9C8 /* SideMenu */ = {
+			isa = PBXGroup;
+			children = (
+				3277460D26C06F0C00B7A9C8 /* LeftSideMenu */,
+			);
+			path = SideMenu;
+			sourceTree = "<group>";
+		};
+		3277460D26C06F0C00B7A9C8 /* LeftSideMenu */ = {
+			isa = PBXGroup;
+			children = (
+				3277460E26C06F1A00B7A9C8 /* View */,
+			);
+			path = LeftSideMenu;
+			sourceTree = "<group>";
+		};
+		3277460E26C06F1A00B7A9C8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3277460F26C06F4B00B7A9C8 /* LeftSideMenuView.storyboard */,
+				3277461426C089C000B7A9C8 /* LeftSideMenuViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -236,6 +302,8 @@
 				3277D2152677BDCE00F84C30 /* kafoTests */,
 				3277D2202677BDCE00F84C30 /* kafoUITests */,
 				3277D1FD2677BDCA00F84C30 /* Products */,
+				FAC5CD33A7AABBFAD7C45393 /* Pods */,
+				AE26B4950D33F0254E0D7820 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -286,6 +354,8 @@
 		3277D2322677BEE400F84C30 /* Presentaion */ = {
 			isa = PBXGroup;
 			children = (
+				327A636726C2F2C5003B3EDE /* Profile */,
+				3277460C26C06F0100B7A9C8 /* SideMenu */,
 				327689B0269CA28F00CC61C0 /* KafoService */,
 				32DDC4EF269C765700969823 /* ListOfBodyGuards */,
 				328A565A2699F1A800BFD9C2 /* Location */,
@@ -348,6 +418,23 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		327A636726C2F2C5003B3EDE /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				327A636826C2F2D3003B3EDE /* View */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		327A636826C2F2D3003B3EDE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				327A636926C2F5C0003B3EDE /* ProfileView.storyboard */,
+				327A636E26C2F6D8003B3EDE /* ProfileTableViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		328A56472699D18E00BFD9C2 /* Services */ = {
 			isa = PBXGroup;
 			children = (
@@ -359,7 +446,7 @@
 		328A56482699D19900BFD9C2 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				328A56492699D1EF00BFD9C2 /* ServicesView.storyboard */,
+				3276298A26C4974B00F0AC4F /* ServicesView.storyboard */,
 				328A56512699EA5200BFD9C2 /* ServicesTableViewController.swift */,
 			);
 			path = View;
@@ -368,7 +455,7 @@
 		328A565A2699F1A800BFD9C2 /* Location */ = {
 			isa = PBXGroup;
 			children = (
-				328A565B2699F1C600BFD9C2 /* LocationView.storyboard */,
+				323B672E26C72ACD005CA819 /* LocationView.storyboard */,
 				328A56662699F73F00BFD9C2 /* LocationViewController.swift */,
 			);
 			path = Location;
@@ -378,6 +465,7 @@
 			isa = PBXGroup;
 			children = (
 				329B6094267FD87D008AB2DE /* Checkbox.swift */,
+				32F5E13126C59DC100C097DF /* Gridiant.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -458,9 +546,32 @@
 			isa = PBXGroup;
 			children = (
 				32DDC4F7269C79BB00969823 /* ListOfGuardsTableViewCell.swift */,
-				32DDC4F8269C79BB00969823 /* ListOfGuardsTableViewCell.xib */,
+				323B673926C7329D005CA819 /* ListOfGuardsTableViewCell.xib */,
 			);
 			path = Cell;
+			sourceTree = "<group>";
+		};
+		AE26B4950D33F0254E0D7820 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				10CBAC4709A94C2A221702BC /* Pods_kafo.framework */,
+				A965F922173A0C423BE26C0F /* Pods_kafo_kafoUITests.framework */,
+				E852DB847189408DE9F18D44 /* Pods_kafoTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FAC5CD33A7AABBFAD7C45393 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				46F0118B6043FB520B1263E9 /* Pods-kafo.debug.xcconfig */,
+				66DF3D11DF0DA6660F42825A /* Pods-kafo.release.xcconfig */,
+				E5A951C69020BBDE04AA4848 /* Pods-kafo-kafoUITests.debug.xcconfig */,
+				95C1D6BCCC8F08224335244C /* Pods-kafo-kafoUITests.release.xcconfig */,
+				5C8DDD3CD63E84AA43B16114 /* Pods-kafoTests.debug.xcconfig */,
+				E12F105B309F201C6749E92E /* Pods-kafoTests.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -470,9 +581,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3277D2262677BDCE00F84C30 /* Build configuration list for PBXNativeTarget "kafo" */;
 			buildPhases = (
+				AB943C05D4D3521C94EE411B /* [CP] Check Pods Manifest.lock */,
 				3277D1F82677BDCA00F84C30 /* Sources */,
 				3277D1F92677BDCA00F84C30 /* Frameworks */,
 				3277D1FA2677BDCA00F84C30 /* Resources */,
+				F14F89D3FB277A95ED708F96 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -487,6 +600,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3277D2292677BDCE00F84C30 /* Build configuration list for PBXNativeTarget "kafoTests" */;
 			buildPhases = (
+				D97C551E44E9A695EF8C077B /* [CP] Check Pods Manifest.lock */,
 				3277D20E2677BDCE00F84C30 /* Sources */,
 				3277D20F2677BDCE00F84C30 /* Frameworks */,
 				3277D2102677BDCE00F84C30 /* Resources */,
@@ -505,9 +619,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3277D22C2677BDCE00F84C30 /* Build configuration list for PBXNativeTarget "kafoUITests" */;
 			buildPhases = (
+				907A6151B5940B00DBBE7934 /* [CP] Check Pods Manifest.lock */,
 				3277D2192677BDCE00F84C30 /* Sources */,
 				3277D21A2677BDCE00F84C30 /* Frameworks */,
 				3277D21B2677BDCE00F84C30 /* Resources */,
+				BEBEF59018908DF1D9C12A2F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -548,6 +664,7 @@
 			knownRegions = (
 				en,
 				Base,
+				ar,
 			);
 			mainGroup = 3277D1F32677BDCA00F84C30;
 			productRefGroup = 3277D1FD2677BDCA00F84C30 /* Products */;
@@ -566,21 +683,23 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				32DDC4FA269C79BB00969823 /* ListOfGuardsTableViewCell.xib in Resources */,
-				328A565C2699F1C600BFD9C2 /* LocationView.storyboard in Resources */,
+				323B673726C7329D005CA819 /* ListOfGuardsTableViewCell.xib in Resources */,
+				323B672C26C72ACD005CA819 /* LocationView.storyboard in Resources */,
 				3277D20C2677BDCD00F84C30 /* LaunchScreen.storyboard in Resources */,
 				3277D2092677BDCD00F84C30 /* Assets.xcassets in Resources */,
-				326A3685267EA49000B87D37 /* SignUpView.storyboard in Resources */,
+				32F5E12626C5924400C097DF /* SignUpView.storyboard in Resources */,
+				327A636A26C2F5C0003B3EDE /* ProfileView.storyboard in Resources */,
 				3277D2072677BDCB00F84C30 /* Main.storyboard in Resources */,
 				329B60AC267FED7D008AB2DE /* PersonalBodyguardView.storyboard in Resources */,
-				328A564A2699D1EF00BFD9C2 /* ServicesView.storyboard in Resources */,
-				327689C5269CBFDB00CC61C0 /* BodyguardGenderView.storyboard in Resources */,
+				3276298826C4974B00F0AC4F /* ServicesView.storyboard in Resources */,
+				3277461026C06F4B00B7A9C8 /* LeftSideMenuView.storyboard in Resources */,
+				323B673F26C7355F005CA819 /* BodyguardGenderView.storyboard in Resources */,
 				32DDC4F2269C78F200969823 /* ListOfBodyGuards.storyboard in Resources */,
 				3269983D2680DA0F0074E586 /* MainViewTableViewCell.xib in Resources */,
 				329B60A0267FE9C4008AB2DE /* MainCustomerView.storyboard in Resources */,
 				32699850268112DE0074E586 /* CompanyDetailsView.storyboard in Resources */,
-				327689D2269CC84500CC61C0 /* NumberOfHoursView.storyboard in Resources */,
-				327689BD269CA4D400CC61C0 /* KafoServiceView.storyboard in Resources */,
+				323B675226C73C20005CA819 /* NumberOfHoursView.storyboard in Resources */,
+				323B674726C7363A005CA819 /* KafoServiceView.storyboard in Resources */,
 				3277D2562677C08F00F84C30 /* LoginView.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -601,13 +720,118 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		907A6151B5940B00DBBE7934 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-kafo-kafoUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AB943C05D4D3521C94EE411B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-kafo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BEBEF59018908DF1D9C12A2F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-kafo-kafoUITests/Pods-kafo-kafoUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-kafo-kafoUITests/Pods-kafo-kafoUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-kafo-kafoUITests/Pods-kafo-kafoUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D97C551E44E9A695EF8C077B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-kafoTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F14F89D3FB277A95ED708F96 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-kafo/Pods-kafo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-kafo/Pods-kafo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-kafo/Pods-kafo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		3277D1F82677BDCA00F84C30 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				327A636F26C2F6D8003B3EDE /* ProfileTableViewController.swift in Sources */,
 				329B6095267FD87D008AB2DE /* Checkbox.swift in Sources */,
 				32699851268112DE0074E586 /* CompanyDetailsTableViewController.swift in Sources */,
+				32F5E13226C59DC100C097DF /* Gridiant.swift in Sources */,
 				3277D24D2677C05C00F84C30 /* LoginVIewController + TextFiledDelegate.swift in Sources */,
 				32DDC4FF269C7CDE00969823 /* ListOfBodyGuardsViewController.swift in Sources */,
 				3277D2392677BFED00F84C30 /* LoginViewController.swift in Sources */,
@@ -615,7 +839,9 @@
 				3277D2042677BDCB00F84C30 /* ViewController.swift in Sources */,
 				32DDC4F9269C79BB00969823 /* ListOfGuardsTableViewCell.swift in Sources */,
 				326998332680CD9B0074E586 /* PersonalBodyguardTableViewController.swift in Sources */,
+				3276299926C49D1100F0AC4F /* SecondViewController.swift in Sources */,
 				328A56522699EA5200BFD9C2 /* ServicesTableViewController.swift in Sources */,
+				3277461526C089C000B7A9C8 /* LeftSideMenuViewController.swift in Sources */,
 				328A56672699F73F00BFD9C2 /* LocationViewController.swift in Sources */,
 				3277D2002677BDCA00F84C30 /* AppDelegate.swift in Sources */,
 				326A368D267EA6DD00B87D37 /* SignUpTableViewController.swift in Sources */,
@@ -625,6 +851,7 @@
 				326998422680DE8B0074E586 /* MainCustomerViewController.swift in Sources */,
 				327689B5269CA4B700CC61C0 /* KafoServiceViewController.swift in Sources */,
 				3269983C2680DA0F0074E586 /* MainViewTableViewCell.swift in Sources */,
+				3276299426C49CF800F0AC4F /* FirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -660,10 +887,65 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		323B672E26C72ACD005CA819 /* LocationView.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				323B672D26C72ACD005CA819 /* Base */,
+				323B673326C72AD1005CA819 /* ar */,
+			);
+			name = LocationView.storyboard;
+			sourceTree = "<group>";
+		};
+		323B673926C7329D005CA819 /* ListOfGuardsTableViewCell.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				323B673826C7329D005CA819 /* Base */,
+				323B673B26C732A3005CA819 /* ar */,
+			);
+			name = ListOfGuardsTableViewCell.xib;
+			sourceTree = "<group>";
+		};
+		323B674126C7355F005CA819 /* BodyguardGenderView.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				323B674026C7355F005CA819 /* Base */,
+				323B674626C73564005CA819 /* ar */,
+			);
+			name = BodyguardGenderView.storyboard;
+			sourceTree = "<group>";
+		};
+		323B674926C7363A005CA819 /* KafoServiceView.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				323B674826C7363A005CA819 /* Base */,
+				323B674E26C7363E005CA819 /* ar */,
+			);
+			name = KafoServiceView.storyboard;
+			sourceTree = "<group>";
+		};
+		323B675426C73C20005CA819 /* NumberOfHoursView.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				323B675326C73C20005CA819 /* Base */,
+				323B675626C73C28005CA819 /* ar */,
+			);
+			name = NumberOfHoursView.storyboard;
+			sourceTree = "<group>";
+		};
+		3276298A26C4974B00F0AC4F /* ServicesView.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3276298926C4974B00F0AC4F /* Base */,
+				3276298F26C4975400F0AC4F /* ar */,
+			);
+			name = ServicesView.storyboard;
+			sourceTree = "<group>";
+		};
 		3277D2052677BDCB00F84C30 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				3277D2062677BDCB00F84C30 /* Base */,
+				3277460026C0642900B7A9C8 /* ar */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -672,6 +954,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				3277D20B2677BDCD00F84C30 /* Base */,
+				3277460126C0642900B7A9C8 /* ar */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -680,8 +963,18 @@
 			isa = PBXVariantGroup;
 			children = (
 				3277D2552677C08F00F84C30 /* Base */,
+				327745FF26C0642900B7A9C8 /* ar */,
 			);
 			name = LoginView.storyboard;
+			sourceTree = "<group>";
+		};
+		32F5E12826C5924400C097DF /* SignUpView.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				32F5E12726C5924400C097DF /* Base */,
+				32F5E12D26C5924C00C097DF /* ar */,
+			);
+			name = SignUpView.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -691,6 +984,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -752,6 +1046,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -805,6 +1100,7 @@
 		};
 		3277D2272677BDCE00F84C30 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 46F0118B6043FB520B1263E9 /* Pods-kafo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -824,6 +1120,7 @@
 		};
 		3277D2282677BDCE00F84C30 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 66DF3D11DF0DA6660F42825A /* Pods-kafo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -843,6 +1140,7 @@
 		};
 		3277D22A2677BDCE00F84C30 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5C8DDD3CD63E84AA43B16114 /* Pods-kafoTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -865,6 +1163,7 @@
 		};
 		3277D22B2677BDCE00F84C30 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E12F105B309F201C6749E92E /* Pods-kafoTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -887,6 +1186,7 @@
 		};
 		3277D22D2677BDCE00F84C30 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E5A951C69020BBDE04AA4848 /* Pods-kafo-kafoUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -907,6 +1207,7 @@
 		};
 		3277D22E2677BDCE00F84C30 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 95C1D6BCCC8F08224335244C /* Pods-kafo-kafoUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

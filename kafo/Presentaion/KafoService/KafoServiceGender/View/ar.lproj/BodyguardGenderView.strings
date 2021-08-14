@@ -1,0 +1,9 @@
+
+/* Class = "UILabel"; text = "Gaurding Facility"; ObjectID = "3Cn-Kr-Y7M"; */
+"3Cn-Kr-Y7M.text" = "حارس شخصي";
+
+/* Class = "UILabel"; text = "Dear Customer which  bodyguard you prefare ?"; ObjectID = "5Yc-Op-0hp"; */
+"5Yc-Op-0hp.text" = "عزيزى العميل اختر نوع الحارس الشخصى";
+
+/* Class = "UILabel"; text = "Personal Bodyguard"; ObjectID = "iZu-XE-FK2"; */
+"iZu-XE-FK2.text" = "حارسة شخصية";

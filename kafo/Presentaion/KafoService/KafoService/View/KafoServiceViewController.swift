@@ -26,6 +26,16 @@ class KafoServiceViewController: UITableViewController {
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        setGradientBackground()
+    }
+    @IBAction func menuBtnDidTapped(_ sender: Any) {
+        let leftSideMenuStoryboard = UIStoryboard(name: "LeftSideMenuView", bundle: nil)
+
+        let sideMenuViewController = leftSideMenuStoryboard.instantiateViewController(identifier: "LeftSideMenuNavigationController") as! UINavigationController
+        self.present(sideMenuViewController, animated: true)
+    }
     @objc func clickAction(sender : UITapGestureRecognizer) {
         // Do what you want
         let bodyguardGenderViewStoryboard = UIStoryboard(name: "BodyguardGenderView", bundle: nil)
@@ -56,6 +66,21 @@ class KafoServiceViewController: UITableViewController {
         }
     }
 
+    func setGradientBackground() {
+      
+        let colorTop =  UIColor(red: 0.0/255.0, green: 0.0/255.0, blue: 55.0/255.0, alpha: 1.0).cgColor
+        let colorBottom = UIColor(red: 0.0/255.0, green: 140.0/255.0, blue:255.0/255.0, alpha: 1.0).cgColor
+                    
+        let gradientLayer = CAGradientLayer()
+        gradientLayer.colors = [colorTop, colorBottom]
+        gradientLayer.locations = [0.0, 1.0]
+        gradientLayer.frame = self.tableView.bounds
+                
+        let backgroundView = UIView(frame: tableView.bounds)
+        backgroundView.layer.insertSublayer(gradientLayer, at: 0)
+        tableView.backgroundView = backgroundView
+//        self.tableView.layer.insertSublayer(gradientLayer, at:0)
+    }
     /*
     // MARK: - Navigation
 

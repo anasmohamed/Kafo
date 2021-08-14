@@ -28,7 +28,7 @@
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Choose the type of security ?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TCJ-jk-Jxu">
                                                     <rect key="frame" x="8" y="69" width="398" height="20.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -38,6 +38,7 @@
                                                 <constraint firstItem="TCJ-jk-Jxu" firstAttribute="leading" secondItem="4lD-c9-XYQ" secondAttribute="leading" constant="8" id="hvN-kf-x48"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="228" id="f3v-Iw-Nek">
                                         <rect key="frame" x="0.0" y="129" width="414" height="228"/>
@@ -79,6 +80,7 @@
                                                 <constraint firstItem="oXf-AW-FPt" firstAttribute="top" secondItem="qCa-r2-j8s" secondAttribute="top" constant="10" id="r2M-jf-vX7"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="230" id="IF7-B5-ggS">
                                         <rect key="frame" x="0.0" y="357" width="414" height="230"/>
@@ -120,6 +122,7 @@
                                                 <constraint firstAttribute="bottom" secondItem="qBy-Ej-S3x" secondAttribute="bottom" constant="15" id="cXN-i8-FXE"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="139" id="Tvo-J1-uNt">
                                         <rect key="frame" x="0.0" y="587" width="414" height="139"/>
@@ -128,6 +131,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="139"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="145" id="NF8-GJ-Akd">
                                         <rect key="frame" x="0.0" y="726" width="414" height="145"/>
@@ -136,6 +140,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="145"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
@@ -145,7 +150,13 @@
                             <outlet property="delegate" destination="KeW-ME-7jg" id="117-z5-LGM"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="rLP-rF-fSW"/>
+                    <navigationItem key="navigationItem" id="rLP-rF-fSW">
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="menu (3)" id="dN2-Dl-7tU">
+                            <connections>
+                                <action selector="menuBtnDidTapped:" destination="KeW-ME-7jg" id="E7f-8H-pVj"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="guardingFacilityUIView" destination="qBy-Ej-S3x" id="EVX-lV-axK"/>
                         <outlet property="personalBodygaurdUIView" destination="oXf-AW-FPt" id="llM-pF-8vP"/>
@@ -176,6 +187,7 @@
     </scenes>
     <resources>
         <image name="man" width="600" height="600"/>
+        <image name="menu (3)" width="24" height="24"/>
         <image name="other compnies" width="960" height="637"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

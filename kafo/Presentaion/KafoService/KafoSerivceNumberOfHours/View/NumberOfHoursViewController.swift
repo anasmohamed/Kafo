@@ -29,12 +29,15 @@ class NumberOfHoursViewController: UIViewController {
         numberOfHoursTextField.layer.borderWidth = 1
         numberOfHoursTextField.layer.cornerRadius = 8
         
-        checkoutBtn.layer.borderColor = UIColor.init(red: 176.0/255.0, green: 173.0/255.0, blue: 108.0/255.0, alpha: 1).cgColor
+        checkoutBtn.layer.borderColor = UIColor.black.cgColor
         checkoutBtn.layer.borderWidth = 2
-        checkoutBtn.layer.cornerRadius = 8
+        checkoutBtn.layer.cornerRadius = 20
         // Do any additional setup after loading the view.
     }
-    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        setGradientBackground()
+    }
 
     /*
     // MARK: - Navigation
@@ -45,5 +48,21 @@ class NumberOfHoursViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    @IBAction func menuBtnDidTapped(_ sender: Any) {
+        let leftSideMenuStoryboard = UIStoryboard(name: "LeftSideMenuView", bundle: nil)
 
+        let sideMenuViewController = leftSideMenuStoryboard.instantiateViewController(identifier: "LeftSideMenuNavigationController") as! UINavigationController
+        self.present(sideMenuViewController, animated: true)
+    }
+    func setGradientBackground() {
+        let colorTop =  UIColor(red: 0.0/255.0, green: 0.0/255.0, blue: 55.0/255.0, alpha: 1.0).cgColor
+        let colorBottom = UIColor(red: 0.0/255.0, green: 140.0/255.0, blue:255.0/255.0, alpha: 1.0).cgColor
+                    
+        let gradientLayer = CAGradientLayer()
+        gradientLayer.colors = [colorTop, colorBottom]
+        gradientLayer.locations = [0.0, 1.0]
+        gradientLayer.frame = self.view.bounds
+                
+        self.view.layer.insertSublayer(gradientLayer, at:0)
+    }
 }

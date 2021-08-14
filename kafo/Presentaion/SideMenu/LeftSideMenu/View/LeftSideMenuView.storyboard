@@ -250,7 +250,7 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <userDefinedRuntimeAttributes>
-                        <userDefinedRuntimeAttribute type="boolean" keyPath="leftSide" value="NO"/>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="leftSide" value="YES"/>
                     </userDefinedRuntimeAttributes>
                     <connections>
                         <segue destination="rb5-30-DdF" kind="relationship" relationship="rootViewController" id="Hmz-b0-48x"/>

@@ -11,7 +11,7 @@
         <!--Other Companies View Controller-->
         <scene sceneID="HQx-zz-mNj">
             <objects>
-                <viewController id="I9j-7g-58O" customClass="OtherCompaniesViewController" customModule="kafo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="OtherCompaniesViewController" id="I9j-7g-58O" customClass="OtherCompaniesViewController" customModule="kafo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="4Vc-JJ-1mX">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

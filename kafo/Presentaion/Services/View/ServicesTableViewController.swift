@@ -19,12 +19,16 @@ class ServicesTableViewController: UITableViewController {
         viewShadow(view: kafoServiceView)
         viewShadow(view: instantServiceView)
         
-        
+        self.navigationItem.setHidesBackButton(true, animated: true)
+
         let gesture = UITapGestureRecognizer(target: self, action:  #selector(self.clickAction(sender:)))
         self.instantServiceView.addGestureRecognizer(gesture)
         
         let kafoServicesGesture = UITapGestureRecognizer(target: self, action:  #selector(self.kafoServiceClickAction(sender:)))
         self.kafoServiceView.addGestureRecognizer(kafoServicesGesture)
+        
+        let otherCompaniesGesture = UITapGestureRecognizer(target: self, action:  #selector(self.otherCompaniesServiceClickAction(sender:)))
+        self.compniesServiceView.addGestureRecognizer(otherCompaniesGesture)
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -42,6 +46,12 @@ class ServicesTableViewController: UITableViewController {
         let kafoServiceViewStoryboard = UIStoryboard(name: "KafoServiceView", bundle: nil)
         let kafoServiceViewController = kafoServiceViewStoryboard.instantiateViewController(identifier: "KafoServiceViewController") as! KafoServiceViewController
         self.navigationController?.pushViewController(kafoServiceViewController, animated: true)
+    }
+    @objc func otherCompaniesServiceClickAction(sender : UITapGestureRecognizer) {
+        // Do what you want
+        let otherCompaniesViewStoryboard = UIStoryboard(name: "OtherCompaniesView", bundle: nil)
+        let otherCompaniesViewController = otherCompaniesViewStoryboard.instantiateViewController(identifier: "OtherCompaniesViewController") as! OtherCompaniesViewController
+        self.navigationController?.pushViewController(otherCompaniesViewController, animated: true)
     }
     // MARK: - Table view data source
     func viewShadow(view:UIView)  {

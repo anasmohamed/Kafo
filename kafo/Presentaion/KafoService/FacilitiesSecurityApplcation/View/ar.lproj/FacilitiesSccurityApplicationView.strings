@@ -1,0 +1,38 @@
+
+/* Class = "UILabel"; text = "9"; ObjectID = "40l-fK-00X"; */
+"40l-fK-00X.text" = "رقم المبنى:";
+
+/* Class = "UILabel"; text = "7"; ObjectID = "6RD-Q1-qhM"; */
+"6RD-Q1-qhM.text" = "المدينة:";
+
+/* Class = "UILabel"; text = "2"; ObjectID = "Ebx-gA-rop"; */
+"Ebx-gA-rop.text" = "الهاتف:";
+
+/* Class = "UILabel"; text = "4"; ObjectID = "ILW-id-zA1"; */
+"ILW-id-zA1.text" = "الفاكس:";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "aGf-dn-l1w"; */
+"aGf-dn-l1w.normalTitle" = "اتمام";
+
+/* Class = "UILabel"; text = "6"; ObjectID = "knR-Lo-0Hn"; */
+"knR-Lo-0Hn.text" = "اسم المنشأة:";
+
+/* Class = "UILabel"; text = "6"; ObjectID = "lSm-RV-FT3"; */
+"lSm-RV-FT3.text" = "عدد الحراس فى الشفت الواحد:";
+
+/* Class = "UILabel"; text = "8"; ObjectID = "o5i-f0-6CE"; */
+"o5i-f0-6CE.text" = "الشارع:";
+
+/* Class = "UILabel"; text = "1"; ObjectID = "pP8-LA-Rj8"; */
+"pP8-LA-Rj8.text" = "الشخص المسؤل:";
+
+/* Class = "UILabel"; text = "3"; ObjectID = "q12-L0-1Xd"; */
+"q12-L0-1Xd.text" = "رقم هاتف المؤسسة:";
+
+/* Class = "UILabel"; text = "5"; ObjectID = "ukl-BL-t0B"; */
+"ukl-BL-t0B.text" = "عدد الشفتات:";
+
+"n1c-0P-c5K.text" = "تاريخ بدأ العمل:";
+
+
+"ydo-I4-FoZ.text" = "مدة العقد بالأيام:";

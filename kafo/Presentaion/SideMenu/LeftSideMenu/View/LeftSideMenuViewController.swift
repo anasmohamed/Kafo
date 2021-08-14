@@ -10,9 +10,16 @@ import SideMenu
 
 class LeftSideMenuViewController: UITableViewController {
 
+    @IBOutlet weak var connectWIthUsView: UIView!
+    @IBOutlet weak var profileView: UIView!
+    @IBOutlet weak var ordersView: UIView!
+    @IBOutlet weak var homePageView: UIView!
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        connectWIthUsView.layer.cornerRadius = 15
+        profileView.layer.cornerRadius = 15
+        ordersView.layer.cornerRadius = 15
+        homePageView.layer.cornerRadius = 15
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -20,12 +27,23 @@ class LeftSideMenuViewController: UITableViewController {
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
         
     }
-    
+    func navigateToServiceViewController() {
+        let servicesViewStoryboard = UIStoryboard.init(name: "ServicesView", bundle: nil)
+        let servicesViewController = servicesViewStoryboard.instantiateViewController(withIdentifier: "ServicesTableViewController")
+//        servicesViewController.modalPresentationStyle = .fullScreen
+        self.navigationController?.pushViewController(servicesViewController, animated: true)
+    }
     @IBAction func profileBtnDidTapped(_ sender: Any) {
         let profileViewStoryboard = UIStoryboard(name: "ProfileView", bundle: nil)
         let profileViewController = profileViewStoryboard.instantiateViewController(identifier: "ProfileTableViewController") as! ProfileTableViewController
         self.navigationController?.pushViewController(profileViewController, animated: true)
     }
+    @IBAction func homeBtnDidTapped(_ sender: Any) {
+        navigateToServiceViewController()
+    }
+    
+    
+    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         tableView.reloadData()

@@ -39,7 +39,10 @@ class ProfileTableViewController: UITableViewController {
         self.present(sideMenuViewController, animated: true)
     }
     // MARK: - Table view data source
-
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        setGradientBackground() 
+    }
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
         return 1
@@ -55,6 +58,21 @@ class ProfileTableViewController: UITableViewController {
           txtField.leftView = leftImageView
           txtField.leftViewMode = .always
       }
+    func setGradientBackground() {
+      
+        let colorTop =  UIColor(red: 0.0/255.0, green: 0.0/255.0, blue: 55.0/255.0, alpha: 1.0).cgColor
+        let colorBottom = UIColor(red: 0.0/255.0, green: 140.0/255.0, blue:255.0/255.0, alpha: 1.0).cgColor
+                    
+        let gradientLayer = CAGradientLayer()
+        gradientLayer.colors = [colorTop, colorBottom]
+        gradientLayer.locations = [0.0, 1.0]
+        gradientLayer.frame = self.tableView.bounds
+                
+        let backgroundView = UIView(frame: tableView.bounds)
+        backgroundView.layer.insertSublayer(gradientLayer, at: 0)
+        tableView.backgroundView = backgroundView
+//        self.tableView.layer.insertSublayer(gradientLayer, at:0)
+    }
     /*
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)

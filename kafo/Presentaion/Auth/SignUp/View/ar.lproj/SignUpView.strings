@@ -3,10 +3,10 @@
 "1JM-qY-shZ.normalTitle" = "حارس أمن";
 
 /* Class = "UITextField"; placeholder = "Confirm Password"; ObjectID = "1ac-DY-oaC"; */
-"1ac-DY-oaC.placeholder" = "Confirm Password";
+"1ac-DY-oaC.placeholder" = "كلمة المرور";
 
 /* Class = "UITextField"; placeholder = "Password"; ObjectID = "43u-2b-G6p"; */
-"43u-2b-G6p.placeholder" = "Password";
+"43u-2b-G6p.placeholder" = "كلمة المرور";
 
 /* Class = "UILabel"; text = "مؤسسة كفو للحراسات الأمنية"; ObjectID = "AZN-mz-P0g"; */
 "AZN-mz-P0g.text" = "مؤسسة كفو للحراسات الأمنية";
@@ -24,31 +24,34 @@
 "Hld-L3-dE6.text" = "مؤسسة كفو للحرسات الأمنية";
 
 /* Class = "UIButton"; normalTitle = "Register"; ObjectID = "L2v-Cb-pCu"; */
-"L2v-Cb-pCu.normalTitle" = "Register";
+"L2v-Cb-pCu.normalTitle" = "تسجيل جديد";
 
 /* Class = "UITextField"; placeholder = "Date Of Birth"; ObjectID = "S1M-ZQ-4XP"; */
-"S1M-ZQ-4XP.placeholder" = "Date Of Birth";
+"S1M-ZQ-4XP.placeholder" = "تاريخ الميلاد";
 
 /* Class = "UITextField"; placeholder = "Email Address"; ObjectID = "Tdf-Q2-pra"; */
-"Tdf-Q2-pra.placeholder" = "Email Address";
+"Tdf-Q2-pra.placeholder" = "البريد الالكترونى";
 
 /* Class = "UILabel"; text = "Female"; ObjectID = "lwP-7A-eyY"; */
-"lwP-7A-eyY.text" = "Female";
+"lwP-7A-eyY.text" = "أنثى";
 
 /* Class = "UITextField"; placeholder = "Last Name"; ObjectID = "mIv-fd-CBb"; */
-"mIv-fd-CBb.placeholder" = "Last Name";
+"mIv-fd-CBb.placeholder" = "اسم العائلة";
 
 /* Class = "UILabel"; text = "Male"; ObjectID = "ndQ-zB-vWX"; */
-"ndQ-zB-vWX.text" = "Male";
+"ndQ-zB-vWX.text" = "ذكر";
 
 /* Class = "UILabel"; text = "مؤسسة كفو للحرسات الأمنية"; ObjectID = "tFJ-za-WLH"; */
 "tFJ-za-WLH.text" = "مؤسسة كفو للحرسات الأمنية";
 
 /* Class = "UILabel"; text = "I accept terms and conditions"; ObjectID = "uKD-M3-Yvm"; */
-"uKD-M3-Yvm.text" = "I accept terms and conditions";
+"uKD-M3-Yvm.text" = "أنا أقبل الشروط والأحكام";
 
 /* Class = "UITextField"; placeholder = "First Name"; ObjectID = "vgX-1O-VNn"; */
-"vgX-1O-VNn.placeholder" = "First Name";
+"vgX-1O-VNn.placeholder" = "الاسم الأول";
 
 /* Class = "UITextField"; placeholder = "Mobile Number"; ObjectID = "vgf-D3-Esn"; */
-"vgf-D3-Esn.placeholder" = "Mobile Number";
+"vgf-D3-Esn.placeholder" = "رقم الجوال";
+
+
+"GCy-Oy-chv.normalTitle" = "رجوع";

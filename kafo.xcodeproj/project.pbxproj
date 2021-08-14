@@ -19,6 +19,8 @@
 		3251E6F426C7F06800F1B95B /* OtherCompaniesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3251E6F326C7F06800F1B95B /* OtherCompaniesViewController.swift */; };
 		3251E6FB26C7F0DD00F1B95B /* OtherCompaniesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3251E6F926C7F0DD00F1B95B /* OtherCompaniesTableViewCell.swift */; };
 		3251E6FC26C7F0DD00F1B95B /* OtherCompaniesTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3251E6FA26C7F0DD00F1B95B /* OtherCompaniesTableViewCell.xib */; };
+		3251E70926C8156800F1B95B /* LeftSideMenuView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3251E70B26C8156800F1B95B /* LeftSideMenuView.storyboard */; };
+		3251E71426C8215800F1B95B /* ProfileView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3251E71626C8215800F1B95B /* ProfileView.storyboard */; };
 		326998332680CD9B0074E586 /* PersonalBodyguardTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 326998322680CD9B0074E586 /* PersonalBodyguardTableViewController.swift */; };
 		3269983C2680DA0F0074E586 /* MainViewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3269983A2680DA0F0074E586 /* MainViewTableViewCell.swift */; };
 		3269983D2680DA0F0074E586 /* MainViewTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3269983B2680DA0F0074E586 /* MainViewTableViewCell.xib */; };
@@ -32,7 +34,6 @@
 		327689B5269CA4B700CC61C0 /* KafoServiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327689B4269CA4B700CC61C0 /* KafoServiceViewController.swift */; };
 		327689CA269CC10100CC61C0 /* BodyGuardGenderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327689C9269CC10100CC61C0 /* BodyGuardGenderViewController.swift */; };
 		327689D7269CCA1D00CC61C0 /* NumberOfHoursViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327689D6269CCA1D00CC61C0 /* NumberOfHoursViewController.swift */; };
-		3277461026C06F4B00B7A9C8 /* LeftSideMenuView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3277460F26C06F4B00B7A9C8 /* LeftSideMenuView.storyboard */; };
 		3277461526C089C000B7A9C8 /* LeftSideMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3277461426C089C000B7A9C8 /* LeftSideMenuViewController.swift */; };
 		3277D2002677BDCA00F84C30 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3277D1FF2677BDCA00F84C30 /* AppDelegate.swift */; };
 		3277D2022677BDCB00F84C30 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3277D2012677BDCB00F84C30 /* SceneDelegate.swift */; };
@@ -45,7 +46,6 @@
 		3277D2392677BFED00F84C30 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3277D2382677BFED00F84C30 /* LoginViewController.swift */; };
 		3277D24D2677C05C00F84C30 /* LoginVIewController + TextFiledDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3277D24C2677C05C00F84C30 /* LoginVIewController + TextFiledDelegate.swift */; };
 		3277D2562677C08F00F84C30 /* LoginView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3277D2542677C08F00F84C30 /* LoginView.storyboard */; };
-		327A636A26C2F5C0003B3EDE /* ProfileView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 327A636926C2F5C0003B3EDE /* ProfileView.storyboard */; };
 		327A636F26C2F6D8003B3EDE /* ProfileTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327A636E26C2F6D8003B3EDE /* ProfileTableViewController.swift */; };
 		328A56522699EA5200BFD9C2 /* ServicesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 328A56512699EA5200BFD9C2 /* ServicesTableViewController.swift */; };
 		328A56672699F73F00BFD9C2 /* LocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 328A56662699F73F00BFD9C2 /* LocationViewController.swift */; };
@@ -98,6 +98,10 @@
 		3251E6F326C7F06800F1B95B /* OtherCompaniesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtherCompaniesViewController.swift; sourceTree = "<group>"; };
 		3251E6F926C7F0DD00F1B95B /* OtherCompaniesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtherCompaniesTableViewCell.swift; sourceTree = "<group>"; };
 		3251E6FA26C7F0DD00F1B95B /* OtherCompaniesTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OtherCompaniesTableViewCell.xib; sourceTree = "<group>"; };
+		3251E70A26C8156800F1B95B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LeftSideMenuView.storyboard; sourceTree = "<group>"; };
+		3251E71026C8157100F1B95B /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/LeftSideMenuView.strings; sourceTree = "<group>"; };
+		3251E71526C8215800F1B95B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/ProfileView.storyboard; sourceTree = "<group>"; };
+		3251E71B26C8215D00F1B95B /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/ProfileView.strings; sourceTree = "<group>"; };
 		326998322680CD9B0074E586 /* PersonalBodyguardTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalBodyguardTableViewController.swift; sourceTree = "<group>"; };
 		3269983A2680DA0F0074E586 /* MainViewTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewTableViewCell.swift; sourceTree = "<group>"; };
 		3269983B2680DA0F0074E586 /* MainViewTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewTableViewCell.xib; sourceTree = "<group>"; };
@@ -115,7 +119,6 @@
 		327745FF26C0642900B7A9C8 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/LoginView.strings; sourceTree = "<group>"; };
 		3277460026C0642900B7A9C8 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Main.strings; sourceTree = "<group>"; };
 		3277460126C0642900B7A9C8 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
-		3277460F26C06F4B00B7A9C8 /* LeftSideMenuView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LeftSideMenuView.storyboard; sourceTree = "<group>"; };
 		3277461426C089C000B7A9C8 /* LeftSideMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftSideMenuViewController.swift; sourceTree = "<group>"; };
 		3277D1FC2677BDCA00F84C30 /* kafo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = kafo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3277D1FF2677BDCA00F84C30 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -134,7 +137,6 @@
 		3277D2382677BFED00F84C30 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		3277D24C2677C05C00F84C30 /* LoginVIewController + TextFiledDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "LoginVIewController + TextFiledDelegate.swift"; sourceTree = "<group>"; };
 		3277D2552677C08F00F84C30 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LoginView.storyboard; sourceTree = "<group>"; };
-		327A636926C2F5C0003B3EDE /* ProfileView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ProfileView.storyboard; sourceTree = "<group>"; };
 		327A636E26C2F6D8003B3EDE /* ProfileTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTableViewController.swift; sourceTree = "<group>"; };
 		328A56512699EA5200BFD9C2 /* ServicesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicesTableViewController.swift; sourceTree = "<group>"; };
 		328A56662699F73F00BFD9C2 /* LocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationViewController.swift; sourceTree = "<group>"; };
@@ -347,7 +349,7 @@
 		3277460E26C06F1A00B7A9C8 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				3277460F26C06F4B00B7A9C8 /* LeftSideMenuView.storyboard */,
+				3251E70B26C8156800F1B95B /* LeftSideMenuView.storyboard */,
 				3277461426C089C000B7A9C8 /* LeftSideMenuViewController.swift */,
 			);
 			path = View;
@@ -488,7 +490,7 @@
 		327A636826C2F2D3003B3EDE /* View */ = {
 			isa = PBXGroup;
 			children = (
-				327A636926C2F5C0003B3EDE /* ProfileView.storyboard */,
+				3251E71626C8215800F1B95B /* ProfileView.storyboard */,
 				327A636E26C2F6D8003B3EDE /* ProfileTableViewController.swift */,
 			);
 			path = View;
@@ -748,11 +750,11 @@
 				3277D2092677BDCD00F84C30 /* Assets.xcassets in Resources */,
 				32F5E12626C5924400C097DF /* SignUpView.storyboard in Resources */,
 				3251E6DE26C7D9FA00F1B95B /* FacilitiesSccurityApplicationView.storyboard in Resources */,
-				327A636A26C2F5C0003B3EDE /* ProfileView.storyboard in Resources */,
+				3251E71426C8215800F1B95B /* ProfileView.storyboard in Resources */,
 				3277D2072677BDCB00F84C30 /* Main.storyboard in Resources */,
 				329B60AC267FED7D008AB2DE /* PersonalBodyguardView.storyboard in Resources */,
 				3276298826C4974B00F0AC4F /* ServicesView.storyboard in Resources */,
-				3277461026C06F4B00B7A9C8 /* LeftSideMenuView.storyboard in Resources */,
+				3251E70926C8156800F1B95B /* LeftSideMenuView.storyboard in Resources */,
 				323B673F26C7355F005CA819 /* BodyguardGenderView.storyboard in Resources */,
 				32DDC4F2269C78F200969823 /* ListOfBodyGuards.storyboard in Resources */,
 				3269983D2680DA0F0074E586 /* MainViewTableViewCell.xib in Resources */,
@@ -1004,6 +1006,24 @@
 				3251E6E526C7DA0400F1B95B /* ar */,
 			);
 			name = FacilitiesSccurityApplicationView.storyboard;
+			sourceTree = "<group>";
+		};
+		3251E70B26C8156800F1B95B /* LeftSideMenuView.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3251E70A26C8156800F1B95B /* Base */,
+				3251E71026C8157100F1B95B /* ar */,
+			);
+			name = LeftSideMenuView.storyboard;
+			sourceTree = "<group>";
+		};
+		3251E71626C8215800F1B95B /* ProfileView.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3251E71526C8215800F1B95B /* Base */,
+				3251E71B26C8215D00F1B95B /* ar */,
+			);
+			name = ProfileView.storyboard;
 			sourceTree = "<group>";
 		};
 		3276298A26C4974B00F0AC4F /* ServicesView.storyboard */ = {

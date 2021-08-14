@@ -10,6 +10,7 @@ import UIKit
 class SignUpTableViewController: UITableViewController {
     @IBOutlet weak var passwordTextField: UITextField!
     
+    @IBOutlet weak var backBtn: UIButton!
     @IBOutlet weak var confiremPasswordTextField: UITextField!
     @IBOutlet weak var lastNameTextField: UITextField!
     @IBOutlet weak var deteOfBirthTextField: UITextField!
@@ -18,7 +19,7 @@ class SignUpTableViewController: UITableViewController {
     @IBOutlet weak var firstNameTextField: UITextField!
     @IBOutlet weak var regiterBtn: UIButton!
    
-    
+   
     override func viewDidLoad() {
         super.viewDidLoad()
 //        tableView.backgroundView = UIImageView(image: UIImage(named: "background3"))
@@ -43,6 +44,12 @@ class SignUpTableViewController: UITableViewController {
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
+    
+    
+    @IBAction func backBtnDidTapped(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+    }
+    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         setGradientBackground()
@@ -51,6 +58,10 @@ class SignUpTableViewController: UITableViewController {
         regiterBtn.layer.cornerRadius = 20
         regiterBtn.layer.borderWidth = 2
         regiterBtn.layer.borderColor = UIColor.yellow.cgColor
+        
+        backBtn.layer.cornerRadius = 20
+        backBtn.layer.borderWidth = 2
+        backBtn.layer.borderColor = UIColor.yellow.cgColor
     }
    
     // MARK: - Table view data source
@@ -67,7 +78,7 @@ class SignUpTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 6
+        return 7
     }
 
     func setGradientBackground() {

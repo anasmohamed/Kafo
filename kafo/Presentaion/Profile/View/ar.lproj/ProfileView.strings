@@ -1,0 +1,34 @@
+
+/* Class = "UITextField"; placeholder = "Email Address"; ObjectID = "3Jw-ms-Sm4"; */
+"3Jw-ms-Sm4.placeholder" = "البريد الالكترونى";
+
+/* Class = "UITextField"; placeholder = "Last Name"; ObjectID = "3uy-uy-AjI"; */
+"3uy-uy-AjI.placeholder" = "اسم العائلة";
+
+/* Class = "UIBarButtonItem"; title = "Item"; ObjectID = "4xS-C4-JPy"; */
+"4xS-C4-JPy.title" = "Item";
+
+/* Class = "UITextField"; placeholder = "First Name"; ObjectID = "7M1-ji-7HZ"; */
+"7M1-ji-7HZ.placeholder" = "الاسم الأول";
+
+/* Class = "UITextField"; placeholder = "Date Of Birth"; ObjectID = "DT1-rN-JGK"; */
+"DT1-rN-JGK.placeholder" = "تاريخ الميلاد";
+
+/* Class = "UITextField"; placeholder = "Mobile Number"; ObjectID = "Dtr-yd-qiZ"; */
+"Dtr-yd-qiZ.placeholder" = "رقم الجوال";
+
+/* Class = "UILabel"; text = "Male"; ObjectID = "hyo-lD-BC9"; */
+"hyo-lD-BC9.text" = "ذكر";
+
+/* Class = "UILabel"; text = "Female"; ObjectID = "uCT-63-iqh"; */
+"uCT-63-iqh.text" = "أنثى";
+
+/* Class = "UIButton"; normalTitle = "Security"; ObjectID = "1JM-qY-shZ"; */
+"1JM-qY-shZ.normalTitle" = "حارس أمن";
+
+/* Class = "UITextField"; placeholder = "Confirm Password"; ObjectID = "1ac-DY-oaC"; */
+"1ac-DY-oaC.placeholder" = "كلمة المرور";
+
+
+
+

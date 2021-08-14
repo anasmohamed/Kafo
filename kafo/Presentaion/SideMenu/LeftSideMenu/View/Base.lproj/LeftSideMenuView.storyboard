@@ -47,8 +47,11 @@
                                                                     <real key="value" value="20"/>
                                                                 </userDefinedRuntimeAttribute>
                                                             </userDefinedRuntimeAttributes>
+                                                            <connections>
+                                                                <action selector="homeBtnDidTapped:" destination="rb5-30-DdF" eventType="touchUpInside" id="UJ4-bA-wI2"/>
+                                                            </connections>
                                                         </button>
-                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="call" translatesAutoresizingMaskIntoConstraints="NO" id="THx-jY-Od9">
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="home" translatesAutoresizingMaskIntoConstraints="NO" id="THx-jY-Od9">
                                                             <rect key="frame" x="320" y="10" width="30" height="20"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="20" id="S8b-ON-XLe"/>
@@ -100,7 +103,7 @@
                                                                 <action selector="profileBtnDidTapped:" destination="rb5-30-DdF" eventType="touchUpInside" id="X3S-b9-Y0C"/>
                                                             </connections>
                                                         </button>
-                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="call" translatesAutoresizingMaskIntoConstraints="NO" id="1zb-Iq-AO4">
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="user" translatesAutoresizingMaskIntoConstraints="NO" id="1zb-Iq-AO4">
                                                             <rect key="frame" x="320" y="10" width="30" height="20"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" constant="30" id="hT9-Vw-Cwn"/>
@@ -149,7 +152,7 @@
                                                                 </userDefinedRuntimeAttribute>
                                                             </userDefinedRuntimeAttributes>
                                                         </button>
-                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="call" translatesAutoresizingMaskIntoConstraints="NO" id="rtw-cQ-OAO">
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="menu (4)" translatesAutoresizingMaskIntoConstraints="NO" id="rtw-cQ-OAO">
                                                             <rect key="frame" x="320" y="10" width="30" height="20"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" constant="30" id="1Ce-7G-QtN"/>
@@ -198,7 +201,7 @@
                                                                 </userDefinedRuntimeAttribute>
                                                             </userDefinedRuntimeAttributes>
                                                         </button>
-                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="call" translatesAutoresizingMaskIntoConstraints="NO" id="LaD-Gz-Qkr">
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="help" translatesAutoresizingMaskIntoConstraints="NO" id="LaD-Gz-Qkr">
                                                             <rect key="frame" x="320" y="10" width="30" height="20"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" constant="30" id="1Ji-PM-mw8"/>
@@ -234,6 +237,12 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="60r-wZ-M3i"/>
+                    <connections>
+                        <outlet property="connectWIthUsView" destination="cC0-yq-ccO" id="VCT-ex-qYt"/>
+                        <outlet property="homePageView" destination="uoj-eg-0hc" id="He1-Up-azp"/>
+                        <outlet property="ordersView" destination="cql-eM-LSB" id="fUE-IY-1oS"/>
+                        <outlet property="profileView" destination="kBa-M7-pxO" id="FZJ-tM-lT5"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nzJ-Iv-jYT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -262,7 +271,10 @@
         </scene>
     </scenes>
     <resources>
-        <image name="call" width="24" height="24"/>
+        <image name="help" width="32" height="32"/>
+        <image name="home" width="32" height="32"/>
+        <image name="menu (4)" width="32" height="32"/>
+        <image name="user" width="32" height="32"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

@@ -20,6 +20,9 @@ class KafoServiceViewController: UITableViewController {
         
         let gesture = UITapGestureRecognizer(target: self, action:  #selector(self.clickAction(sender:)))
         self.personalBodygaurdUIView.addGestureRecognizer(gesture)
+        
+        let facilitiesGesture = UITapGestureRecognizer(target: self, action:  #selector(self.facilitiesClickAction(sender:)))
+        self.guardingFacilityUIView.addGestureRecognizer(facilitiesGesture)
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -41,6 +44,13 @@ class KafoServiceViewController: UITableViewController {
         let bodyguardGenderViewStoryboard = UIStoryboard(name: "BodyguardGenderView", bundle: nil)
         let bodyguardGenderViewController = bodyguardGenderViewStoryboard.instantiateViewController(identifier: "BodyGuardGenderViewController") as! BodyGuardGenderViewController
         self.navigationController?.pushViewController(bodyguardGenderViewController, animated: true)
+      
+    }
+    @objc func facilitiesClickAction(sender : UITapGestureRecognizer) {
+        // Do what you want
+        let facilitiesSccurityApplicationViewStoryboard = UIStoryboard(name: "FacilitiesSccurityApplicationView", bundle: nil)
+        let facilitiesSccurityApplicationViewController = facilitiesSccurityApplicationViewStoryboard.instantiateViewController(identifier: "FacilitiesSccurityApplicationViewController") as! FacilitiesSccurityApplicationViewController
+        self.navigationController?.pushViewController(facilitiesSccurityApplicationViewController, animated: true)
     }
     // MARK: - Table view data source
     func viewShadow(view:UIView)  {

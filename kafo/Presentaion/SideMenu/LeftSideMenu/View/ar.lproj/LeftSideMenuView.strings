@@ -1,0 +1,12 @@
+
+/* Class = "UIButton"; normalTitle = "Home"; ObjectID = "Qac-Tr-80g"; */
+"Qac-Tr-80g.normalTitle" = "الصفحة الرئيسية";
+
+/* Class = "UIButton"; normalTitle = "connect with us"; ObjectID = "WRr-LJ-M2G"; */
+"WRr-LJ-M2G.normalTitle" = "تواصل معانا";
+
+/* Class = "UIButton"; normalTitle = "Profile"; ObjectID = "eHv-kp-pCQ"; */
+"eHv-kp-pCQ.normalTitle" = "الملف الشخصى";
+
+/* Class = "UIButton"; normalTitle = "Orders"; ObjectID = "l3X-vz-yUN"; */
+"l3X-vz-yUN.normalTitle" = "الطلبات";

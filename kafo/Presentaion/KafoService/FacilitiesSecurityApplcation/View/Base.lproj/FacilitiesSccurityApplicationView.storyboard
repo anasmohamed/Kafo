@@ -10,7 +10,7 @@
         <!--Facilities Sccurity Application View Controller-->
         <scene sceneID="o8s-tF-DQI">
             <objects>
-                <tableViewController id="8dr-M3-oTQ" customClass="FacilitiesSccurityApplicationViewController" customModule="kafo" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="FacilitiesSccurityApplicationViewController" id="8dr-M3-oTQ" customClass="FacilitiesSccurityApplicationViewController" customModule="kafo" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="98c-MS-WtT">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -435,7 +435,13 @@
                             <outlet property="delegate" destination="8dr-M3-oTQ" id="GNo-0T-Sy4"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="Rjg-KB-fMB"/>
+                    <navigationItem key="navigationItem" id="Rjg-KB-fMB">
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="menu (3)" id="64R-0x-4rv">
+                            <connections>
+                                <action selector="menuBtnDidTapped:" destination="8dr-M3-oTQ" id="bPI-YC-17b"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="doneBtn" destination="aGf-dn-l1w" id="Pho-CY-OGY"/>
                         <outlet property="eighthTextField" destination="zyT-SM-fDD" id="7vq-Wt-qfh"/>
@@ -476,6 +482,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="menu (3)" width="24" height="24"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

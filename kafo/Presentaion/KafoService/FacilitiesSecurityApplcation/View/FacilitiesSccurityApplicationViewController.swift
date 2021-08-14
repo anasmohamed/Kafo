@@ -76,7 +76,12 @@ class FacilitiesSccurityApplicationViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
         cell.backgroundColor = UIColor.clear
     }
- 
+    @IBAction func menuBtnDidTapped(_ sender: Any) {
+        let leftSideMenuStoryboard = UIStoryboard(name: "LeftSideMenuView", bundle: nil)
+
+        let sideMenuViewController = leftSideMenuStoryboard.instantiateViewController(identifier: "LeftSideMenuNavigationController") as! UINavigationController
+        self.present(sideMenuViewController, animated: true)
+    }
     /*
     // MARK: - Navigation
 

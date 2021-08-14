@@ -37,8 +37,9 @@ class SecondViewController: UIViewController {
         let signupViewStoryboard = UIStoryboard.init(name: "SignUpView", bundle: nil)
         let signupViewController = signupViewStoryboard.instantiateViewController(withIdentifier: "SignUpTableViewController")
         signupViewController.modalPresentationStyle = .fullScreen
-        
-        self.present(signupViewController, animated: true, completion: nil)
+        self.present(signupViewController, animated: true)
+
+//        self.present(signupViewController, animated: true, completion: nil)
     }
     func setGradientBackground() {
         let colorTop =  UIColor(red: 0.0/255.0, green: 0.0/255.0, blue: 55.0/255.0, alpha: 1.0).cgColor

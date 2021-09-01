@@ -8,7 +8,9 @@ target 'kafo' do
   # Pods for kafo
       pod 'SideMenu', '~> 6.0'
       pod 'SwiftyMenu', '~> 0.6.5'
-
+      pod 'Firebase/Analytics'
+      pod 'Firebase/Auth'
+      pod 'Firebase/Database'  
   target 'kafoTests' do
     inherit! :search_paths
     # Pods for testing

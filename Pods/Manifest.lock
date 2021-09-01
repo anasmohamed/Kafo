@@ -100,6 +100,7 @@ PODS:
   - SnapKit (5.0.1)
   - SwiftyMenu (0.6.5):
     - SnapKit (~> 5.0.1)
+  - Toast-Swift (5.0.1)
 
 DEPENDENCIES:
   - Firebase/Analytics
@@ -107,6 +108,7 @@ DEPENDENCIES:
   - Firebase/Database
   - SideMenu (~> 6.0)
   - SwiftyMenu (~> 0.6.5)
+  - Toast-Swift (~> 5.0.1)
 
 SPEC REPOS:
   trunk:
@@ -127,6 +129,7 @@ SPEC REPOS:
     - SideMenu
     - SnapKit
     - SwiftyMenu
+    - Toast-Swift
 
 SPEC CHECKSUMS:
   Firebase: 21ac9f28b09a8bdfc005f34c984fca84e7e8786d
@@ -146,7 +149,8 @@ SPEC CHECKSUMS:
   SideMenu: f583187d21c5b1dd04c72002be544b555a2627a2
   SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
   SwiftyMenu: 9f38e9a22fb9c01b889d33cc362ffc12de042dd2
+  Toast-Swift: 9b6a70f28b3bf0b96c40d46c0c4b9d6639846711
 
-PODFILE CHECKSUM: efdc760dd666381a21ea839361670d599897a914
+PODFILE CHECKSUM: 523fd4d612f2387f62d93ed39f672f54fcc47a74
 
 COCOAPODS: 1.10.1

@@ -23,7 +23,7 @@ class SignupViewModel {
     private var phoneNumber = ""
     private var privacyPolicyCheckbox = false
     private var notificationToken = ""
-    
+    private var dateOfBirth = ""
 
     var credentialsInputErrorMessage: Observable<String> = Observable("")
     var isUsernameTextFieldHighLighted: Observable<Bool> = Observable(false)
@@ -42,7 +42,7 @@ class SignupViewModel {
     //    }
     
     //Here we update our model
-    func updateCredentials(firstName: String,lastName:String, password: String, phoneNumber: String,email: String ,userType: String,gender:String,date:String) {
+    func updateCredentials(firstName: String,lastName:String, password: String, phoneNumber: String,email: String ,userType: String,gender:String,date:String,privacyPolicy:Bool) {
         user.firstName = firstName
         user.lastName = lastName
         user.password = password
@@ -50,6 +50,7 @@ class SignupViewModel {
         user.userType = userType
         user.gender = gender
         user.dateOfBirth = date
+        privacyPolicyCheckbox = privacyPolicy
 //        user.isActive = isActive
 //        user.deviceToken = deviceToken
         user.mobileNumber = "+973\(phoneNumber)"
@@ -85,42 +86,54 @@ class SignupViewModel {
 //        }
 //    }
     func credentialsInput() -> CredentialsInputStatus {
-//        if !privacyPolicyCheckbox
-//        {
-//            errorMessage.value = "the conditons must be agreed first"
-//            return .Incorrect
-//
-//        }
+        if !privacyPolicyCheckbox
+        {
+            errorMessage.value = "the conditons must be agreed first"
+            return .Incorrect
+
+        }
 //        if userName.isEmpty && password.isEmpty && email.isEmpty && phoneNumber.isEmpty{
 //            errorMessage.value = "Please provide username and password."
 //            isUsernameTextFieldHighLighted.value = true
 //
 //            return .Incorrect
 //        }
-//        if firstName.isEmpty {
-//            errorMessage.value = "Username field is empty."
-//            isUsernameTextFieldHighLighted.value = true
-//            return .Incorrect
-//        }
-//        if password.isEmpty {
-//            errorMessage.value = "Password field is empty."
-//            isPasswordTextFieldHighLighted.value = true
-//            return .Incorrect
-//        }
-//        if email.isEmpty
-//        {
-//            errorMessage.value = "Email field is empty."
-//            isEmailTextFieldHighLighted.value = true
-//            return .Incorrect
-//        }
+        if user.firstName.isEmpty {
+            errorMessage.value = "first name field is empty."
+            isUsernameTextFieldHighLighted.value = true
+            return .Incorrect
+        }
+        if user.lastName.isEmpty {
+            errorMessage.value = "last name field is empty."
+            isUsernameTextFieldHighLighted.value = true
+            return .Incorrect
+        }
+        
+        if user.password.isEmpty {
+            errorMessage.value = "Password field is empty."
+            isPasswordTextFieldHighLighted.value = true
+            return .Incorrect
+        }
+        if user.email.isEmpty
+        {
+            errorMessage.value = "Email field is empty."
+            isEmailTextFieldHighLighted.value = true
+            return .Incorrect
+        }
 //       b
-//        if phoneNumber.isEmpty{
-//            
-//            errorMessage.value = "phone number field is empty."
-//            isPhoneNumberTextFieldHighLighted.value = true
-//            return .Incorrect
-//        }
-      
+        
+        if user.mobileNumber.isEmpty{
+            
+            errorMessage.value = "phone number field is empty."
+            isPhoneNumberTextFieldHighLighted.value = true
+            return .Incorrect
+        }
+        if user.dateOfBirth.isEmpty{
+            
+            errorMessage.value = "date of birthfield is empty."
+            isPhoneNumberTextFieldHighLighted.value = true
+            return .Incorrect
+        }
         return .Correct
     }
 }

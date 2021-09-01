@@ -6,7 +6,7 @@
 //
 
 import UIKit
-
+import Toast_Swift
 class SignUpTableViewController: UITableViewController {
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var backBtn: UIButton!
@@ -19,13 +19,14 @@ class SignUpTableViewController: UITableViewController {
     @IBOutlet weak var regiterBtn: UIButton!
     @IBOutlet weak var femalCheckbox: Checkbox!
     @IBOutlet weak var maleCheckbox: Checkbox!
+    @IBOutlet weak var privacyPolicyCheckbox: Checkbox!
     
     var signupViewModel = SignupViewModel()
     var gender = "male"
     var userType = ""
     let datePicker = UIDatePicker()
     var date : Date? = nil
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         //        tableView.backgroundView = UIImageView(image: UIImage(named: "background3"))
@@ -110,14 +111,12 @@ class SignUpTableViewController: UITableViewController {
             //               LoadingIndicatorView.hide()
             
             guard let errorMessage = $0 else { return }
-            //               var style = ToastStyle()
+            var style = ToastStyle()
             
-            //               // this is just one of many style options
-            //               style.messageColor = .white
-            //               style.backgroundColor = .red
-            //               style.messageFont = UIFont(name:"Cairo-Regular" , size:20.0)!
-            //               self.view.makeToast(errorMessage, duration: 3.0, position: .bottom,style:style)
-            //            AlertController.showAllert(title: "Error", message: errorMessage, allertType: .error)
+            // this is just one of many style options
+            style.messageColor = .white
+            style.backgroundColor = .black
+            self.view.makeToast(errorMessage, duration: 3.0, position: .bottom,style:style)
         }
     }
     
@@ -126,7 +125,7 @@ class SignUpTableViewController: UITableViewController {
     }
     
     @IBAction func registerBtnDidTapped(_ sender: Any) {
-        signupViewModel.updateCredentials(firstName: firstNameTextField.text!,lastName: lastNameTextField.text!, password: passwordTextField.text!,phoneNumber: mobileNameTextField.text!,email: emailTextFiled.text!,userType: userType,gender: gender,date:deteOfBirthTextField.text!)
+        signupViewModel.updateCredentials(firstName: firstNameTextField.text!,lastName: lastNameTextField.text!, password: passwordTextField.text!,phoneNumber: mobileNameTextField.text!,email: emailTextFiled.text!,userType: userType,gender: gender,date:deteOfBirthTextField.text!,privacyPolicy:privacyPolicyCheckbox.isChecked)
         
         //Here we check user's credentials input - if it's correct we call login()
         switch signupViewModel.credentialsInput() {

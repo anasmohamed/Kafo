@@ -46,9 +46,9 @@ class FirstViewController: UIViewController {
     }
     func navigateToSignUpViewController() {
         let signupViewStoryboard = UIStoryboard.init(name: "SignUpView", bundle: nil)
-        let signupViewController = signupViewStoryboard.instantiateViewController(withIdentifier: "SignUpTableViewController")
+        let signupViewController = signupViewStoryboard.instantiateViewController(withIdentifier: "SignUpTableViewController") as! SignUpTableViewController
         signupViewController.modalPresentationStyle = .fullScreen
-        
+        signupViewController.userType = "client"
         self.present(signupViewController, animated: true, completion: nil)
     }
     func setGradientBackground() {

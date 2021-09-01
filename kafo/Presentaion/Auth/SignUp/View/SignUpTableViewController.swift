@@ -9,7 +9,6 @@ import UIKit
 
 class SignUpTableViewController: UITableViewController {
     @IBOutlet weak var passwordTextField: UITextField!
-    
     @IBOutlet weak var backBtn: UIButton!
     @IBOutlet weak var confiremPasswordTextField: UITextField!
     @IBOutlet weak var lastNameTextField: UITextField!
@@ -18,9 +17,11 @@ class SignUpTableViewController: UITableViewController {
     @IBOutlet weak var emailTextFiled: UITextField!
     @IBOutlet weak var firstNameTextField: UITextField!
     @IBOutlet weak var regiterBtn: UIButton!
+    @IBOutlet weak var femalCheckbox: Checkbox!
+    @IBOutlet weak var maleCheckbox: Checkbox!
     
     var signupViewModel = SignupViewModel()
-    
+    var gender = "male"
     var userType = ""
     let datePicker = UIDatePicker()
     var date : Date? = nil
@@ -45,11 +46,24 @@ class SignUpTableViewController: UITableViewController {
         bindData()
         setDelegates()
         createDatePicker()
+        maleCheckbox.isChecked = true
+        
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
         
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
+    }
+    
+    @IBAction func onFemaleCheckboxBtnDidTapped(_ sender: Any) {
+        maleCheckbox.isChecked = false
+        femalCheckbox.isChecked = true
+        gender = "famel"
+    }
+    @IBAction func onMaleCheckboxBtnDidTapped(_ sender: Any) {
+        maleCheckbox.isChecked = true
+        femalCheckbox.isChecked = false
+        gender = "male"
     }
     func createDatePicker()  {
         let toolBar = UIToolbar()
@@ -112,7 +126,7 @@ class SignUpTableViewController: UITableViewController {
     }
     
     @IBAction func registerBtnDidTapped(_ sender: Any) {
-        signupViewModel.updateCredentials(firstName: firstNameTextField.text!,lastName: lastNameTextField.text!, password: passwordTextField.text!,phoneNumber: mobileNameTextField.text!,email: emailTextFiled.text!)
+        signupViewModel.updateCredentials(firstName: firstNameTextField.text!,lastName: lastNameTextField.text!, password: passwordTextField.text!,phoneNumber: mobileNameTextField.text!,email: emailTextFiled.text!,userType: userType,gender: gender,date:deteOfBirthTextField.text!)
         
         //Here we check user's credentials input - if it's correct we call login()
         switch signupViewModel.credentialsInput() {

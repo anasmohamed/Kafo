@@ -42,11 +42,14 @@ class SignupViewModel {
     //    }
     
     //Here we update our model
-    func updateCredentials(firstName: String,lastName:String, password: String, phoneNumber: String,email: String ) {
+    func updateCredentials(firstName: String,lastName:String, password: String, phoneNumber: String,email: String ,userType: String,gender:String,date:String) {
         user.firstName = firstName
         user.lastName = lastName
         user.password = password
         user.email = email
+        user.userType = userType
+        user.gender = gender
+        user.dateOfBirth = date
 //        user.isActive = isActive
 //        user.deviceToken = deviceToken
         user.mobileNumber = "+973\(phoneNumber)"

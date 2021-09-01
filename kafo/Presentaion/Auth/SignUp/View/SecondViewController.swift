@@ -11,6 +11,7 @@ class SecondViewController: UIViewController {
 
     @IBOutlet weak var organizationBtn: UIButton!
     @IBOutlet weak var aloneBtn: UIButton!
+    var userType = ""
     override func viewDidLoad() {
         super.viewDidLoad()
         organizationBtn.layer.cornerRadius = 20
@@ -27,16 +28,19 @@ class SecondViewController: UIViewController {
         setGradientBackground()
     }
     @IBAction func aloneBtnDidTapped(_ sender: Any) {
+        userType = "alone_bodygourd"
         navigateToSignUpViewController()
     }
     
     @IBAction func organizationBtnDidTapped(_ sender: Any) {
+        userType = "organiztion_bodygourd"
         navigateToSignUpViewController()
     }
     func navigateToSignUpViewController() {
         let signupViewStoryboard = UIStoryboard.init(name: "SignUpView", bundle: nil)
-        let signupViewController = signupViewStoryboard.instantiateViewController(withIdentifier: "SignUpTableViewController")
+        let signupViewController = signupViewStoryboard.instantiateViewController(withIdentifier: "SignUpTableViewController") as! SignUpTableViewController
         signupViewController.modalPresentationStyle = .fullScreen
+        signupViewController.userType = userType
         self.present(signupViewController, animated: true)
 
 //        self.present(signupViewController, animated: true, completion: nil)

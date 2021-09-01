@@ -188,6 +188,9 @@
                                                             <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </userDefinedRuntimeAttribute>
                                                     </userDefinedRuntimeAttributes>
+                                                    <connections>
+                                                        <action selector="onMaleCheckboxBtnDidTapped:" destination="onc-vH-v8c" eventType="valueChanged" id="JRf-5M-Ohg"/>
+                                                    </connections>
                                                 </view>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="s7c-6b-bSL" customClass="Checkbox" customModule="kafo" customModuleProvider="target">
                                                     <rect key="frame" x="150" y="91" width="25" height="25"/>
@@ -205,6 +208,9 @@
                                                             <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </userDefinedRuntimeAttribute>
                                                     </userDefinedRuntimeAttributes>
+                                                    <connections>
+                                                        <action selector="onFemaleCheckboxBtnDidTapped:" destination="onc-vH-v8c" eventType="valueChanged" id="IQB-Up-GDS"/>
+                                                    </connections>
                                                 </view>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Male" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ndQ-zB-vWX">
                                                     <rect key="frame" x="83" y="93" width="37" height="21"/>
@@ -402,8 +408,10 @@
                         <outlet property="confiremPasswordTextField" destination="1ac-DY-oaC" id="2x0-WU-4bD"/>
                         <outlet property="deteOfBirthTextField" destination="S1M-ZQ-4XP" id="xsg-oX-AUQ"/>
                         <outlet property="emailTextFiled" destination="Tdf-Q2-pra" id="qR1-sW-zjk"/>
+                        <outlet property="femalCheckbox" destination="s7c-6b-bSL" id="ajo-iZ-pFz"/>
                         <outlet property="firstNameTextField" destination="vgX-1O-VNn" id="2G0-hd-SKS"/>
                         <outlet property="lastNameTextField" destination="mIv-fd-CBb" id="JDb-B3-moK"/>
+                        <outlet property="maleCheckbox" destination="Mqk-rW-Zpl" id="rYi-fS-z9L"/>
                         <outlet property="mobileNameTextField" destination="vgf-D3-Esn" id="2jA-jK-GKt"/>
                         <outlet property="passwordTextField" destination="43u-2b-G6p" id="uHL-eL-uXQ"/>
                         <outlet property="regiterBtn" destination="L2v-Cb-pCu" id="oqq-c2-fq1"/>

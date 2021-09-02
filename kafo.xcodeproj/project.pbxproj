@@ -51,6 +51,11 @@
 		327BE18826DD7D8000F46FCB /* SignupViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327BE18726DD7D8000F46FCB /* SignupViewModel.swift */; };
 		327BE18F26DD7E0500F46FCB /* SignupFirebaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327BE18E26DD7E0500F46FCB /* SignupFirebaseManager.swift */; };
 		327BE1C126DD8C7F00F46FCB /* SignupViewController- UITextFieldDelegate .swift in Sources */ = {isa = PBXBuildFile; fileRef = 327BE1C026DD8C7F00F46FCB /* SignupViewController- UITextFieldDelegate .swift */; };
+		328320BD26E13A6B0040FD60 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 328320BC26E13A6B0040FD60 /* LoginViewModel.swift */; };
+		328320C226E13E3A0040FD60 /* LoginFirebaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 328320C126E13E3A0040FD60 /* LoginFirebaseManager.swift */; };
+		328320C926E159400040FD60 /* ListOfBodyGuardsFirabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 328320C826E159400040FD60 /* ListOfBodyGuardsFirabaseManager.swift */; };
+		328320D126E15B550040FD60 /* ListOfBodyGuardsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 328320D026E15B550040FD60 /* ListOfBodyGuardsViewModel.swift */; };
+		328320D926E175890040FD60 /* BodyGuardProfileViewControll.swift in Sources */ = {isa = PBXBuildFile; fileRef = 328320D826E175890040FD60 /* BodyGuardProfileViewControll.swift */; };
 		328A56522699EA5200BFD9C2 /* ServicesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 328A56512699EA5200BFD9C2 /* ServicesTableViewController.swift */; };
 		328A56672699F73F00BFD9C2 /* LocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 328A56662699F73F00BFD9C2 /* LocationViewController.swift */; };
 		328CEA6126D7D7EE00F2C1BA /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 328CEA6026D7D7ED00F2C1BA /* GoogleService-Info.plist */; };
@@ -148,6 +153,11 @@
 		327BE18726DD7D8000F46FCB /* SignupViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewModel.swift; sourceTree = "<group>"; };
 		327BE18E26DD7E0500F46FCB /* SignupFirebaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupFirebaseManager.swift; sourceTree = "<group>"; };
 		327BE1C026DD8C7F00F46FCB /* SignupViewController- UITextFieldDelegate .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SignupViewController- UITextFieldDelegate .swift"; sourceTree = "<group>"; };
+		328320BC26E13A6B0040FD60 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		328320C126E13E3A0040FD60 /* LoginFirebaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginFirebaseManager.swift; sourceTree = "<group>"; };
+		328320C826E159400040FD60 /* ListOfBodyGuardsFirabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListOfBodyGuardsFirabaseManager.swift; sourceTree = "<group>"; };
+		328320D026E15B550040FD60 /* ListOfBodyGuardsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListOfBodyGuardsViewModel.swift; sourceTree = "<group>"; };
+		328320D826E175890040FD60 /* BodyGuardProfileViewControll.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BodyGuardProfileViewControll.swift; sourceTree = "<group>"; };
 		328A56512699EA5200BFD9C2 /* ServicesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicesTableViewController.swift; sourceTree = "<group>"; };
 		328A56662699F73F00BFD9C2 /* LocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationViewController.swift; sourceTree = "<group>"; };
 		328CEA6026D7D7ED00F2C1BA /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -477,6 +487,7 @@
 		3277D2362677BF8300F84C30 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				328320BC26E13A6B0040FD60 /* LoginViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -484,6 +495,7 @@
 		3277D2372677BF9900F84C30 /* LoginFirebaseManager */ = {
 			isa = PBXGroup;
 			children = (
+				328320C126E13E3A0040FD60 /* LoginFirebaseManager.swift */,
 			);
 			path = LoginFirebaseManager;
 			sourceTree = "<group>";
@@ -527,6 +539,22 @@
 				327BE1C026DD8C7F00F46FCB /* SignupViewController- UITextFieldDelegate .swift */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		328320C626E150160040FD60 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				328320D026E15B550040FD60 /* ListOfBodyGuardsViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		328320C726E1501F0040FD60 /* FirebaseManager */ = {
+			isa = PBXGroup;
+			children = (
+				328320C826E159400040FD60 /* ListOfBodyGuardsFirabaseManager.swift */,
+			);
+			path = FirebaseManager;
 			sourceTree = "<group>";
 		};
 		328A56472699D18E00BFD9C2 /* Services */ = {
@@ -638,6 +666,8 @@
 		32DDC4EF269C765700969823 /* ListOfBodyGuards */ = {
 			isa = PBXGroup;
 			children = (
+				328320C726E1501F0040FD60 /* FirebaseManager */,
+				328320C626E150160040FD60 /* ViewModel */,
 				32DDC4F0269C766B00969823 /* View */,
 			);
 			path = ListOfBodyGuards;
@@ -649,6 +679,7 @@
 				32DDC4F6269C798100969823 /* Cell */,
 				32DDC4F1269C78F200969823 /* ListOfBodyGuards.storyboard */,
 				32DDC4FE269C7CDE00969823 /* ListOfBodyGuardsViewController.swift */,
+				328320D826E175890040FD60 /* BodyGuardProfileViewControll.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -945,13 +976,16 @@
 			files = (
 				327A636F26C2F6D8003B3EDE /* ProfileTableViewController.swift in Sources */,
 				329B6095267FD87D008AB2DE /* Checkbox.swift in Sources */,
+				328320BD26E13A6B0040FD60 /* LoginViewModel.swift in Sources */,
 				32699851268112DE0074E586 /* CompanyDetailsTableViewController.swift in Sources */,
 				32F5E13226C59DC100C097DF /* Gridiant.swift in Sources */,
 				3277D24D2677C05C00F84C30 /* LoginVIewController + TextFiledDelegate.swift in Sources */,
 				3251E6FB26C7F0DD00F1B95B /* OtherCompaniesTableViewCell.swift in Sources */,
 				327BE18826DD7D8000F46FCB /* SignupViewModel.swift in Sources */,
 				32DDC4FF269C7CDE00969823 /* ListOfBodyGuardsViewController.swift in Sources */,
+				328320C926E159400040FD60 /* ListOfBodyGuardsFirabaseManager.swift in Sources */,
 				3277D2392677BFED00F84C30 /* LoginViewController.swift in Sources */,
+				328320C226E13E3A0040FD60 /* LoginFirebaseManager.swift in Sources */,
 				327689CA269CC10100CC61C0 /* BodyGuardGenderViewController.swift in Sources */,
 				3277D2042677BDCB00F84C30 /* ViewController.swift in Sources */,
 				32DDC4F9269C79BB00969823 /* ListOfGuardsTableViewCell.swift in Sources */,
@@ -970,11 +1004,13 @@
 				32B25E59267C184500ED2082 /* CustomerOrWorkerViewController.swift in Sources */,
 				327689D7269CCA1D00CC61C0 /* NumberOfHoursViewController.swift in Sources */,
 				326998422680DE8B0074E586 /* MainCustomerViewController.swift in Sources */,
+				328320D126E15B550040FD60 /* ListOfBodyGuardsViewModel.swift in Sources */,
 				327BE18326DD7D4000F46FCB /* Observable.swift in Sources */,
 				327689B5269CA4B700CC61C0 /* KafoServiceViewController.swift in Sources */,
 				3269983C2680DA0F0074E586 /* MainViewTableViewCell.swift in Sources */,
 				3276299426C49CF800F0AC4F /* FirstViewController.swift in Sources */,
 				3251E6F426C7F06800F1B95B /* OtherCompaniesViewController.swift in Sources */,
+				328320D926E175890040FD60 /* BodyGuardProfileViewControll.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

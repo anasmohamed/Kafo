@@ -29,6 +29,9 @@ class SignupViewModel {
     var isUsernameTextFieldHighLighted: Observable<Bool> = Observable(false)
     var isPasswordTextFieldHighLighted: Observable<Bool> = Observable(false)
     var isEmailTextFieldHighLighted: Observable<Bool> = Observable(false)
+    var isCityTextFieldHighLighted: Observable<Bool> = Observable(false)
+    var isCountryTextFieldHighLighted: Observable<Bool> = Observable(false)
+
     var isPhoneNumberTextFieldHighLighted: Observable<Bool> = Observable(false)
     var isPrivacyPolicyCheckboxChecked: Observable<Bool> = Observable(false)
     var errorMessage: Observable<String?> = Observable(nil)
@@ -42,7 +45,7 @@ class SignupViewModel {
     //    }
     
     //Here we update our model
-    func updateCredentials(firstName: String,lastName:String, password: String, phoneNumber: String,email: String ,userType: String,gender:String,date:String,privacyPolicy:Bool) {
+    func updateCredentials(firstName: String,lastName:String, password: String, phoneNumber: String,email: String ,userType: String,gender:String,date:String,privacyPolicy:Bool,city:String = "",country:String = "") {
         user.firstName = firstName
         user.lastName = lastName
         user.password = password
@@ -51,6 +54,8 @@ class SignupViewModel {
         user.gender = gender
         user.dateOfBirth = date
         privacyPolicyCheckbox = privacyPolicy
+        user.city = city
+        user.country = country
 //        user.isActive = isActive
 //        user.deviceToken = deviceToken
         user.mobileNumber = "+973\(phoneNumber)"
@@ -114,14 +119,24 @@ class SignupViewModel {
             isPasswordTextFieldHighLighted.value = true
             return .Incorrect
         }
+        if user.userType != "client"{
+            if user.city.isEmpty{
+                errorMessage.value = "City field is empty."
+                isCityTextFieldHighLighted.value = true
+                return .Incorrect
+            }
+            if user.country.isEmpty{
+                errorMessage.value = "Country field is empty."
+                isCountryTextFieldHighLighted.value = true
+                return .Incorrect
+            }
+        }
         if user.email.isEmpty
         {
             errorMessage.value = "Email field is empty."
             isEmailTextFieldHighLighted.value = true
             return .Incorrect
         }
-//       b
-        
         if user.mobileNumber.isEmpty{
             
             errorMessage.value = "phone number field is empty."

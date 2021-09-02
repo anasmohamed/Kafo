@@ -14,12 +14,15 @@ class SignUpTableViewController: UITableViewController {
     @IBOutlet weak var lastNameTextField: UITextField!
     @IBOutlet weak var deteOfBirthTextField: UITextField!
     @IBOutlet weak var mobileNameTextField: UITextField!
+    @IBOutlet weak var locationCell: UITableViewCell!
     @IBOutlet weak var emailTextFiled: UITextField!
     @IBOutlet weak var firstNameTextField: UITextField!
     @IBOutlet weak var regiterBtn: UIButton!
     @IBOutlet weak var femalCheckbox: Checkbox!
     @IBOutlet weak var maleCheckbox: Checkbox!
     @IBOutlet weak var privacyPolicyCheckbox: Checkbox!
+    @IBOutlet weak var countryTextField: UITextField!
+    @IBOutlet weak var cityTextField: UITextField!
     
     var signupViewModel = SignupViewModel()
     var gender = "male"
@@ -36,7 +39,6 @@ class SignUpTableViewController: UITableViewController {
         let callImage = UIImage(named:"call-2")
         let calenderImage = UIImage(named:"calendar")
         let passwordImage = UIImage(named:"padlock")
-        
         addLeftImageTo(txtField: emailTextFiled, andImage: emailImage!)
         addLeftImageTo(txtField: passwordTextField, andImage: passwordImage!)
         addLeftImageTo(txtField: confiremPasswordTextField, andImage: passwordImage!)
@@ -49,6 +51,13 @@ class SignUpTableViewController: UITableViewController {
         createDatePicker()
         maleCheckbox.isChecked = true
         
+        if userType != "client"
+        {
+            locationCell.isHidden = false
+            
+        }else{
+            locationCell.isHidden = true
+        }
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
         
@@ -125,7 +134,12 @@ class SignUpTableViewController: UITableViewController {
     }
     
     @IBAction func registerBtnDidTapped(_ sender: Any) {
-        signupViewModel.updateCredentials(firstName: firstNameTextField.text!,lastName: lastNameTextField.text!, password: passwordTextField.text!,phoneNumber: mobileNameTextField.text!,email: emailTextFiled.text!,userType: userType,gender: gender,date:deteOfBirthTextField.text!,privacyPolicy:privacyPolicyCheckbox.isChecked)
+        if userType != "client"{
+            signupViewModel.updateCredentials(firstName: firstNameTextField.text!,lastName: lastNameTextField.text!, password: passwordTextField.text!,phoneNumber: mobileNameTextField.text!,email: emailTextFiled.text!,userType: userType,gender: gender,date:deteOfBirthTextField.text!,privacyPolicy:privacyPolicyCheckbox.isChecked,city: cityTextField.text!,country: countryTextField.text!)
+        }else{
+            signupViewModel.updateCredentials(firstName: firstNameTextField.text!,lastName: lastNameTextField.text!, password: passwordTextField.text!,phoneNumber: mobileNameTextField.text!,email: emailTextFiled.text!,userType: userType,gender: gender,date:deteOfBirthTextField.text!,privacyPolicy:privacyPolicyCheckbox.isChecked)
+        }
+       
         
         //Here we check user's credentials input - if it's correct we call login()
         switch signupViewModel.credentialsInput() {
@@ -175,7 +189,28 @@ class SignUpTableViewController: UITableViewController {
         // #warning Incomplete implementation, return the number of sections
         return 1
     }
-    
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        if userType != "client"{
+            if indexPath.row == 5 {
+                return 120
+            }
+        }else{
+            if indexPath.row == 5 {
+                return 0
+            }
+            
+        }
+        if indexPath.row == 4{
+            return 190
+        }
+        if indexPath.row == 3 {
+            return 68
+        }
+        if indexPath.row == 2{
+            return 130
+        }
+        return 200
+    }
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
         return 7

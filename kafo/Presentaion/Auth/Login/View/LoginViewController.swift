@@ -6,7 +6,7 @@
 //
 
 import UIKit
-//import Toast_Swift
+import Toast_Swift
 class LoginViewController: UIViewController {
     
     @IBOutlet weak var emailTextField: UITextField!
@@ -16,7 +16,7 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var containerView: UIView!
     @IBOutlet weak var newUserBtn: UIButton!
     
-//    var loginViewModel = LoginViewModel()
+    var loginViewModel = LoginViewModel()
     
     
     
@@ -29,8 +29,8 @@ class LoginViewController: UIViewController {
                
         let passwordImage = UIImage(named:"padlock")
         addLeftImageTo(txtField: passwordTextField, andImage: passwordImage!)
-//        bindData()
-//        setDelegates()
+        bindData()
+        setDelegates()
 //        handeIsUserLogin()
 //        self.tabBarController?.tabBar.isHidden = true
 //        self.navigationItem.setHidesBackButton(true, animated: true)
@@ -74,7 +74,16 @@ class LoginViewController: UIViewController {
     
     
     @IBAction func signinBtnDidTapped(_ sender: Any) {
-        navigateToServiceViewController()
+//        navigateToServiceViewController()
+        loginViewModel.updateCredentials(email: emailTextField.text!, password: passwordTextField.text!)
+        
+        switch loginViewModel.credentialsInput() {
+
+        case .Correct:
+            login()
+        case .Incorrect:
+            return
+        }
     }
     
     func setupButton()  {
@@ -86,22 +95,10 @@ class LoginViewController: UIViewController {
     func handeIsUserLogin()
     {
         if !(UserDefaults.standard.string(forKey: "token")?.isEmpty ?? true){
-            navigateToMainViewController()
+            navigateToServiceViewController()
         }
     }
-    @IBAction func signInBtnDidTapped(_ sender: Any) {
-        //Here we ask viewModel to update model with existing credentials from text fields
-//        loginViewModel.updateCredentials(email: emailTextField.text!, password: passwordTextField.text!)
-        
-        //Here we check user's credentials input - if it's correct we call login()
-//        switch loginViewModel.credentialsInput() {
-//
-//        case .Correct:
-//            login()
-//        case .Incorrect:
-//            return
-//        }
-    }
+  
     
     func addLeftImageTo(txtField: UITextField, andImage img: UIImage) {
           let leftImageView = UIImageView(frame: CGRect(x: 0.0, y: 0.0, width: img.size.width, height: img.size.height))
@@ -123,32 +120,32 @@ class LoginViewController: UIViewController {
     }
     
     func bindData() {
-//        loginViewModel.loginSuccess.bind { [self] in
-//            guard let email = $0?[1] else { return }
-//            UserDefaults.standard.set(email, forKey: "email")
-//            UserDefaults.standard.set($0![0], forKey: "token")
+        loginViewModel.loginSuccess.bind { [self] in
+            guard let email = $0?[1] else { return }
+            UserDefaults.standard.set(email, forKey: "email")
+            UserDefaults.standard.set($0![0], forKey: "token")
 //            navigateToMainViewController()
-//
-//        }
-//
-//        loginViewModel.isEmailTextFieldHighLighted.bind { [weak self] in
-//            if $0 { self?.highlightTextField((self?.emailTextField)!)}
-//        }
-//
-//        loginViewModel.isPasswordTextFieldHighLighted.bind { [weak self] in
-//            if $0 { self?.highlightTextField((self?.passwordTextField)!)}
-//        }
-//
-//        loginViewModel.errorMessage.bind {
-//            guard let errorMessage = $0 else { return }
-//            var style = ToastStyle()
-//
-//            // this is just one of many style options
-//            style.messageColor = .white
-//            style.backgroundColor = .red
-//            style.messageFont = UIFont(name:"Cairo-Regular" , size:20.0)!
-//            self.view.makeToast(errorMessage, duration: 3.0, position: .bottom,style:style)
-//        }
+            navigateToServiceViewController()
+
+        }
+
+        loginViewModel.isEmailTextFieldHighLighted.bind { [weak self] in
+            if $0 { self?.highlightTextField((self?.emailTextField)!)}
+        }
+
+        loginViewModel.isPasswordTextFieldHighLighted.bind { [weak self] in
+            if $0 { self?.highlightTextField((self?.passwordTextField)!)}
+        }
+
+        loginViewModel.errorMessage.bind {
+            guard let errorMessage = $0 else { return }
+            var style = ToastStyle()
+
+            // this is just one of many style options
+            style.messageColor = .white
+            style.backgroundColor = .red
+            self.view.makeToast(errorMessage, duration: 3.0, position: .bottom,style:style)
+        }
     }
     
     func navigateToMainViewController() {
@@ -172,7 +169,7 @@ class LoginViewController: UIViewController {
         self.navigationController?.pushViewController(servicesViewController, animated: true)
     }
     func login() {
-//        loginViewModel.login()
+        loginViewModel.login()
     }
     
     func setGradientBackground() {
@@ -187,10 +184,10 @@ class LoginViewController: UIViewController {
         self.view.layer.insertSublayer(gradientLayer, at:0)
     }
 //
-//    func setDelegates() {
-//        emailTextField.delegate = self
-//        passwordTextField.delegate = self
-//    }
+    func setDelegates() {
+        emailTextField.delegate = self
+        passwordTextField.delegate = self
+    }
     
     
     func highlightTextField(_ textField: UITextField) {

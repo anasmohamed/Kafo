@@ -15,4 +15,7 @@ class User {
     var email = ""
     var password = ""
     var userType = ""
+    var location = ""
+    var city = ""
+    var country = ""
 }

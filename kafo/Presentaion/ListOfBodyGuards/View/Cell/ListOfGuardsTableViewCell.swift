@@ -13,6 +13,12 @@ class ListOfGuardsTableViewCell: UITableViewCell {
     @IBOutlet weak var bodyguardNameUIView: UIView!
     @IBOutlet weak var bodyguardNameLbl: UILabel!
     @IBOutlet weak var bodyGaurdImageView: UIImageView!
+    var item = User(){
+          didSet{
+            bodyguardNameLbl.text = item.firstName + " " + item.lastName
+            
+          }
+      }
     override func awakeFromNib() {
         super.awakeFromNib()
         bodyGaurdImageView.layer.cornerRadius = bodyGaurdImageView.frame.height / 2

@@ -323,8 +323,45 @@
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="130" id="4r7-EW-J6r">
+                                        <rect key="frame" x="0.0" y="834" width="414" height="130"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="4r7-EW-J6r" id="rk6-BP-hJO">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="130"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="City" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Lwc-uo-ysE">
+                                                    <rect key="frame" x="38" y="21" width="338" height="40"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="40" id="e4p-Qu-FIQ"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits" keyboardType="emailAddress" textContentType="email"/>
+                                                </textField>
+                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Country" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fLr-L9-FrF">
+                                                    <rect key="frame" x="38" y="69" width="338" height="40"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="40" id="RCf-6y-iLM"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="new-password">
+                                                        <passwordRules key="passwordRules" passwordRulesDescriptor="minlength: 8"/>
+                                                    </textInputTraits>
+                                                </textField>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="Lwc-uo-ysE" firstAttribute="leading" secondItem="rk6-BP-hJO" secondAttribute="leadingMargin" constant="30" id="6gJ-s3-YC4"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="fLr-L9-FrF" secondAttribute="trailing" constant="30" id="Mdn-tU-sRB"/>
+                                                <constraint firstItem="fLr-L9-FrF" firstAttribute="top" secondItem="Lwc-uo-ysE" secondAttribute="bottom" constant="8" symbolic="YES" id="aLz-Pb-GaC"/>
+                                                <constraint firstItem="Lwc-uo-ysE" firstAttribute="top" secondItem="rk6-BP-hJO" secondAttribute="topMargin" constant="10" id="foE-wu-iIW"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="Lwc-uo-ysE" secondAttribute="trailing" constant="30" id="q1q-aC-dds"/>
+                                                <constraint firstItem="fLr-L9-FrF" firstAttribute="leading" secondItem="rk6-BP-hJO" secondAttribute="leadingMargin" constant="30" id="uFZ-N9-oPb"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="134" id="yRu-NZ-6au">
-                                        <rect key="frame" x="0.0" y="834" width="414" height="134"/>
+                                        <rect key="frame" x="0.0" y="964" width="414" height="134"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="yRu-NZ-6au" id="pO7-bw-5Rz">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="134"/>
@@ -372,7 +409,7 @@
                                         <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="149" id="G96-rw-DEz">
-                                        <rect key="frame" x="0.0" y="968" width="414" height="149"/>
+                                        <rect key="frame" x="0.0" y="1098" width="414" height="149"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="G96-rw-DEz" id="F77-lQ-5c5">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="149"/>
@@ -411,12 +448,15 @@
                     <navigationItem key="navigationItem" id="Op3-PQ-CUR"/>
                     <connections>
                         <outlet property="backBtn" destination="GCy-Oy-chv" id="VU5-U9-pkW"/>
+                        <outlet property="cityTextField" destination="Lwc-uo-ysE" id="yP6-2y-pre"/>
                         <outlet property="confiremPasswordTextField" destination="1ac-DY-oaC" id="2x0-WU-4bD"/>
+                        <outlet property="countryTextField" destination="fLr-L9-FrF" id="ugN-z4-XvD"/>
                         <outlet property="deteOfBirthTextField" destination="S1M-ZQ-4XP" id="xsg-oX-AUQ"/>
                         <outlet property="emailTextFiled" destination="Tdf-Q2-pra" id="qR1-sW-zjk"/>
                         <outlet property="femalCheckbox" destination="s7c-6b-bSL" id="ajo-iZ-pFz"/>
                         <outlet property="firstNameTextField" destination="vgX-1O-VNn" id="2G0-hd-SKS"/>
                         <outlet property="lastNameTextField" destination="mIv-fd-CBb" id="JDb-B3-moK"/>
+                        <outlet property="locationCell" destination="4r7-EW-J6r" id="Zr3-Q2-qQ9"/>
                         <outlet property="maleCheckbox" destination="Mqk-rW-Zpl" id="rYi-fS-z9L"/>
                         <outlet property="mobileNameTextField" destination="vgf-D3-Esn" id="2jA-jK-GKt"/>
                         <outlet property="passwordTextField" destination="43u-2b-G6p" id="uHL-eL-uXQ"/>

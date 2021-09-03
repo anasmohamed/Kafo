@@ -19,7 +19,7 @@ class LoginViewController: UIViewController {
     var loginViewModel = LoginViewModel()
     
     
-    
+    var user : User?
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationController?.navigationBar.isHidden = true
@@ -31,7 +31,8 @@ class LoginViewController: UIViewController {
         addLeftImageTo(txtField: passwordTextField, andImage: passwordImage!)
         bindData()
         setDelegates()
-        handeIsUserLogin()
+//        handeIsUserLogin()
+        login()
 //        self.tabBarController?.tabBar.isHidden = true
 //        self.navigationItem.setHidesBackButton(true, animated: true)
 //        let tap = UITapGestureRecognizer(target: self, action: #selector(self.handleTap(_:)))
@@ -94,9 +95,9 @@ class LoginViewController: UIViewController {
     }
     func handeIsUserLogin()
     {
-        if !(UserDefaults.standard.string(forKey: "token")?.isEmpty ?? true){
-            navigateToServiceViewController()
-        }
+//        if !(UserDefaults.standard.string(forKey: "token")?.isEmpty ?? true){
+//            navigateToServiceViewController()
+//        }
     }
   
     
@@ -120,12 +121,17 @@ class LoginViewController: UIViewController {
     }
     
     func bindData() {
-        loginViewModel.loginSuccess.bind { [self] in
-            guard let email = $0?[1] else { return }
-            UserDefaults.standard.set(email, forKey: "email")
-            UserDefaults.standard.set($0![0], forKey: "token")
-//            navigateToMainViewController()
-            navigateToServiceViewController()
+        loginViewModel.loginSuccess.bind { user in
+            guard let user = user else {
+                return
+            }
+            UserDefaults.standard.set(user.email, forKey: "email")
+            UserDefaults.standard.set(user.firstName, forKey: "firstName")
+            UserDefaults.standard.set(user.lastName, forKey: "lastName")
+            UserDefaults.standard.set(user.gender, forKey: "gender")
+            UserDefaults.standard.set(user.mobileNumber, forKey: "mobileNumber")
+            self.user = user
+            self.navigateToServiceViewController()
 
         }
 
@@ -164,7 +170,8 @@ class LoginViewController: UIViewController {
     }
     func navigateToServiceViewController() {
         let servicesViewStoryboard = UIStoryboard.init(name: "ServicesView", bundle: nil)
-        let servicesViewController = servicesViewStoryboard.instantiateViewController(withIdentifier: "ServicesTableViewController")
+        let servicesViewController = servicesViewStoryboard.instantiateViewController(withIdentifier: "ServicesTableViewController") as! ServicesTableViewController
+        servicesViewController.user = user
 //        servicesViewController.modalPresentationStyle = .fullScreen
         self.navigationController?.pushViewController(servicesViewController, animated: true)
     }

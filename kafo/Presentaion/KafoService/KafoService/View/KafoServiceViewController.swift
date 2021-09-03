@@ -12,6 +12,7 @@ class KafoServiceViewController: UITableViewController {
     @IBOutlet weak var personalBodygaurdUIView: UIView!
     @IBOutlet weak var guardingFacilityUIView: UIView!
     
+    var user : User?
     override func viewDidLoad() {
         super.viewDidLoad()
          viewShadow(view: personalBodygaurdUIView)
@@ -43,6 +44,7 @@ class KafoServiceViewController: UITableViewController {
         // Do what you want
         let bodyguardGenderViewStoryboard = UIStoryboard(name: "BodyguardGenderView", bundle: nil)
         let bodyguardGenderViewController = bodyguardGenderViewStoryboard.instantiateViewController(identifier: "BodyGuardGenderViewController") as! BodyGuardGenderViewController
+        bodyguardGenderViewController.user = user
         self.navigationController?.pushViewController(bodyguardGenderViewController, animated: true)
       
     }

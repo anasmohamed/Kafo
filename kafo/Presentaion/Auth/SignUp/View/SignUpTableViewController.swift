@@ -95,7 +95,11 @@ class SignUpTableViewController: UITableViewController {
             self.navigateToServiceViewController()
             UserDefaults.standard.set(user?.email, forKey: "email")
             UserDefaults.standard.set(user?.mobileNumber, forKey: "mobile")
-            UserDefaults.standard.set(user?.firstName + " " +?.lastName, forKey: "name")
+            
+            UserDefaults.standard.set(user?.firstName ?? "", forKey: "firstName")
+            UserDefaults.standard.set(user?.lastName ?? "", forKey: "lastName")
+
+            
 
             
         }

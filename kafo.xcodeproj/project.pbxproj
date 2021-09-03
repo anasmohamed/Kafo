@@ -362,7 +362,6 @@
 			isa = PBXGroup;
 			children = (
 				327689C9269CC10100CC61C0 /* BodyGuardGenderViewController.swift */,
-				323B674126C7355F005CA819 /* BodyguardGenderView.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -565,6 +564,7 @@
 			isa = PBXGroup;
 			children = (
 				328320C826E159400040FD60 /* ListOfBodyGuardsFirabaseManager.swift */,
+				323B674126C7355F005CA819 /* BodyguardGenderView.storyboard */,
 			);
 			path = FirebaseManager;
 			sourceTree = "<group>";

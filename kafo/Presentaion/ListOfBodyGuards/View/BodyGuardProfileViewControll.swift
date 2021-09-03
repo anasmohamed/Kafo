@@ -23,6 +23,7 @@ class BodyGuardProfileControll: UIViewController {
     var clientEmail = ""
     var clientMobileNumber = ""
     
+    var user : User?
     override func viewDidLoad() {
         super.viewDidLoad()
         setGradientBackground()
@@ -56,9 +57,9 @@ class BodyGuardProfileControll: UIViewController {
         bodyGuardProfileViewControll.bodyGuardEmail = email
         bodyGuardProfileViewControll.bodyGuardLocation = location
         bodyGuardProfileViewControll.bodyGuardMobileNumber = mobile
-        bodyGuardProfileViewControll.clientEmail = clientEmail
-        bodyGuardProfileViewControll.clientName = clientName
-        bodyGuardProfileViewControll.clientMobileNumber = clientMobileNumber
+        bodyGuardProfileViewControll.clientEmail = user!.email
+        bodyGuardProfileViewControll.clientName = user!.firstName  + " " + user!.lastName
+        bodyGuardProfileViewControll.clientMobileNumber = user!.mobileNumber
         self.navigationController?.pushViewController(bodyGuardProfileViewControll, animated: true)
     }
     

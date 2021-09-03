@@ -20,6 +20,7 @@ class NumberOfHoursViewController: UIViewController {
     let datePicker = UIDatePicker()
     var date : Date? = nil
     var gender = "male"
+    var user : User?
     var kafoServiceViewModel = KafoServieViewModel()
     override func viewDidLoad() {
         super.viewDidLoad()

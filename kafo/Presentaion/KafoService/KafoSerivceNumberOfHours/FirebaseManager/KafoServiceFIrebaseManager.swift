@@ -21,8 +21,10 @@ class KafoServiceFirebaseManager {
             "numberOfBodyGuard":order.numberOfBodyGuard,
             "numberOfDays":order.numbarOfDays,
             "serviceStartDate":order.serviceStartDate,
-            "orderId":orderId
-//            "firstName":order.firstName,
+            "orderId":orderId,
+            "clientName":order.clientName,
+            "clientEmail":order.clientEmail,
+            "clientMobileNumber":order.clientMobileNumber//            "firstName":order.firstName,
 //            "lastName":order.lastName,
 //            "password":order.password,
 //            "userType":user.userType,

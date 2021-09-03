@@ -24,7 +24,7 @@ class LoginViewModel {
     var isPasswordTextFieldHighLighted: Observable<Bool> = Observable(false)
     var isEmailTextFieldHighLighted: Observable<Bool> = Observable(false)
     var errorMessage: Observable<String?> = Observable(nil)
-    var loginSuccess: Observable<[String]?> = Observable(nil)
+    var loginSuccess: Observable<User?> = Observable(nil)
 
     
     //Here we update our model

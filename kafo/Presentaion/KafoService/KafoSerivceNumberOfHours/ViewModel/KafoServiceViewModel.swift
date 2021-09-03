@@ -19,11 +19,14 @@ class KafoServieViewModel {
     var errorMessage: Observable<String?> = Observable(nil)
     var getUsersSuccess: Observable<[User]?> = Observable(nil)
 
-    func update(gender:String,and numberOfDays:String,numberOfBodyGuard:String,serviceStartDate:String)  {
+    func update(gender:String,and numberOfDays:String,numberOfBodyGuard:String,serviceStartDate:String,clientName:String,clientEmail:String,clientMobileNumber:String)  {
         order.gender = gender
         order.numbarOfDays = numberOfDays
         order.numberOfBodyGuard = numberOfBodyGuard
         order.serviceStartDate = serviceStartDate
+        order.clientEmail = clientEmail
+        order.clientName = clientName
+        order.clientMobileNumber = clientMobileNumber
     }
    
     

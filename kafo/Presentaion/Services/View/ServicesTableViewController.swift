@@ -12,7 +12,7 @@ class ServicesTableViewController: UITableViewController {
     @IBOutlet weak var kafoServiceView: UIView!
     @IBOutlet weak var instantServiceView: UIView!
     
-    
+    var user: User?
     override func viewDidLoad() {
         super.viewDidLoad()
          viewShadow(view: compniesServiceView)
@@ -39,12 +39,14 @@ class ServicesTableViewController: UITableViewController {
         // Do what you want
         let locationViewStoryboard = UIStoryboard(name: "LocationView", bundle: nil)
         let locationViewController = locationViewStoryboard.instantiateViewController(identifier: "LocationViewController") as! LocationViewController
+        locationViewController.user = user
         self.navigationController?.pushViewController(locationViewController, animated: true)
     }
     @objc func kafoServiceClickAction(sender : UITapGestureRecognizer) {
         // Do what you want
         let kafoServiceViewStoryboard = UIStoryboard(name: "KafoServiceView", bundle: nil)
         let kafoServiceViewController = kafoServiceViewStoryboard.instantiateViewController(identifier: "KafoServiceViewController") as! KafoServiceViewController
+        kafoServiceViewController.user = user
         self.navigationController?.pushViewController(kafoServiceViewController, animated: true)
     }
     @objc func otherCompaniesServiceClickAction(sender : UITapGestureRecognizer) {

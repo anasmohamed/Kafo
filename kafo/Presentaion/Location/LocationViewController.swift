@@ -18,6 +18,8 @@ class LocationViewController: UIViewController {
     @IBOutlet weak var countryDropDownMenu: SwiftyMenu!
     private let dropDownOptionsDataSource = ["الدمام","الرياض"]
     private let countryDropDownOptionsDataSource = ["الضفة","الاندلس","الامل","العقيق"]
+    
+    var user : User?
     override func viewDidLoad() {
         super.viewDidLoad()
         cityDropDownMenu.items = dropDownOptionsDataSource
@@ -44,6 +46,7 @@ class LocationViewController: UIViewController {
     @IBAction func nearbyLocationBtnDidTapped(_ sender: Any) {
         let locationViewStoryboard = UIStoryboard(name: "ListOfBodyGuards", bundle: nil)
         let locationViewController = locationViewStoryboard.instantiateViewController(identifier: "ListOfBodyGuardsViewController") as! ListOfBodyGuardsViewController
+        locationViewController.user = user
         self.navigationController?.pushViewController(locationViewController, animated: true)
     }
     func setGradientBackground() {

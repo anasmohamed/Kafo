@@ -11,5 +11,7 @@ class KafoBodyGuardOrder {
     var numberOfBodyGuard = ""
     var numbarOfDays = ""
     var serviceStartDate = ""
-    
+    var clientMobileNumber = ""
+    var clientEmail = ""
+    var clientName = ""
 }

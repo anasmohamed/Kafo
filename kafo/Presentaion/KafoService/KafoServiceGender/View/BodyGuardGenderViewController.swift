@@ -12,6 +12,7 @@ class BodyGuardGenderViewController: UITableViewController {
     @IBOutlet weak var maleUIView: UIView!
     @IBOutlet weak var femaleUIVIew: UIView!
     
+    var user : User?
     override func viewDidLoad() {
         super.viewDidLoad()
          viewShadow(view: maleUIView)
@@ -61,6 +62,8 @@ class BodyGuardGenderViewController: UITableViewController {
         let numberOfHoursViewStoryboard = UIStoryboard(name: "NumberOfHoursView", bundle: nil)
         let numberOfHoursViewController = numberOfHoursViewStoryboard.instantiateViewController(identifier: "NumberOfHoursViewController") as! NumberOfHoursViewController
         numberOfHoursViewController.isMale = false
+        numberOfHoursViewController.user = user
+
         self.navigationController?.pushViewController(numberOfHoursViewController, animated: true)
     }
     @objc func maleGestureClickAction(sender : UITapGestureRecognizer) {
@@ -68,6 +71,7 @@ class BodyGuardGenderViewController: UITableViewController {
         let numberOfHoursViewStoryboard = UIStoryboard(name: "NumberOfHoursView", bundle: nil)
         let numberOfHoursViewController = numberOfHoursViewStoryboard.instantiateViewController(identifier: "NumberOfHoursViewController") as! NumberOfHoursViewController
         numberOfHoursViewController.isMale = true
+        numberOfHoursViewController.user = user
         self.navigationController?.pushViewController(numberOfHoursViewController, animated: true)
     }
    

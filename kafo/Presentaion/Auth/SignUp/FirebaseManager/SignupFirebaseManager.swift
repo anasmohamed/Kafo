@@ -34,7 +34,8 @@ class SignupManager{
         
         // 2
         let childRef = rootRef.reference(withPath: "Users")
-        let userId = childRef.childByAutoId().key
+        let userId = Auth.auth().currentUser?.uid
+        
         var userDict : [String:Any?]?
         userDict = [
             "email":user.email,

@@ -49,6 +49,8 @@ class SignupManager{
             "userType":user.userType,
             "gender":user.gender,
             "dateOfBirth":user.dateOfBirth,
+            "city": user.city,
+            "country":user.country,
             "mobileNumbr":user.mobileNumber]
         
         childRef.child(userId!).setValue(userDict)

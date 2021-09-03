@@ -31,7 +31,7 @@ class LoginViewController: UIViewController {
         addLeftImageTo(txtField: passwordTextField, andImage: passwordImage!)
         bindData()
         setDelegates()
-//        handeIsUserLogin()
+        handeIsUserLogin()
 //        self.tabBarController?.tabBar.isHidden = true
 //        self.navigationItem.setHidesBackButton(true, animated: true)
 //        let tap = UITapGestureRecognizer(target: self, action: #selector(self.handleTap(_:)))

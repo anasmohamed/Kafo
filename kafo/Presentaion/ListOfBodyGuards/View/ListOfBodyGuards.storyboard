@@ -113,10 +113,15 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zoQ-mI-BMs">
-                                <rect key="frame" x="190" y="537" width="38" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="متابعة"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zoQ-mI-BMs">
+                                <rect key="frame" x="40" y="537" width="334" height="45"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="OhP-t7-bwi"/>
+                                </constraints>
+                                <state key="normal" title="متابعة">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <connections>
                                     <action selector="continueBtnDidTapped:" destination="Cyv-dB-l5a" eventType="touchUpInside" id="pg1-Ac-kTZ"/>
                                 </connections>
@@ -147,13 +152,16 @@
                             <constraint firstItem="RLF-66-zqw" firstAttribute="centerX" secondItem="BYL-Yq-ALm" secondAttribute="centerX" id="AJR-aI-gXJ"/>
                             <constraint firstItem="CDf-tX-IvW" firstAttribute="top" secondItem="lIS-za-hkf" secondAttribute="bottom" constant="16.5" id="BMP-hr-ZVI"/>
                             <constraint firstItem="BYL-Yq-ALm" firstAttribute="leading" secondItem="CDf-tX-IvW" secondAttribute="leading" constant="-10" id="BVq-Bf-ygV"/>
+                            <constraint firstItem="BYL-Yq-ALm" firstAttribute="trailing" secondItem="zoQ-mI-BMs" secondAttribute="trailing" constant="40" id="CvS-GT-Vm7"/>
                             <constraint firstItem="lIS-za-hkf" firstAttribute="top" secondItem="iWN-ny-urv" secondAttribute="bottom" constant="28" id="G2b-XE-QKU"/>
+                            <constraint firstItem="zoQ-mI-BMs" firstAttribute="top" secondItem="7Qs-jx-hXd" secondAttribute="bottom" constant="27" id="GSA-V0-lvz"/>
                             <constraint firstItem="RLF-66-zqw" firstAttribute="leading" secondItem="BYL-Yq-ALm" secondAttribute="leading" id="HFf-IM-Sfn"/>
                             <constraint firstItem="7Qs-jx-hXd" firstAttribute="centerX" secondItem="BYL-Yq-ALm" secondAttribute="centerX" id="QeM-UZ-nLC"/>
                             <constraint firstItem="sKE-4Q-viW" firstAttribute="top" secondItem="Oo4-sU-7UA" secondAttribute="bottom" constant="10" id="Wvh-mK-ViE"/>
                             <constraint firstItem="lIS-za-hkf" firstAttribute="centerX" secondItem="BYL-Yq-ALm" secondAttribute="centerX" id="ZA7-uf-o95"/>
                             <constraint firstItem="Oo4-sU-7UA" firstAttribute="leading" secondItem="CDf-tX-IvW" secondAttribute="leading" id="ci3-Mz-YqM"/>
                             <constraint firstItem="sKE-4Q-viW" firstAttribute="leading" secondItem="Oo4-sU-7UA" secondAttribute="leading" id="gbi-jX-H61"/>
+                            <constraint firstItem="zoQ-mI-BMs" firstAttribute="leading" secondItem="BYL-Yq-ALm" secondAttribute="leading" constant="40" id="mEu-tz-2MX"/>
                             <constraint firstItem="RLF-66-zqw" firstAttribute="trailing" secondItem="BYL-Yq-ALm" secondAttribute="trailing" id="syF-SX-7fL"/>
                             <constraint firstItem="Oo4-sU-7UA" firstAttribute="top" secondItem="CDf-tX-IvW" secondAttribute="bottom" constant="14.5" id="t8V-R1-l5i"/>
                             <constraint firstItem="7Qs-jx-hXd" firstAttribute="top" secondItem="sKE-4Q-viW" secondAttribute="bottom" constant="31" id="ttb-LW-Exw"/>
@@ -170,6 +178,82 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2q7-BR-ZOA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1837.68115942029" y="75.669642857142847"/>
+        </scene>
+        <!--Body Gaurd Number Of Hours View Controller-->
+        <scene sceneID="0ss-Z7-5EE">
+            <objects>
+                <viewController storyboardIdentifier="BodyGaurdNumberOfHoursViewController" id="ecL-Uz-eBX" customClass="BodyGaurdNumberOfHoursViewController" customModule="kafo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jpO-kv-WAT">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hkR-qe-Mcj">
+                                <rect key="frame" x="40" y="189" width="334" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="bSO-jp-WrT"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ROg-jG-VZt">
+                                <rect key="frame" x="40" y="295" width="334" height="45"/>
+                                <color key="backgroundColor" red="0.99607843139999996" green="0.98039215690000003" blue="0.95686274510000002" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="7MQ-ZZ-EIW"/>
+                                </constraints>
+                                <state key="normal" title="إتمام">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="doneBtnDidTapped:" destination="ecL-Uz-eBX" eventType="touchUpInside" id="4Dr-K6-x66"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="أدخل عدد الساعات" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5u3-BW-fe6">
+                                <rect key="frame" x="30" y="144" width="129" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="المجموع:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hp8-ml-B5z">
+                                <rect key="frame" x="40" y="255" width="64.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rrg-Ak-BW2">
+                                <rect key="frame" x="117" y="265.5" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="AQm-68-KSb"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Rrg-Ak-BW2" firstAttribute="centerY" secondItem="Hp8-ml-B5z" secondAttribute="centerY" id="3xl-vj-3Z0"/>
+                            <constraint firstItem="hkR-qe-Mcj" firstAttribute="top" secondItem="5u3-BW-fe6" secondAttribute="bottom" constant="24" id="4K5-rD-odm"/>
+                            <constraint firstItem="Hp8-ml-B5z" firstAttribute="leading" secondItem="hkR-qe-Mcj" secondAttribute="leading" id="557-zd-2jO"/>
+                            <constraint firstItem="5u3-BW-fe6" firstAttribute="leading" secondItem="AQm-68-KSb" secondAttribute="leading" constant="30" id="Mbg-y1-hml"/>
+                            <constraint firstItem="ROg-jG-VZt" firstAttribute="top" secondItem="hkR-qe-Mcj" secondAttribute="bottom" constant="61" id="MkI-Qu-Dbc"/>
+                            <constraint firstItem="hkR-qe-Mcj" firstAttribute="leading" secondItem="AQm-68-KSb" secondAttribute="leading" constant="40" id="UlC-Gx-ofz"/>
+                            <constraint firstItem="ROg-jG-VZt" firstAttribute="centerX" secondItem="AQm-68-KSb" secondAttribute="centerX" id="UnZ-S8-Kxk"/>
+                            <constraint firstItem="5u3-BW-fe6" firstAttribute="top" secondItem="AQm-68-KSb" secondAttribute="top" constant="100" id="fzE-1c-pRF"/>
+                            <constraint firstItem="Rrg-Ak-BW2" firstAttribute="leading" secondItem="Hp8-ml-B5z" secondAttribute="trailing" constant="12.5" id="g2B-OE-dhX"/>
+                            <constraint firstItem="AQm-68-KSb" firstAttribute="trailing" secondItem="hkR-qe-Mcj" secondAttribute="trailing" constant="40" id="jc7-85-Nxj"/>
+                            <constraint firstItem="Hp8-ml-B5z" firstAttribute="top" secondItem="hkR-qe-Mcj" secondAttribute="bottom" constant="21" id="lOc-JQ-hxh"/>
+                            <constraint firstItem="AQm-68-KSb" firstAttribute="trailing" secondItem="ROg-jG-VZt" secondAttribute="trailing" constant="40" id="t1k-NY-zpM"/>
+                            <constraint firstItem="ROg-jG-VZt" firstAttribute="leading" secondItem="AQm-68-KSb" secondAttribute="leading" constant="40" id="vrp-tw-VSy"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="doneBtn" destination="ROg-jG-VZt" id="8Yt-zk-q5w"/>
+                        <outlet property="numberOfHoursTextField" destination="hkR-qe-Mcj" id="8ie-pI-zOf"/>
+                        <outlet property="totalMoneyLbl" destination="Rrg-Ak-BW2" id="ISp-Oy-7Ef"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2AT-Te-gdH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2692.753623188406" y="75.669642857142847"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="FAc-32-RLM">

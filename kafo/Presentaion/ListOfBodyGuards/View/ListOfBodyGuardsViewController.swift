@@ -48,7 +48,7 @@ class ListOfBodyGuardsViewController: UIViewController ,UITableViewDelegate,UITa
             let bodyGuardProfileViewControll = bodyGuardProfileViewStoryboard.instantiateViewController(identifier: "BodyGuardProfileControll") as! BodyGuardProfileControll
         bodyGuardProfileViewControll.email = listOfBodyGuardsViewModel.getData(index: indexPath.row).email
         bodyGuardProfileViewControll.mobile = listOfBodyGuardsViewModel.getData(index: indexPath.row).mobileNumber
-        bodyGuardProfileViewControll.location = listOfBodyGuardsViewModel.getData(index: indexPath.row).location
+        bodyGuardProfileViewControll.location = listOfBodyGuardsViewModel.getData(index: indexPath.row).city + " " + listOfBodyGuardsViewModel.getData(index: indexPath.row).country
 
 
             self.navigationController?.pushViewController(bodyGuardProfileViewControll, animated: true)

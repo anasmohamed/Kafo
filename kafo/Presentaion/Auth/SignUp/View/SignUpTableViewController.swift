@@ -88,19 +88,15 @@ class SignUpTableViewController: UITableViewController {
     }
     func bindData() {
         
-        signupViewModel.signupSuccess.bind {_ in
+        signupViewModel.signupSuccess.bind {user in
             //               LoadingIndicatorView.hide()
             print("success")
-            //               guard let email = $0?[1] else { return }
-            //               let homeViewStoryboard = UIStoryboard.init(name: "MainView", bundle: nil)
-            //               let homeViewController = homeViewStoryboard.instantiateViewController(withIdentifier: "HomeTabBar")
-            ////               self.signupViewModel.sbaveUser(userToken: $0![0])
-            //               print("token\($0?[0])")
-            //               homeViewController.modalPresentationStyle = .fullScreen
-            //               self.present(homeViewController, animated: true, completion: nil)
-            //               UserDefaults.standard.set(email, forKey: "email")
-            //               UserDefaults.standard.set($0![0], forKey: "token")
-            
+//            guard let email = $0?[1] else { return }
+            self.navigateToServiceViewController()
+            UserDefaults.standard.set(user?.email, forKey: "email")
+            UserDefaults.standard.set(user?.mobileNumber, forKey: "mobile")
+            UserDefaults.standard.set(user?.firstName + " " +?.lastName, forKey: "name")
+
             
         }
         signupViewModel.isEmailTextFieldHighLighted.bind { [weak self] in
@@ -139,7 +135,7 @@ class SignUpTableViewController: UITableViewController {
         }else{
             signupViewModel.updateCredentials(firstName: firstNameTextField.text!,lastName: lastNameTextField.text!, password: passwordTextField.text!,phoneNumber: mobileNameTextField.text!,email: emailTextFiled.text!,userType: userType,gender: gender,date:deteOfBirthTextField.text!,privacyPolicy:privacyPolicyCheckbox.isChecked)
         }
-       
+        
         
         //Here we check user's credentials input - if it's correct we call login()
         switch signupViewModel.credentialsInput() {
@@ -171,7 +167,12 @@ class SignUpTableViewController: UITableViewController {
         backBtn.layer.borderWidth = 2
         backBtn.layer.borderColor = UIColor.yellow.cgColor
     }
-    
+    func navigateToServiceViewController() {
+        let servicesViewStoryboard = UIStoryboard.init(name: "ServicesView", bundle: nil)
+        let servicesViewController = servicesViewStoryboard.instantiateViewController(withIdentifier: "ServicesTableViewController")
+//        servicesViewController.modalPresentationStyle = .fullScreen
+        self.navigationController?.pushViewController(servicesViewController, animated: true)
+    }
     func highlightTextField(_ textField: UITextField) {
         textField.resignFirstResponder()
         textField.layer.borderWidth = 1.0

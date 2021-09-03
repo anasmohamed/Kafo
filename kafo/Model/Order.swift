@@ -9,7 +9,11 @@ import Foundation
 class Order {
     var numberOfHours = ""
     var totalMoney = ""
-    var baudyGaurdName = ""
+    var bodyGaurdName = ""
     var clientName = ""
     var location = ""
+    var bodyGuardEmail = ""
+    var bodyGuardMobileNumber = ""
+    var clientMobileNumber = ""
+    var clientEmail = ""
 }

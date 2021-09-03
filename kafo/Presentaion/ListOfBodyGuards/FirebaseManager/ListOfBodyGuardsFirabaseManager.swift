@@ -35,17 +35,17 @@ class ListOfBodyGuardsFirebaseManager {
                }
            })
     }
-    func sendUserData(order:Order)  {
+    func sendUserData(order:Order )  {
         // 1
         let rootRef = Database.database()
         
         // 2
-//        let childRef = rootRef.reference(withPath: "Users")
-//        let userId = childRef.childByAutoId().key
-//        var userDict : [String:Any?]?
-//        userDict = [
-//            "email":order.email,
-//            "userId":userId,
+        let childRef = rootRef.reference(withPath: "ImmdiateOrder")
+        let orderId = childRef.childByAutoId().key
+        var userDict : [String:Any?]?
+        userDict = [
+            "totalMoney":order.totalMoney,
+            "orderId":orderId,
 //            "firstName":order.firstName,
 //            "lastName":order.lastName,
 //            "password":order.password,
@@ -54,8 +54,11 @@ class ListOfBodyGuardsFirebaseManager {
 //            "dateOfBirth":user.dateOfBirth,
 //            "city": user.city,
 //            "country":user.country,
-//            "mobileNumbr":user.mobileNumber]
-//        
-//        childRef.child(userId!).setValue(userDict)
+//            "mobileNumbr":user.mobileNumber
+        ]
+        
+        childRef.child(orderId!).setValue(userDict)
+        
+        
     }
 }

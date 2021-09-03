@@ -12,6 +12,16 @@ class BodyGaurdNumberOfHoursViewController: UIViewController ,UITextFieldDelegat
     @IBOutlet weak var doneBtn: UIButton!
     @IBOutlet weak var totalMoneyLbl: UILabel!
     @IBOutlet weak var numberOfHoursTextField: UITextField!
+    
+    var bodyGuardName = ""
+    var bodyGuardEmail = ""
+    var bodyGuardMobileNumber = ""
+    var bodyGuardLocation = ""
+    var clientName = ""
+    var clientMobileNumber = ""
+    var clientEmail = ""
+    var listOfBodyGuardsViewModel = ListOfBodyGuardsViewModel()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setGradientBackground()
@@ -22,14 +32,18 @@ class BodyGaurdNumberOfHoursViewController: UIViewController ,UITextFieldDelegat
         doneBtn.layer.borderWidth = 1
         // Do any additional setup after loading the view.
     }
-    func textFieldDidEndEditing(_ textField: UITextField) {
-    }
-    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
-//        print(Int(numberOfHoursTextField.text!))
-//        totalMoneyLbl.text = String( Int(numberOfHoursTextField.text!)! * 100)
-        return true
-    }
+    
+   
     @IBAction func doneBtnDidTapped(_ sender: Any) {
+        //Here we check user's credentials input - if it's correct we call login()
+        listOfBodyGuardsViewModel.update(totalMoney: totalMoneyLbl.text!, and: numberOfHoursTextField.text!, bodyGuardName: bodyGuardName, bodygauardMobileNumber: bodyGuardMobileNumber, bodyguardEmail: bodyGuardEmail, bodyguardLocation: bodyGuardLocation, clinetName:clientName , clientMobileNumber: clientMobileNumber, clientEmail: clientEmail)
+        switch listOfBodyGuardsViewModel.credentialsInput() {
+        
+        case .Correct:
+            listOfBodyGuardsViewModel.setOrder()
+        case .Incorrect:
+            return
+        }
     }
     
     func setGradientBackground() {

@@ -18,6 +18,11 @@ class BodyGuardProfileControll: UIViewController {
     var email : String = ""
     var mobile : String = ""
     var location : String = ""
+    var bodyGuardName = ""
+    var clientName = ""
+    var clientEmail = ""
+    var clientMobileNumber = ""
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setGradientBackground()
@@ -27,6 +32,10 @@ class BodyGuardProfileControll: UIViewController {
         continueBtn.layer.cornerRadius = 15
         continueBtn.layer.borderColor = UIColor.black.cgColor
         continueBtn.layer.borderWidth = 1
+        
+        
+        
+        
     }
     func setGradientBackground() {
         let colorTop =  UIColor(red: 0.0/255.0, green: 0.0/255.0, blue: 55.0/255.0, alpha: 1.0).cgColor
@@ -43,9 +52,13 @@ class BodyGuardProfileControll: UIViewController {
     @IBAction func continueBtnDidTapped(_ sender: Any) {
         let bodyGuardProfileViewStoryboard = UIStoryboard(name: "ListOfBodyGuards", bundle: nil)
         let bodyGuardProfileViewControll = bodyGuardProfileViewStoryboard.instantiateViewController(identifier: "BodyGaurdNumberOfHoursViewController") as! BodyGaurdNumberOfHoursViewController
-
-
-
+        bodyGuardProfileViewControll.bodyGuardName = bodyGuardName
+        bodyGuardProfileViewControll.bodyGuardEmail = email
+        bodyGuardProfileViewControll.bodyGuardLocation = location
+        bodyGuardProfileViewControll.bodyGuardMobileNumber = mobile
+        bodyGuardProfileViewControll.clientEmail = clientEmail
+        bodyGuardProfileViewControll.clientName = clientName
+        bodyGuardProfileViewControll.clientMobileNumber = clientMobileNumber
         self.navigationController?.pushViewController(bodyGuardProfileViewControll, animated: true)
     }
     

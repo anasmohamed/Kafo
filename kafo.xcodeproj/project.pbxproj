@@ -65,6 +65,9 @@
 		329B6095267FD87D008AB2DE /* Checkbox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329B6094267FD87D008AB2DE /* Checkbox.swift */; };
 		329B60A0267FE9C4008AB2DE /* MainCustomerView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 329B609F267FE9C4008AB2DE /* MainCustomerView.storyboard */; };
 		329B60AC267FED7D008AB2DE /* PersonalBodyguardView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 329B60AB267FED7D008AB2DE /* PersonalBodyguardView.storyboard */; };
+		32ADEFBB26E2787A00D11201 /* KafoServiceFIrebaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32ADEFBA26E2787A00D11201 /* KafoServiceFIrebaseManager.swift */; };
+		32ADEFC026E27B2E00D11201 /* KafoBodyGuardOrder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32ADEFBF26E27B2E00D11201 /* KafoBodyGuardOrder.swift */; };
+		32ADEFC526E27C2800D11201 /* KafoServiceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32ADEFC426E27C2800D11201 /* KafoServiceViewModel.swift */; };
 		32B25E59267C184500ED2082 /* CustomerOrWorkerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B25E58267C184500ED2082 /* CustomerOrWorkerViewController.swift */; };
 		32DDC4F2269C78F200969823 /* ListOfBodyGuards.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32DDC4F1269C78F200969823 /* ListOfBodyGuards.storyboard */; };
 		32DDC4F9269C79BB00969823 /* ListOfGuardsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32DDC4F7269C79BB00969823 /* ListOfGuardsTableViewCell.swift */; };
@@ -169,6 +172,9 @@
 		329B6094267FD87D008AB2DE /* Checkbox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Checkbox.swift; sourceTree = "<group>"; };
 		329B609F267FE9C4008AB2DE /* MainCustomerView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainCustomerView.storyboard; sourceTree = "<group>"; };
 		329B60AB267FED7D008AB2DE /* PersonalBodyguardView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PersonalBodyguardView.storyboard; sourceTree = "<group>"; };
+		32ADEFBA26E2787A00D11201 /* KafoServiceFIrebaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KafoServiceFIrebaseManager.swift; sourceTree = "<group>"; };
+		32ADEFBF26E27B2E00D11201 /* KafoBodyGuardOrder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KafoBodyGuardOrder.swift; sourceTree = "<group>"; };
+		32ADEFC426E27C2800D11201 /* KafoServiceViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KafoServiceViewModel.swift; sourceTree = "<group>"; };
 		32B25E58267C184500ED2082 /* CustomerOrWorkerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerOrWorkerViewController.swift; sourceTree = "<group>"; };
 		32DDC4F1269C78F200969823 /* ListOfBodyGuards.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ListOfBodyGuards.storyboard; sourceTree = "<group>"; };
 		32DDC4F7269C79BB00969823 /* ListOfGuardsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListOfGuardsTableViewCell.swift; sourceTree = "<group>"; };
@@ -327,6 +333,8 @@
 		327689B3269CA2D800CC61C0 /* KafoSerivceNumberOfHours */ = {
 			isa = PBXGroup;
 			children = (
+				32ADEFB926E275EA00D11201 /* FirebaseManager */,
+				32ADEFB826E275E200D11201 /* ViewModel */,
 				327689CE269CC80800CC61C0 /* View */,
 			);
 			path = KafoSerivceNumberOfHours;
@@ -600,6 +608,7 @@
 			children = (
 				328CEA6726D7E3E900F2C1BA /* User.swift */,
 				328320ED26E1ADAE0040FD60 /* Order.swift */,
+				32ADEFBF26E27B2E00D11201 /* KafoBodyGuardOrder.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -666,6 +675,22 @@
 				326998322680CD9B0074E586 /* PersonalBodyguardTableViewController.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		32ADEFB826E275E200D11201 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				32ADEFC426E27C2800D11201 /* KafoServiceViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		32ADEFB926E275EA00D11201 /* FirebaseManager */ = {
+			isa = PBXGroup;
+			children = (
+				32ADEFBA26E2787A00D11201 /* KafoServiceFIrebaseManager.swift */,
+			);
+			path = FirebaseManager;
 			sourceTree = "<group>";
 		};
 		32DDC4EF269C765700969823 /* ListOfBodyGuards */ = {
@@ -982,6 +1007,7 @@
 			files = (
 				327A636F26C2F6D8003B3EDE /* ProfileTableViewController.swift in Sources */,
 				329B6095267FD87D008AB2DE /* Checkbox.swift in Sources */,
+				32ADEFBB26E2787A00D11201 /* KafoServiceFIrebaseManager.swift in Sources */,
 				328320BD26E13A6B0040FD60 /* LoginViewModel.swift in Sources */,
 				32699851268112DE0074E586 /* CompanyDetailsTableViewController.swift in Sources */,
 				328320E926E1A29B0040FD60 /* BodyGaurdNumberOfHoursViewController.swift in Sources */,
@@ -990,6 +1016,7 @@
 				3251E6FB26C7F0DD00F1B95B /* OtherCompaniesTableViewCell.swift in Sources */,
 				327BE18826DD7D8000F46FCB /* SignupViewModel.swift in Sources */,
 				32DDC4FF269C7CDE00969823 /* ListOfBodyGuardsViewController.swift in Sources */,
+				32ADEFC026E27B2E00D11201 /* KafoBodyGuardOrder.swift in Sources */,
 				328320C926E159400040FD60 /* ListOfBodyGuardsFirabaseManager.swift in Sources */,
 				3277D2392677BFED00F84C30 /* LoginViewController.swift in Sources */,
 				328320C226E13E3A0040FD60 /* LoginFirebaseManager.swift in Sources */,
@@ -1003,6 +1030,7 @@
 				3277461526C089C000B7A9C8 /* LeftSideMenuViewController.swift in Sources */,
 				3251E6DA26C7D81800F1B95B /* FacilitiesSccurityApplicationViewController.swift in Sources */,
 				328A56672699F73F00BFD9C2 /* LocationViewController.swift in Sources */,
+				32ADEFC526E27C2800D11201 /* KafoServiceViewModel.swift in Sources */,
 				3277D2002677BDCA00F84C30 /* AppDelegate.swift in Sources */,
 				327BE18F26DD7E0500F46FCB /* SignupFirebaseManager.swift in Sources */,
 				326A368D267EA6DD00B87D37 /* SignUpTableViewController.swift in Sources */,

@@ -11,7 +11,7 @@ import FirebaseAuth
 import Firebase
 class SignupManager{
     
-    func signupWithEmailAndPassword(email:String,password:String, completionHandler: @escaping ([String]?,Error?) -> Void) {
+    func signupWithEmailAndPassword(email:String,password:String, completionHandler: @escaping (Bool?,Error?) -> Void) {
         Auth.auth().createUser(withEmail: email, password: password) { authResult, error in
             if let error = error as? NSError {
                 completionHandler(nil,error)
@@ -19,13 +19,9 @@ class SignupManager{
             } else {
                 print("User signs up successfully")
                 let newUserInfo = Auth.auth().currentUser
-                let token = Auth.auth().currentUser?.uid
-                let email = newUserInfo?.email
-                var user = [String]()
-                user.append(token!)
-                user.append(email!)
+               
                 
-                completionHandler(user,nil)
+                completionHandler(true,nil)
                 
             }
             

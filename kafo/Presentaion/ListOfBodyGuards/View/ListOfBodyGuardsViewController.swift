@@ -49,7 +49,7 @@ class ListOfBodyGuardsViewController: UIViewController ,UITableViewDelegate,UITa
         bodyGuardProfileViewControll.email = listOfBodyGuardsViewModel.getData(index: indexPath.row).email
         bodyGuardProfileViewControll.mobile = listOfBodyGuardsViewModel.getData(index: indexPath.row).mobileNumber
         bodyGuardProfileViewControll.location = listOfBodyGuardsViewModel.getData(index: indexPath.row).city + " " + listOfBodyGuardsViewModel.getData(index: indexPath.row).country
-
+        bodyGuardProfileViewControll.bodyGuardName = listOfBodyGuardsViewModel.getData(index: indexPath.row).firstName + " " + listOfBodyGuardsViewModel.getData(index: indexPath.row).lastName
 
             self.navigationController?.pushViewController(bodyGuardProfileViewControll, animated: true)
         }

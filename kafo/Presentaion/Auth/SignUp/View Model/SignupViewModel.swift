@@ -35,7 +35,7 @@ class SignupViewModel {
     var isPhoneNumberTextFieldHighLighted: Observable<Bool> = Observable(false)
     var isPrivacyPolicyCheckboxChecked: Observable<Bool> = Observable(false)
     var errorMessage: Observable<String?> = Observable(nil)
-    var signupSuccess: Observable<[String]?> = Observable(nil)
+    var signupSuccess: Observable<User?> = Observable(nil)
 //    var saveUserSuccess : Observable<> = Observable(nil)
     //    init() {
     //
@@ -67,7 +67,7 @@ class SignupViewModel {
         print("password   \(user.password)")
         signupManager.signupWithEmailAndPassword(email: user.email, password: user.password) { [weak self] (user,error) in
             guard let error = error else {
-                self?.signupSuccess.value = user
+                self?.signupSuccess.value = self?.user
                 self!.signupManager.sendUserData(user: self!.user)
                 return
             }

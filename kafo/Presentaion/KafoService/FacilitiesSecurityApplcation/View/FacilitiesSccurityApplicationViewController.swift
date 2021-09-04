@@ -24,6 +24,9 @@ class FacilitiesSccurityApplicationViewController: UITableViewController {
     
     @IBOutlet weak var doneBtn: UIButton!
     
+    let datePicker = UIDatePicker()
+    var date : Date? = nil
+    
     var facilitiesSccurityApplicationViewModel =  FacilitiesSccurityApplicationViewModel()
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -42,7 +45,8 @@ class FacilitiesSccurityApplicationViewController: UITableViewController {
         roundView(view: facilityMobileNumberTextField)
         roundView(view: numberOfDaysTextField)
         roundView(view: startDateTextField)
-        
+        createDatePicker()
+
         setDelegates()
         bindData()
         // Do any additional setup after loading the view.
@@ -109,6 +113,17 @@ class FacilitiesSccurityApplicationViewController: UITableViewController {
         view.layer.cornerRadius = 15
         view.layer.borderColor = UIColor.black.cgColor
         view.layer.borderWidth = 1
+    }
+    @objc func selectDatedoneBtnDidTapped()  {
+        let formatter = DateFormatter()
+        formatter.dateStyle = .medium
+        formatter.timeStyle = .none
+        formatter.dateFormat = "yyyy-MM-dd"
+        formatter.locale = Locale(identifier: "en_US")
+        
+        date = datePicker.date
+        startDateTextField.text = formatter.string(from: datePicker.date)
+        self.view.endEditing(true)
     }
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 13
@@ -210,7 +225,17 @@ extension FacilitiesSccurityApplicationViewController: UITextFieldDelegate {
         facilityNameTextField.resignFirstResponder()
         return true
     }
-    
+    func createDatePicker()  {
+        let toolBar = UIToolbar()
+        toolBar.sizeToFit()
+        let doneBtn = UIBarButtonItem(barButtonSystemItem: .done, target: nil, action: #selector(selectDatedoneBtnDidTapped))
+        toolBar.setItems([doneBtn], animated: true)
+        startDateTextField.inputAccessoryView = toolBar
+        startDateTextField.inputView = datePicker
+        datePicker.locale = Locale(identifier: "en_US")
+        
+        datePicker.datePickerMode = .date
+    }
     func textFieldDidBeginEditing(_ textField: UITextField) {
         startDateTextField.layer.borderWidth = 0
         facilityMobileNumberTextField.layer.borderWidth = 0

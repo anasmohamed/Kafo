@@ -68,6 +68,7 @@
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="40" id="MPS-rg-lyw"/>
                                                     </constraints>
+                                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits"/>
                                                 </textField>
@@ -100,6 +101,7 @@
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="40" id="Juj-uO-X7Y"/>
                                                     </constraints>
+                                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits"/>
                                                 </textField>
@@ -132,6 +134,7 @@
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="40" id="tfJ-wC-uc4"/>
                                                     </constraints>
+                                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits"/>
                                                 </textField>
@@ -164,6 +167,7 @@
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="40" id="ImG-50-OIq"/>
                                                     </constraints>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits"/>
                                                 </textField>
@@ -196,8 +200,9 @@
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="40" id="pqJ-Go-0f8"/>
                                                     </constraints>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <textInputTraits key="textInputTraits"/>
+                                                    <textInputTraits key="textInputTraits" keyboardType="phonePad" textContentType="tel"/>
                                                 </textField>
                                             </subviews>
                                             <constraints>
@@ -228,8 +233,9 @@
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="40" id="lOz-Cg-Kvw"/>
                                                     </constraints>
+                                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <textInputTraits key="textInputTraits"/>
+                                                    <textInputTraits key="textInputTraits" keyboardType="phonePad" textContentType="tel"/>
                                                 </textField>
                                             </subviews>
                                             <constraints>
@@ -260,6 +266,7 @@
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="40" id="X8L-lh-GmP"/>
                                                     </constraints>
+                                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits"/>
                                                 </textField>
@@ -292,8 +299,9 @@
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="40" id="gjX-cO-Jgq"/>
                                                     </constraints>
+                                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <textInputTraits key="textInputTraits"/>
+                                                    <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                                 </textField>
                                             </subviews>
                                             <constraints>
@@ -324,8 +332,9 @@
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="40" id="EnH-Rp-w4w"/>
                                                     </constraints>
+                                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <textInputTraits key="textInputTraits"/>
+                                                    <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                                 </textField>
                                             </subviews>
                                             <constraints>
@@ -356,6 +365,7 @@
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="40" id="rUs-rx-o7q"/>
                                                     </constraints>
+                                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits"/>
                                                 </textField>
@@ -388,8 +398,9 @@
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="40" id="3Pb-Gu-U6i"/>
                                                     </constraints>
+                                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <textInputTraits key="textInputTraits"/>
+                                                    <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                                 </textField>
                                             </subviews>
                                             <constraints>
@@ -449,26 +460,16 @@
                         <outlet property="buildingNumberTextField" destination="dUO-9p-bJD" id="IiN-FG-gWY"/>
                         <outlet property="cityTextField" destination="9xp-BT-1kS" id="A2k-OT-OQ3"/>
                         <outlet property="doneBtn" destination="aGf-dn-l1w" id="Pho-CY-OGY"/>
-                        <outlet property="eighthTextField" destination="zyT-SM-fDD" id="7vq-Wt-qfh"/>
-                        <outlet property="eleventhTextField" destination="4A0-nD-joY" id="E2V-SN-ooV"/>
                         <outlet property="facilityMobileNumberTextField" destination="zyT-SM-fDD" id="1RO-yh-cqw"/>
                         <outlet property="facilityNameTextField" destination="mQc-lR-yIg" id="LEJ-Lc-8TN"/>
                         <outlet property="faxTextField" destination="7dz-Dw-P3q" id="EZ3-w8-0jJ"/>
-                        <outlet property="fifthTextField" destination="p22-1F-Qn2" id="xUk-ok-Oup"/>
-                        <outlet property="fitstTextField" destination="mQc-lR-yIg" id="Daw-AZ-YDi"/>
                         <outlet property="mobileTextField" destination="4Ih-GD-VT8" id="YPQ-lA-T5e"/>
                         <outlet property="numberOfBodyguarsTextField" destination="4A0-nD-joY" id="jDF-bJ-Rfm"/>
                         <outlet property="numberOfDaysTextField" destination="lee-rS-BVZ" id="qV5-zE-dsn"/>
                         <outlet property="numberOfShiftTextField" destination="BRL-a5-Xfp" id="VSa-5T-1C2"/>
                         <outlet property="responsiblePersonTextField" destination="p22-1F-Qn2" id="j1h-dR-xoD"/>
-                        <outlet property="secondTextField" destination="9xp-BT-1kS" id="Fl5-eO-01L"/>
-                        <outlet property="seventhTextField" destination="4Ih-GD-VT8" id="ELL-5J-lM7"/>
                         <outlet property="startDateTextField" destination="YSv-Sz-WpY" id="uIw-2j-1ri"/>
                         <outlet property="streetTextField" destination="3Rp-Eg-eT6" id="Kgr-se-Ous"/>
-                        <outlet property="tenthTextField" destination="BRL-a5-Xfp" id="UX4-cd-Jjs"/>
-                        <outlet property="thirdTextField" destination="3Rp-Eg-eT6" id="5RQ-Hg-PQJ"/>
-                        <outlet property="thirteenthTextField" destination="lee-rS-BVZ" id="A4t-nL-Pqr"/>
-                        <outlet property="twelvthTextField" destination="YSv-Sz-WpY" id="UD6-KS-dVT"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GCF-dj-Toe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

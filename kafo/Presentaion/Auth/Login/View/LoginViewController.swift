@@ -95,9 +95,9 @@ class LoginViewController: UIViewController {
     }
     func handeIsUserLogin()
     {
-//        if !(UserDefaults.standard.string(forKey: "token")?.isEmpty ?? true){
-//            navigateToServiceViewController()
-//        }
+        if !(UserDefaults.standard.string(forKey: "email")?.isEmpty ?? true){
+            navigateToServiceViewController()
+        }
     }
   
     

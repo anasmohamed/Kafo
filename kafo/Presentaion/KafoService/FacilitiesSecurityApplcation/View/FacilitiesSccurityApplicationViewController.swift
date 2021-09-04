@@ -6,41 +6,103 @@
 //
 
 import UIKit
-
+import Toast_Swift
 class FacilitiesSccurityApplicationViewController: UITableViewController {
-    @IBOutlet weak var secondTextField: UITextField!
     
-    @IBOutlet weak var thirdTextField: UITextField!
-    @IBOutlet weak var fifthTextField: UITextField!
-    @IBOutlet weak var seventhTextField: UITextField!
-    @IBOutlet weak var eighthTextField: UITextField!
-    @IBOutlet weak var tenthTextField: UITextField!
-    @IBOutlet weak var fourthTextField: UITextField!
-    @IBOutlet weak var eleventhTextField: UITextField!
-    @IBOutlet weak var ninthTextField: UITextField!
-    @IBOutlet weak var thirteenthTextField: UITextField!
-    @IBOutlet weak var fitstTextField: UITextField!
+    @IBOutlet weak var startDateTextField: UITextField!
+    @IBOutlet weak var facilityMobileNumberTextField: UITextField!
+    @IBOutlet weak var numberOfDaysTextField: UITextField!
+    @IBOutlet weak var numberOfShiftTextField: UITextField!
+    @IBOutlet weak var numberOfBodyguarsTextField: UITextField!
+    @IBOutlet weak var faxTextField: UITextField!
+    @IBOutlet weak var mobileTextField: UITextField!
+    @IBOutlet weak var responsiblePersonTextField: UITextField!
+    @IBOutlet weak var buildingNumberTextField: UITextField!
+    @IBOutlet weak var streetTextField: UITextField!
+    @IBOutlet weak var cityTextField: UITextField!
+    @IBOutlet weak var facilityNameTextField: UITextField!
+    
     @IBOutlet weak var doneBtn: UIButton!
-    @IBOutlet weak var twelvthTextField: UITextField!
+    
+    var facilitiesSccurityApplicationViewModel =  FacilitiesSccurityApplicationViewModel()
     override func viewDidLoad() {
         super.viewDidLoad()
         doneBtn.layer.cornerRadius = 15
         doneBtn.layer.borderColor = UIColor.black.cgColor
         doneBtn.layer.borderWidth = 1
-        roundView(view: fitstTextField)
-        roundView(view: secondTextField)
-        roundView(view: thirdTextField)
-        roundView(view: fourthTextField)
-        roundView(view: fifthTextField)
-        roundView(view: seventhTextField)
-        roundView(view: eighthTextField)
-        roundView(view: ninthTextField)
-        roundView(view: tenthTextField)
-        roundView(view: eleventhTextField)
-        roundView(view: twelvthTextField)
-        roundView(view: thirteenthTextField)
-
+        roundView(view: facilityNameTextField)
+        roundView(view: cityTextField)
+        roundView(view: streetTextField)
+        roundView(view: buildingNumberTextField)
+        roundView(view: responsiblePersonTextField)
+        roundView(view: mobileTextField)
+        roundView(view: faxTextField)
+        roundView(view: numberOfBodyguarsTextField)
+        roundView(view: numberOfShiftTextField)
+        roundView(view: facilityMobileNumberTextField)
+        roundView(view: numberOfDaysTextField)
+        roundView(view: startDateTextField)
+        
+        setDelegates()
+        bindData()
         // Do any additional setup after loading the view.
+    }
+    func bindData() {
+        
+        
+        facilitiesSccurityApplicationViewModel.isNumberOfDaysTextFieldHighLighted.bind { [weak self] in
+            if $0 { self?.highlightTextField((self?.numberOfDaysTextField)!)}
+        }
+        
+        facilitiesSccurityApplicationViewModel.isStreetTextFieldHighLighted.bind { [weak self] in
+            if $0 { self?.highlightTextField((self?.streetTextField)!)}
+        }
+        facilitiesSccurityApplicationViewModel.isNumberOfBodyGuardTextFieldHighLighted.bind { [weak self] in
+            if $0 { self?.highlightTextField((self?.numberOfBodyguarsTextField)!)}
+        }
+        
+        facilitiesSccurityApplicationViewModel.isFaxTextFieldHighLighted.bind { [weak self] in
+            if $0 { self?.highlightTextField((self?.faxTextField)!)}
+        }
+        
+        facilitiesSccurityApplicationViewModel.isMobileTextFieldHighLighted.bind { [weak self] in
+            if $0 { self?.highlightTextField((self?.mobileTextField)!)}
+        }
+        facilitiesSccurityApplicationViewModel.isCityTextFieldHighLighted.bind { [weak self] in
+            if $0 { self?.highlightTextField((self?.cityTextField)!)}
+        }
+        facilitiesSccurityApplicationViewModel.isBuildingNumberTextFieldHighLighted.bind { [weak self] in
+            if $0 { self?.highlightTextField((self?.buildingNumberTextField)!)}
+        }
+        
+        facilitiesSccurityApplicationViewModel.isFacilityNameTextFieldHighLighted.bind { [weak self] in
+            if $0 { self?.highlightTextField((self?.facilityNameTextField)!)}
+        }
+        facilitiesSccurityApplicationViewModel.isStartDateTextFieldHighLighted.bind { [weak self] in
+            if $0 { self?.highlightTextField((self?.startDateTextField)!)}
+        }
+        facilitiesSccurityApplicationViewModel.isNumberOfDaysTextFieldHighLighted.bind { [weak self] in
+            if $0 { self?.highlightTextField((self?.numberOfDaysTextField)!)}
+        }
+        
+        facilitiesSccurityApplicationViewModel.isFacilityMobileNumberTextFieldHighLighted.bind { [weak self] in
+            if $0 { self?.highlightTextField((self?.facilityMobileNumberTextField)!)}
+        }
+        facilitiesSccurityApplicationViewModel.isResponsiblePersonTextFieldHighLighted.bind { [weak self] in
+            if $0 { self?.highlightTextField((self?.responsiblePersonTextField)!)}
+        }
+        facilitiesSccurityApplicationViewModel.isNumberOfShiftTextFieldHighLighted.bind { [weak self] in
+            if $0 { self?.highlightTextField((self?.numberOfShiftTextField)!)}
+        }
+        facilitiesSccurityApplicationViewModel.errorMessage.bind {
+            guard let errorMessage = $0 else { return }
+            var style = ToastStyle()
+            
+            // this is just one of many style options
+            style.messageColor = .white
+            style.backgroundColor = .black
+            self.view.makeToast(errorMessage, duration: 3.0, position: .bottom,style:style)
+        }
     }
     func roundView(view:UIView){
         view.backgroundColor = UIColor.clear
@@ -58,38 +120,114 @@ class FacilitiesSccurityApplicationViewController: UITableViewController {
         super.viewWillAppear(animated)
         setGradientBackground()
     }
+    
+    func setDelegates() {
+        
+        startDateTextField.delegate = self
+        facilityMobileNumberTextField.delegate = self
+        numberOfDaysTextField.delegate = self
+        numberOfShiftTextField.delegate = self
+        numberOfBodyguarsTextField.delegate = self
+        faxTextField.delegate = self
+        mobileTextField.delegate = self
+        responsiblePersonTextField.delegate = self
+        buildingNumberTextField.delegate = self
+        streetTextField.delegate = self
+        cityTextField.delegate = self
+        facilityNameTextField.delegate = self
+    }
+    
+    
+    @IBAction func doneBtnDidTapped(_ sender: Any) {
+        facilitiesSccurityApplicationViewModel.update(facilityName: facilityNameTextField.text!, city: cityTextField.text!, street: streetTextField.text!, buildingNumber: buildingNumberTextField.text!, responsiblePerson:responsiblePersonTextField.text!, mobile: mobileTextField.text!, facilityMobileNumber: facilityNameTextField.text!, fax: buildingNumberTextField.text!, numberOfBodyGuard: numberOfBodyguarsTextField.text!, startDate: startDateTextField.text!, numberOfDays: numberOfDaysTextField.text!, numberOfShift: numberOfShiftTextField.text!)
+        
+        
+        //Here we check user's credentials input - if it's correct we call login()
+        switch facilitiesSccurityApplicationViewModel.credentialsInput() {
+        
+        case .Correct:
+            //                    LoadingIndicatorView.show()
+            
+            facilitiesSccurityApplicationViewModel.setOrder()
+        case .Incorrect:
+            return
+        }
+    }
+    func highlightTextField(_ textField: UITextField) {
+        textField.resignFirstResponder()
+        textField.layer.borderWidth = 1.0
+        textField.layer.borderColor = UIColor.red.cgColor
+        textField.layer.cornerRadius = 3
+    }
     func setGradientBackground() {
-      
+        
         let colorTop =  UIColor(red: 0.0/255.0, green: 0.0/255.0, blue: 55.0/255.0, alpha: 1.0).cgColor
         let colorBottom = UIColor(red: 0.0/255.0, green: 140.0/255.0, blue:255.0/255.0, alpha: 1.0).cgColor
-                    
+        
         let gradientLayer = CAGradientLayer()
         gradientLayer.colors = [colorTop, colorBottom]
         gradientLayer.locations = [0.0, 1.0]
         gradientLayer.frame = self.tableView.bounds
-                
+        
         let backgroundView = UIView(frame: tableView.bounds)
         backgroundView.layer.insertSublayer(gradientLayer, at: 0)
         tableView.backgroundView = backgroundView
-//        self.tableView.layer.insertSublayer(gradientLayer, at:0)
+        //        self.tableView.layer.insertSublayer(gradientLayer, at:0)
     }
     override func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
         cell.backgroundColor = UIColor.clear
     }
     @IBAction func menuBtnDidTapped(_ sender: Any) {
         let leftSideMenuStoryboard = UIStoryboard(name: "LeftSideMenuView", bundle: nil)
-
+        
         let sideMenuViewController = leftSideMenuStoryboard.instantiateViewController(identifier: "LeftSideMenuNavigationController") as! UINavigationController
         self.present(sideMenuViewController, animated: true)
     }
     /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+     // MARK: - Navigation
+     
+     // In a storyboard-based application, you will often want to do a little preparation before navigation
+     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+     // Get the new view controller using segue.destination.
+     // Pass the selected object to the new view controller.
+     }
+     */
+    
 }
+extension FacilitiesSccurityApplicationViewController: UITextFieldDelegate {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        startDateTextField.resignFirstResponder()
+        facilityMobileNumberTextField.resignFirstResponder()
+        numberOfDaysTextField.resignFirstResponder()
+        numberOfShiftTextField.resignFirstResponder()
+        numberOfBodyguarsTextField.resignFirstResponder()
+        faxTextField.resignFirstResponder()
+        mobileTextField.resignFirstResponder()
+        responsiblePersonTextField.resignFirstResponder()
+        buildingNumberTextField.resignFirstResponder()
+        streetTextField.resignFirstResponder()
+        cityTextField.resignFirstResponder()
+        facilityNameTextField.resignFirstResponder()
+        return true
+    }
+    
+    func textFieldDidBeginEditing(_ textField: UITextField) {
+        startDateTextField.layer.borderWidth = 0
+        facilityMobileNumberTextField.layer.borderWidth = 0
+        numberOfDaysTextField.layer.borderWidth = 0
+        numberOfShiftTextField.layer.borderWidth = 0
+        numberOfBodyguarsTextField.layer.borderWidth = 0
+        faxTextField.layer.borderWidth = 0
+        mobileTextField.layer.borderWidth = 0
+        responsiblePersonTextField.layer.borderWidth = 0
+        buildingNumberTextField.layer.borderWidth = 0
+        streetTextField.layer.borderWidth = 0
+        cityTextField.layer.borderWidth = 0
+        facilityNameTextField.layer.borderWidth = 0
+    }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
+    }
+}
+

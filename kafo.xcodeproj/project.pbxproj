@@ -28,6 +28,9 @@
 		32699850268112DE0074E586 /* CompanyDetailsView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3269984E268112DE0074E586 /* CompanyDetailsView.storyboard */; };
 		32699851268112DE0074E586 /* CompanyDetailsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3269984F268112DE0074E586 /* CompanyDetailsTableViewController.swift */; };
 		326A368D267EA6DD00B87D37 /* SignUpTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 326A368C267EA6DD00B87D37 /* SignUpTableViewController.swift */; };
+		326E77EB26E2E993009CAF9A /* FacilitiesSccurityApplicationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 326E77EA26E2E993009CAF9A /* FacilitiesSccurityApplicationViewModel.swift */; };
+		326E77F026E2E9C3009CAF9A /* FacilitiesSccurityApplicationFirebaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 326E77EF26E2E9C3009CAF9A /* FacilitiesSccurityApplicationFirebaseManager.swift */; };
+		326E77F526E2EFAC009CAF9A /* FacilitiesSccurityApplicationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 326E77F426E2EFAC009CAF9A /* FacilitiesSccurityApplicationModel.swift */; };
 		3276298826C4974B00F0AC4F /* ServicesView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3276298A26C4974B00F0AC4F /* ServicesView.storyboard */; };
 		3276299426C49CF800F0AC4F /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3276299326C49CF800F0AC4F /* FirstViewController.swift */; };
 		3276299926C49D1100F0AC4F /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3276299826C49D1100F0AC4F /* SecondViewController.swift */; };
@@ -125,6 +128,9 @@
 		3269984E268112DE0074E586 /* CompanyDetailsView.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CompanyDetailsView.storyboard; sourceTree = "<group>"; };
 		3269984F268112DE0074E586 /* CompanyDetailsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompanyDetailsTableViewController.swift; sourceTree = "<group>"; };
 		326A368C267EA6DD00B87D37 /* SignUpTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpTableViewController.swift; sourceTree = "<group>"; };
+		326E77EA26E2E993009CAF9A /* FacilitiesSccurityApplicationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacilitiesSccurityApplicationViewModel.swift; sourceTree = "<group>"; };
+		326E77EF26E2E9C3009CAF9A /* FacilitiesSccurityApplicationFirebaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacilitiesSccurityApplicationFirebaseManager.swift; sourceTree = "<group>"; };
+		326E77F426E2EFAC009CAF9A /* FacilitiesSccurityApplicationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacilitiesSccurityApplicationModel.swift; sourceTree = "<group>"; };
 		3276298926C4974B00F0AC4F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/ServicesView.storyboard; sourceTree = "<group>"; };
 		3276298F26C4975400F0AC4F /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/ServicesView.strings; sourceTree = "<group>"; };
 		3276299326C49CF800F0AC4F /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -223,6 +229,8 @@
 		323B675A26C75473005CA819 /* FacilitiesSecurityApplcation */ = {
 			isa = PBXGroup;
 			children = (
+				326E77E926E2E96F009CAF9A /* FirebaseManager */,
+				326E77E826E2E964009CAF9A /* ViewModel */,
 				323B675B26C754BE005CA819 /* View */,
 			);
 			path = FacilitiesSecurityApplcation;
@@ -301,6 +309,22 @@
 				3276299826C49D1100F0AC4F /* SecondViewController.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		326E77E826E2E964009CAF9A /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				326E77EA26E2E993009CAF9A /* FacilitiesSccurityApplicationViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		326E77E926E2E96F009CAF9A /* FirebaseManager */ = {
+			isa = PBXGroup;
+			children = (
+				326E77EF26E2E9C3009CAF9A /* FacilitiesSccurityApplicationFirebaseManager.swift */,
+			);
+			path = FirebaseManager;
 			sourceTree = "<group>";
 		};
 		327689B0269CA28F00CC61C0 /* KafoService */ = {
@@ -609,6 +633,7 @@
 				328CEA6726D7E3E900F2C1BA /* User.swift */,
 				328320ED26E1ADAE0040FD60 /* Order.swift */,
 				32ADEFBF26E27B2E00D11201 /* KafoBodyGuardOrder.swift */,
+				326E77F426E2EFAC009CAF9A /* FacilitiesSccurityApplicationModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -1009,6 +1034,7 @@
 				329B6095267FD87D008AB2DE /* Checkbox.swift in Sources */,
 				32ADEFBB26E2787A00D11201 /* KafoServiceFIrebaseManager.swift in Sources */,
 				328320BD26E13A6B0040FD60 /* LoginViewModel.swift in Sources */,
+				326E77F026E2E9C3009CAF9A /* FacilitiesSccurityApplicationFirebaseManager.swift in Sources */,
 				32699851268112DE0074E586 /* CompanyDetailsTableViewController.swift in Sources */,
 				328320E926E1A29B0040FD60 /* BodyGaurdNumberOfHoursViewController.swift in Sources */,
 				32F5E13226C59DC100C097DF /* Gridiant.swift in Sources */,
@@ -1023,6 +1049,7 @@
 				327689CA269CC10100CC61C0 /* BodyGuardGenderViewController.swift in Sources */,
 				3277D2042677BDCB00F84C30 /* ViewController.swift in Sources */,
 				32DDC4F9269C79BB00969823 /* ListOfGuardsTableViewCell.swift in Sources */,
+				326E77EB26E2E993009CAF9A /* FacilitiesSccurityApplicationViewModel.swift in Sources */,
 				326998332680CD9B0074E586 /* PersonalBodyguardTableViewController.swift in Sources */,
 				3276299926C49D1100F0AC4F /* SecondViewController.swift in Sources */,
 				328A56522699EA5200BFD9C2 /* ServicesTableViewController.swift in Sources */,
@@ -1033,6 +1060,7 @@
 				32ADEFC526E27C2800D11201 /* KafoServiceViewModel.swift in Sources */,
 				3277D2002677BDCA00F84C30 /* AppDelegate.swift in Sources */,
 				327BE18F26DD7E0500F46FCB /* SignupFirebaseManager.swift in Sources */,
+				326E77F526E2EFAC009CAF9A /* FacilitiesSccurityApplicationModel.swift in Sources */,
 				326A368D267EA6DD00B87D37 /* SignUpTableViewController.swift in Sources */,
 				3277D2022677BDCB00F84C30 /* SceneDelegate.swift in Sources */,
 				328CEA6826D7E3E900F2C1BA /* User.swift in Sources */,

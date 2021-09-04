@@ -138,7 +138,7 @@ class NumberOfHoursViewController: UIViewController {
     }
     
     @IBAction func checkoutBtnDidTapped(_ sender: Any) {
-        kafoServiceViewModel.update(gender: gender, and: numberOfDaysTextField.text!, numberOfBodyGuard: numberOfHoursTextField.text!, serviceStartDate: serviceStartDateTextField.text!)
+//        kafoServiceViewModel.update(gender: gender, and: numberOfDaysTextField.text!, numberOfBodyGuard: numberOfHoursTextField.text!, serviceStartDate: serviceStartDateTextField.text!,)
         
         
         //Here we check user's credentials input - if it's correct we call login()

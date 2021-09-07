@@ -41,11 +41,17 @@ class BodyGaurdNumberOfHoursViewController: UIViewController ,UITextFieldDelegat
         
         case .Correct:
             listOfBodyGuardsViewModel.setOrder()
+            navigateToServiceViewController()
+            
         case .Incorrect:
             return
         }
     }
-    
+    func navigateToServiceViewController() {
+        let servicesViewStoryboard = UIStoryboard.init(name: "ServicesView", bundle: nil)
+        let servicesViewController = servicesViewStoryboard.instantiateViewController(withIdentifier: "ServicesTableViewController") as! ServicesTableViewController
+        self.navigationController?.pushViewController(servicesViewController, animated: true)
+    }
     func setGradientBackground() {
         let colorTop =  UIColor(red: 0.0/255.0, green: 0.0/255.0, blue: 55.0/255.0, alpha: 1.0).cgColor
         let colorBottom = UIColor(red: 0.0/255.0, green: 140.0/255.0, blue:255.0/255.0, alpha: 1.0).cgColor

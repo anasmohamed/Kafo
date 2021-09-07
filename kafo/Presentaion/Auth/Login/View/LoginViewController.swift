@@ -17,7 +17,7 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var newUserBtn: UIButton!
     
     var loginViewModel = LoginViewModel()
-    
+    var incomeUser = User()
     
     var user : User?
     override func viewDidLoad() {
@@ -31,13 +31,24 @@ class LoginViewController: UIViewController {
         addLeftImageTo(txtField: passwordTextField, andImage: passwordImage!)
         bindData()
         setDelegates()
-//        handeIsUserLogin()
+        handeIsUserLogin()
         login()
+        getUserData()
 //        self.tabBarController?.tabBar.isHidden = true
 //        self.navigationItem.setHidesBackButton(true, animated: true)
 //        let tap = UITapGestureRecognizer(target: self, action: #selector(self.handleTap(_:)))
 //        createAccountStackView.addGestureRecognizer(tap)
         // Do any additional setup after loading the view.
+    }
+    func getUserData()  {
+        
+        user?.email = UserDefaults.standard.string(forKey: "email") ?? ""
+        user?.firstName = UserDefaults.standard.string(forKey: "firstName") ?? ""
+        user?.lastName =  UserDefaults.standard.string(forKey: "lastName") ?? ""
+        user?.gender = UserDefaults.standard.string(forKey: "gender") ?? ""
+        user?.mobileNumber = UserDefaults.standard.string(forKey: "mobileNumber") ?? ""
+        user?.userType = UserDefaults.standard.string(forKey: "userType") ?? ""
+
     }
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -130,8 +141,10 @@ class LoginViewController: UIViewController {
             UserDefaults.standard.set(user.lastName, forKey: "lastName")
             UserDefaults.standard.set(user.gender, forKey: "gender")
             UserDefaults.standard.set(user.mobileNumber, forKey: "mobileNumber")
-            self.user = user
-            self.navigateToServiceViewController()
+            UserDefaults.standard.set(user.userType, forKey: "userType")
+
+//            self.user = user
+//            self.navigateToServiceViewController()
 
         }
 

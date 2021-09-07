@@ -136,7 +136,11 @@ class NumberOfHoursViewController: UIViewController {
         
         self.view.layer.insertSublayer(gradientLayer, at:0)
     }
-    
+    func navigateToServiceViewController() {
+        let servicesViewStoryboard = UIStoryboard.init(name: "ServicesView", bundle: nil)
+        let servicesViewController = servicesViewStoryboard.instantiateViewController(withIdentifier: "ServicesTableViewController") as! ServicesTableViewController
+        self.navigationController?.pushViewController(servicesViewController, animated: true)
+    }
     @IBAction func checkoutBtnDidTapped(_ sender: Any) {
 //        kafoServiceViewModel.update(gender: gender, and: numberOfDaysTextField.text!, numberOfBodyGuard: numberOfHoursTextField.text!, serviceStartDate: serviceStartDateTextField.text!,)
         
@@ -148,6 +152,7 @@ class NumberOfHoursViewController: UIViewController {
             //                    LoadingIndicatorView.show()
             
             kafoServiceViewModel.setOrder()
+            navigateToServiceViewController()
         case .Incorrect:
             return
         }

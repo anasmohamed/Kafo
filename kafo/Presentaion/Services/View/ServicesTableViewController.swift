@@ -29,11 +29,21 @@ class ServicesTableViewController: UITableViewController {
         
         let otherCompaniesGesture = UITapGestureRecognizer(target: self, action:  #selector(self.otherCompaniesServiceClickAction(sender:)))
         self.compniesServiceView.addGestureRecognizer(otherCompaniesGesture)
+        getUserData()
+        
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
+    }
+    func getUserData()  {
+    
+        user?.email = UserDefaults.standard.string(forKey: "email") ?? ""
+        user?.firstName = UserDefaults.standard.string(forKey: "firstName") ?? ""
+        user?.lastName =  UserDefaults.standard.string(forKey: "lastName") ?? ""
+        user?.gender = UserDefaults.standard.string(forKey: "gender") ?? ""
+        user?.mobileNumber = UserDefaults.standard.string(forKey: "mobileNumber") ?? ""
     }
     @objc func clickAction(sender : UITapGestureRecognizer) {
         // Do what you want
@@ -70,7 +80,12 @@ class ServicesTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 3
+        if user?.userType == "client"
+        {
+            return 3
+
+        }
+        return 0
     }
 
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {

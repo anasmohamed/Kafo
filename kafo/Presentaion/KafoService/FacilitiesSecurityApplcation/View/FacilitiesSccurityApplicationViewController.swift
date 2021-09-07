@@ -26,7 +26,7 @@ class FacilitiesSccurityApplicationViewController: UITableViewController {
     
     let datePicker = UIDatePicker()
     var date : Date? = nil
-    
+    var user : User?
     var facilitiesSccurityApplicationViewModel =  FacilitiesSccurityApplicationViewModel()
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -152,7 +152,14 @@ class FacilitiesSccurityApplicationViewController: UITableViewController {
         facilityNameTextField.delegate = self
     }
     
+    func getUserData()  {
     
+        user?.email = UserDefaults.standard.string(forKey: "email") ?? ""
+        user?.firstName = UserDefaults.standard.string(forKey: "firstName") ?? ""
+        user?.lastName =  UserDefaults.standard.string(forKey: "lastName") ?? ""
+        user?.gender = UserDefaults.standard.string(forKey: "gender") ?? ""
+        user?.mobileNumber = UserDefaults.standard.string(forKey: "mobileNumber") ?? ""
+    }
     @IBAction func doneBtnDidTapped(_ sender: Any) {
         facilitiesSccurityApplicationViewModel.update(facilityName: facilityNameTextField.text!, city: cityTextField.text!, street: streetTextField.text!, buildingNumber: buildingNumberTextField.text!, responsiblePerson:responsiblePersonTextField.text!, mobile: mobileTextField.text!, facilityMobileNumber: facilityNameTextField.text!, fax: buildingNumberTextField.text!, numberOfBodyGuard: numberOfBodyguarsTextField.text!, startDate: startDateTextField.text!, numberOfDays: numberOfDaysTextField.text!, numberOfShift: numberOfShiftTextField.text!)
         
@@ -164,9 +171,16 @@ class FacilitiesSccurityApplicationViewController: UITableViewController {
             //                    LoadingIndicatorView.show()
             
             facilitiesSccurityApplicationViewModel.setOrder()
+           
+            navigateToServiceViewController()
         case .Incorrect:
             return
         }
+    }
+    func navigateToServiceViewController() {
+        let servicesViewStoryboard = UIStoryboard.init(name: "ServicesView", bundle: nil)
+        let servicesViewController = servicesViewStoryboard.instantiateViewController(withIdentifier: "ServicesTableViewController") as! ServicesTableViewController
+        self.navigationController?.pushViewController(servicesViewController, animated: true)
     }
     func highlightTextField(_ textField: UITextField) {
         textField.resignFirstResponder()

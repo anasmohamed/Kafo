@@ -44,6 +44,7 @@ class NumberOfHoursViewController: UIViewController {
         checkoutBtn.layer.cornerRadius = 20
         bindData()
         setDelegates()
+        createDatePicker()
         // Do any additional setup after loading the view.
     }
     override func viewWillAppear(_ animated: Bool) {
@@ -142,9 +143,9 @@ class NumberOfHoursViewController: UIViewController {
         self.navigationController?.pushViewController(servicesViewController, animated: true)
     }
     @IBAction func checkoutBtnDidTapped(_ sender: Any) {
-//        kafoServiceViewModel.update(gender: gender, and: numberOfDaysTextField.text!, numberOfBodyGuard: numberOfHoursTextField.text!, serviceStartDate: serviceStartDateTextField.text!,)
+       
         
-        
+        kafoServiceViewModel.update(gender: gender, and: numberOfDaysTextField.text!, numberOfBodyGuard: numberOfHoursTextField.text!, serviceStartDate: serviceStartDateTextField.text!, clientName: UserDefaults.standard.string(forKey: "firstName")! + " " + UserDefaults.standard.string(forKey: "lastName")!, clientEmail: UserDefaults.standard.string(forKey: "email")!, clientMobileNumber: UserDefaults.standard.string(forKey: "mobileNumber")!)
         //Here we check user's credentials input - if it's correct we call login()
         switch kafoServiceViewModel.credentialsInput() {
         

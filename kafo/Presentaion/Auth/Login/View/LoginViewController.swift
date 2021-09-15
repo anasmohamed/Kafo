@@ -32,7 +32,6 @@ class LoginViewController: UIViewController {
         bindData()
         setDelegates()
         handeIsUserLogin()
-        login()
         getUserData()
 //        self.tabBarController?.tabBar.isHidden = true
 //        self.navigationItem.setHidesBackButton(true, animated: true)
@@ -106,9 +105,12 @@ class LoginViewController: UIViewController {
     }
     func handeIsUserLogin()
     {
-        if !(UserDefaults.standard.string(forKey: "email")?.isEmpty ?? true){
-            navigateToServiceViewController()
+        guard let _ = UserDefaults.standard.string(forKey: "email") else {
+            return
         }
+       
+            navigateToServiceViewController()
+        
     }
   
     
@@ -144,7 +146,7 @@ class LoginViewController: UIViewController {
             UserDefaults.standard.set(user.userType, forKey: "userType")
 
 //            self.user = user
-//            self.navigateToServiceViewController()
+            self.navigateToServiceViewController()
 
         }
 

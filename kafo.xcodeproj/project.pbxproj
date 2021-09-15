@@ -72,6 +72,8 @@
 		32ADEFC026E27B2E00D11201 /* KafoBodyGuardOrder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32ADEFBF26E27B2E00D11201 /* KafoBodyGuardOrder.swift */; };
 		32ADEFC526E27C2800D11201 /* KafoServiceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32ADEFC426E27C2800D11201 /* KafoServiceViewModel.swift */; };
 		32B25E59267C184500ED2082 /* CustomerOrWorkerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B25E58267C184500ED2082 /* CustomerOrWorkerViewController.swift */; };
+		32C09F9026E9045200F63112 /* MyOrderView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32C09F8F26E9045200F63112 /* MyOrderView.storyboard */; };
+		32C09F9626E9073400F63112 /* MyOrderTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32C09F9526E9073400F63112 /* MyOrderTableViewController.swift */; };
 		32DDC4F2269C78F200969823 /* ListOfBodyGuards.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32DDC4F1269C78F200969823 /* ListOfBodyGuards.storyboard */; };
 		32DDC4F9269C79BB00969823 /* ListOfGuardsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32DDC4F7269C79BB00969823 /* ListOfGuardsTableViewCell.swift */; };
 		32DDC4FF269C7CDE00969823 /* ListOfBodyGuardsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32DDC4FE269C7CDE00969823 /* ListOfBodyGuardsViewController.swift */; };
@@ -182,6 +184,8 @@
 		32ADEFBF26E27B2E00D11201 /* KafoBodyGuardOrder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KafoBodyGuardOrder.swift; sourceTree = "<group>"; };
 		32ADEFC426E27C2800D11201 /* KafoServiceViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KafoServiceViewModel.swift; sourceTree = "<group>"; };
 		32B25E58267C184500ED2082 /* CustomerOrWorkerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerOrWorkerViewController.swift; sourceTree = "<group>"; };
+		32C09F8F26E9045200F63112 /* MyOrderView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MyOrderView.storyboard; sourceTree = "<group>"; };
+		32C09F9526E9073400F63112 /* MyOrderTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyOrderTableViewController.swift; sourceTree = "<group>"; };
 		32DDC4F1269C78F200969823 /* ListOfBodyGuards.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ListOfBodyGuards.storyboard; sourceTree = "<group>"; };
 		32DDC4F7269C79BB00969823 /* ListOfGuardsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListOfGuardsTableViewCell.swift; sourceTree = "<group>"; };
 		32DDC4FE269C7CDE00969823 /* ListOfBodyGuardsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListOfBodyGuardsViewController.swift; sourceTree = "<group>"; };
@@ -476,6 +480,7 @@
 		3277D2322677BEE400F84C30 /* Presentaion */ = {
 			isa = PBXGroup;
 			children = (
+				32C09F8226E9040200F63112 /* MyOrders */,
 				3251E6EC26C7EFBD00F1B95B /* OtherCompanies */,
 				327A636726C2F2C5003B3EDE /* Profile */,
 				3277460C26C06F0100B7A9C8 /* SideMenu */,
@@ -718,6 +723,47 @@
 			path = FirebaseManager;
 			sourceTree = "<group>";
 		};
+		32C09F8226E9040200F63112 /* MyOrders */ = {
+			isa = PBXGroup;
+			children = (
+				32C09F8E26E9042A00F63112 /* FirebaseManager */,
+				32C09F8D26E9042200F63112 /* viewModel */,
+				32C09F8626E9040F00F63112 /* View */,
+			);
+			path = MyOrders;
+			sourceTree = "<group>";
+		};
+		32C09F8626E9040F00F63112 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				32C09F9426E9070F00F63112 /* cell */,
+				32C09F8F26E9045200F63112 /* MyOrderView.storyboard */,
+				32C09F9526E9073400F63112 /* MyOrderTableViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		32C09F8D26E9042200F63112 /* viewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = viewModel;
+			sourceTree = "<group>";
+		};
+		32C09F8E26E9042A00F63112 /* FirebaseManager */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = FirebaseManager;
+			sourceTree = "<group>";
+		};
+		32C09F9426E9070F00F63112 /* cell */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = cell;
+			sourceTree = "<group>";
+		};
 		32DDC4EF269C765700969823 /* ListOfBodyGuards */ = {
 			isa = PBXGroup;
 			children = (
@@ -899,6 +945,7 @@
 				32699850268112DE0074E586 /* CompanyDetailsView.storyboard in Resources */,
 				3251E6EF26C7EFE800F1B95B /* OtherCompaniesView.storyboard in Resources */,
 				323B675226C73C20005CA819 /* NumberOfHoursView.storyboard in Resources */,
+				32C09F9026E9045200F63112 /* MyOrderView.storyboard in Resources */,
 				323B674726C7363A005CA819 /* KafoServiceView.storyboard in Resources */,
 				328CEA6126D7D7EE00F2C1BA /* GoogleService-Info.plist in Resources */,
 				3277D2562677C08F00F84C30 /* LoginView.storyboard in Resources */,
@@ -1040,6 +1087,7 @@
 				32F5E13226C59DC100C097DF /* Gridiant.swift in Sources */,
 				3277D24D2677C05C00F84C30 /* LoginVIewController + TextFiledDelegate.swift in Sources */,
 				3251E6FB26C7F0DD00F1B95B /* OtherCompaniesTableViewCell.swift in Sources */,
+				32C09F9626E9073400F63112 /* MyOrderTableViewController.swift in Sources */,
 				327BE18826DD7D8000F46FCB /* SignupViewModel.swift in Sources */,
 				32DDC4FF269C7CDE00969823 /* ListOfBodyGuardsViewController.swift in Sources */,
 				32ADEFC026E27B2E00D11201 /* KafoBodyGuardOrder.swift in Sources */,

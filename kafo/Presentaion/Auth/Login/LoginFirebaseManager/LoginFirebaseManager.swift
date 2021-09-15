@@ -31,7 +31,7 @@ class LoginManager {
                     let dateOfBirth = userDict["dateOfBirth"] as! String
                     let gender = userDict["gender"] as! String
                     let mobileNumbr = userDict["mobileNumbr"] as! String
-                    
+                    let userType = userDict["userType"] as! String
                     
                     
                     user.email = email
@@ -40,6 +40,7 @@ class LoginManager {
                     user.dateOfBirth = dateOfBirth
                     user.gender = gender
                     user.mobileNumber = mobileNumbr
+                    user.userType = userType
                     completionHandler(user,nil)
 
                 })

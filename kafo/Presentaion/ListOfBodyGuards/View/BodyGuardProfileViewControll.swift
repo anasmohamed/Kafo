@@ -57,9 +57,9 @@ class BodyGuardProfileControll: UIViewController {
         bodyGuardProfileViewControll.bodyGuardEmail = email
         bodyGuardProfileViewControll.bodyGuardLocation = location
         bodyGuardProfileViewControll.bodyGuardMobileNumber = mobile
-        bodyGuardProfileViewControll.clientEmail = user!.email
-        bodyGuardProfileViewControll.clientName = user!.firstName  + " " + user!.lastName
-        bodyGuardProfileViewControll.clientMobileNumber = user!.mobileNumber
+        bodyGuardProfileViewControll.clientEmail = UserDefaults.standard.string(forKey: "email")!
+        bodyGuardProfileViewControll.clientName = UserDefaults.standard.string(forKey: "firstName")!  + " " + UserDefaults.standard.string(forKey: "lastName")!
+        bodyGuardProfileViewControll.clientMobileNumber = UserDefaults.standard.string(forKey: "mobileNumber")!
         self.navigationController?.pushViewController(bodyGuardProfileViewControll, animated: true)
     }
     

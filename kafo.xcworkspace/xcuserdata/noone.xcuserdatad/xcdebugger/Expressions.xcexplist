@@ -6,7 +6,7 @@
          contextName = "SignUpTableViewController.registerBtnDidTapped(_:):SignUpTableViewController.swift">
          <PersistentStrings>
             <PersistentString
-               value = "emailTextFiled.text!">
+               value = "passwordTextField.text!">
             </PersistentString>
             <PersistentString
                value = "lastNameTextField.text!">
@@ -15,10 +15,18 @@
                value = "firstNameTextField.text!">
             </PersistentString>
             <PersistentString
-               value = "mobileNameTextField.text!">
+               value = "emailTextFiled.text!">
             </PersistentString>
             <PersistentString
-               value = "passwordTextField.text!">
+               value = "mobileNameTextField.text!">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "ServicesTableViewController.tableView(_:numberOfRowsInSection:):ServicesTableViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "UserDefaults.standard.string(forKey: &quot;userType&quot;)">
             </PersistentString>
          </PersistentStrings>
       </ContextState>

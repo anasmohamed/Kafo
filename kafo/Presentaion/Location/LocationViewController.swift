@@ -16,7 +16,7 @@ class LocationViewController: UIViewController {
     @IBOutlet weak var cityDropDownMenu: SwiftyMenu!
     
     @IBOutlet weak var countryDropDownMenu: SwiftyMenu!
-    private let dropDownOptionsDataSource = ["الدمام","الرياض"]
+    private let dropDownOptionsDataSource = ["الرياض"]
     private let countryDropDownOptionsDataSource = ["الضفة","الاندلس","الامل","العقيق"]
     
     var user : User?

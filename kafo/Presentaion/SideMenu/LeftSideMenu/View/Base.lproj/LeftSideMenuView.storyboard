@@ -228,6 +228,58 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="51" id="xua-dQ-pu9" customClass="UITableViewVibrantCell" customModule="SideMenu">
+                                        <rect key="frame" x="0.0" y="377" width="414" height="51"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="xua-dQ-pu9" id="wsM-gK-UFz">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="51"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="deQ-JR-m94">
+                                                    <rect key="frame" x="20" y="5" width="374" height="40"/>
+                                                    <subviews>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Jj-AV-OfI">
+                                                            <rect key="frame" x="0.0" y="0.0" width="320" height="40"/>
+                                                            <color key="backgroundColor" red="0.12126223" green="0.71409296990000004" blue="0.96170288319999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <state key="normal" title="Signout">
+                                                                <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                            </state>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                    <real key="value" value="20"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                            </userDefinedRuntimeAttributes>
+                                                            <connections>
+                                                                <action selector="signoutBrnDidTapped:" destination="rb5-30-DdF" eventType="touchUpInside" id="vxW-wP-Ux2"/>
+                                                            </connections>
+                                                        </button>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logout" translatesAutoresizingMaskIntoConstraints="NO" id="N3z-Tl-gTK">
+                                                            <rect key="frame" x="320" y="10" width="30" height="20"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="20" id="fBz-sW-3GM"/>
+                                                                <constraint firstAttribute="width" constant="30" id="lga-Yy-xko"/>
+                                                            </constraints>
+                                                        </imageView>
+                                                    </subviews>
+                                                    <color key="backgroundColor" red="0.12126223" green="0.71409296990000004" blue="0.96170288319999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <constraints>
+                                                        <constraint firstItem="3Jj-AV-OfI" firstAttribute="top" secondItem="deQ-JR-m94" secondAttribute="top" id="0Ts-m9-lif"/>
+                                                        <constraint firstItem="3Jj-AV-OfI" firstAttribute="leading" secondItem="deQ-JR-m94" secondAttribute="leading" id="1Lm-e6-w6u"/>
+                                                        <constraint firstItem="N3z-Tl-gTK" firstAttribute="leading" secondItem="3Jj-AV-OfI" secondAttribute="trailing" id="7ju-2J-o4u"/>
+                                                        <constraint firstAttribute="bottom" secondItem="3Jj-AV-OfI" secondAttribute="bottom" id="W9f-lh-PKZ"/>
+                                                        <constraint firstAttribute="trailing" secondItem="N3z-Tl-gTK" secondAttribute="trailing" constant="24" id="kCM-PQ-l3k"/>
+                                                        <constraint firstItem="N3z-Tl-gTK" firstAttribute="centerY" secondItem="deQ-JR-m94" secondAttribute="centerY" id="uj8-KK-MUN"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="deQ-JR-m94" firstAttribute="top" secondItem="wsM-gK-UFz" secondAttribute="top" constant="5" id="8LO-cI-OFZ"/>
+                                                <constraint firstAttribute="bottom" secondItem="deQ-JR-m94" secondAttribute="bottom" constant="6" id="B4h-aN-gkb"/>
+                                                <constraint firstItem="deQ-JR-m94" firstAttribute="leading" secondItem="wsM-gK-UFz" secondAttribute="leading" constant="20" id="mxD-v7-IRE"/>
+                                                <constraint firstAttribute="trailing" secondItem="deQ-JR-m94" secondAttribute="trailing" constant="20" id="wyJ-KM-0R9"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
                                 </cells>
                             </tableViewSection>
                         </sections>
@@ -240,6 +292,7 @@
                     <connections>
                         <outlet property="connectWIthUsView" destination="cC0-yq-ccO" id="VCT-ex-qYt"/>
                         <outlet property="homePageView" destination="uoj-eg-0hc" id="He1-Up-azp"/>
+                        <outlet property="logoutView" destination="deQ-JR-m94" id="pmf-OI-V6u"/>
                         <outlet property="ordersView" destination="cql-eM-LSB" id="fUE-IY-1oS"/>
                         <outlet property="profileView" destination="kBa-M7-pxO" id="FZJ-tM-lT5"/>
                     </connections>
@@ -273,6 +326,7 @@
     <resources>
         <image name="help" width="32" height="32"/>
         <image name="home" width="32" height="32"/>
+        <image name="logout" width="32" height="32"/>
         <image name="menu (4)" width="32" height="32"/>
         <image name="user" width="32" height="32"/>
         <systemColor name="systemBackgroundColor">

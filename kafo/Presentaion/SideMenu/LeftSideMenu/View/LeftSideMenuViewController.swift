@@ -7,9 +7,10 @@
 
 import UIKit
 import SideMenu
-
+import FirebaseAuth
 class LeftSideMenuViewController: UITableViewController {
 
+    @IBOutlet weak var logoutView: UIView!
     @IBOutlet weak var connectWIthUsView: UIView!
     @IBOutlet weak var profileView: UIView!
     @IBOutlet weak var ordersView: UIView!
@@ -20,6 +21,7 @@ class LeftSideMenuViewController: UITableViewController {
         profileView.layer.cornerRadius = 15
         ordersView.layer.cornerRadius = 15
         homePageView.layer.cornerRadius = 15
+        logoutView.layer.cornerRadius = 15
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -33,6 +35,12 @@ class LeftSideMenuViewController: UITableViewController {
 //        servicesViewController.modalPresentationStyle = .fullScreen
         self.navigationController?.pushViewController(servicesViewController, animated: true)
     }
+    func navigateToLoginViewController() {
+        let servicesViewStoryboard = UIStoryboard.init(name: "LoginView", bundle: nil)
+        let servicesViewController = servicesViewStoryboard.instantiateViewController(withIdentifier: "LoginViewController")
+        servicesViewController.modalPresentationStyle = .fullScreen
+        self.navigationController?.present(servicesViewController, animated: true)
+    }
     @IBAction func profileBtnDidTapped(_ sender: Any) {
         let profileViewStoryboard = UIStoryboard(name: "ProfileView", bundle: nil)
         let profileViewController = profileViewStoryboard.instantiateViewController(identifier: "ProfileTableViewController") as! ProfileTableViewController
@@ -43,6 +51,18 @@ class LeftSideMenuViewController: UITableViewController {
     }
     
     
+    @IBAction func signoutBrnDidTapped(_ sender: Any) {
+        try! Auth.auth().signOut()
+        UserDefaults.standard.removeObject(forKey: "email")
+        UserDefaults.standard.removeObject (forKey: "firstName")
+        UserDefaults.standard.removeObject(forKey: "lastName")
+        UserDefaults.standard.removeObject(forKey: "gender")
+        UserDefaults.standard.removeObject(forKey: "mobileNumber")
+        UserDefaults.standard.removeObject(forKey: "userType")
+        
+        navigateToLoginViewController()
+
+    }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)

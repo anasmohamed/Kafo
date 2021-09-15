@@ -80,12 +80,16 @@ class ServicesTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        if user?.userType == "client"
-        {
+      
+        if UserDefaults.standard.string(forKey: "userType") == "client"{
             return 3
 
+        }else{
+            return 0
+
         }
-        return 0
+        
+       
     }
 
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {

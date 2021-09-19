@@ -10,8 +10,8 @@ import FirebaseAuth
 import FirebaseDatabase
 class LoginManager {
     func loginWithCredentials(email:String,password:String, completionHandler: @escaping (User?,Error?) -> Void) {
-        var userRef = Database.database().reference(withPath: "Users")
-        Auth.auth().signIn(withEmail: "aew@gmail.com", password: "qwe123") { [weak self] authResult, error in
+        let userRef = Database.database().reference(withPath: "Users")
+        Auth.auth().signIn(withEmail: email, password: password) { [weak self] authResult, error in
             if let error = error as? NSError {
                 completionHandler(nil,error)
                 
@@ -32,7 +32,7 @@ class LoginManager {
                     let gender = userDict["gender"] as! String
                     let mobileNumbr = userDict["mobileNumbr"] as! String
                     let userType = userDict["userType"] as! String
-                    
+                    let userId = userDict["userId"] as! String
                     
                     user.email = email
                     user.firstName = firstName
@@ -41,6 +41,7 @@ class LoginManager {
                     user.gender = gender
                     user.mobileNumber = mobileNumbr
                     user.userType = userType
+                    user.token = userId
                     completionHandler(user,nil)
 
                 })

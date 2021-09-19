@@ -16,4 +16,9 @@ class Order {
     var bodyGuardMobileNumber = ""
     var clientMobileNumber = ""
     var clientEmail = ""
+    var clientToken = ""
+    var bodyGuardToken = ""
+    var orderDate = ""
+    var orderTime = ""
+    
 }

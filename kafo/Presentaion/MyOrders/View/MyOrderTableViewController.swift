@@ -7,39 +7,54 @@
 
 import UIKit
 
-class MyOrderTableViewController: UITableViewController {
-
+class MyOrderTableViewController: UIViewController,UITableViewDataSource,UITableViewDelegate{
+    let orderViewModel  = OrdersViewModel()
+    
+    @IBOutlet weak var ordersTableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        UserDefaults.standard.string(forKey: "userId")
         // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
+        // self.clearsSelectionOnViewWillAppear = false/
+        ordersTableView.delegate = self
+        ordersTableView.dataSource = self
+        setupTableView()
+        orderViewModel.getListOfBodyGuards(id :UserDefaults.standard.string(forKey: "userId") ?? "" )
+        bindData()
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
-
+    func bindData() {
+        orderViewModel.getOrderSuccess.bind{
+            orders in
+            self.ordersTableView.reloadData()
+        }
+       }
+   
+    func setupTableView() {
+        ordersTableView.register(UINib(nibName: "OrderTableViewCell", bundle: nil), forCellReuseIdentifier:"OrderTableViewCell" )
+    }
     // MARK: - Table view data source
 
-    override func numberOfSections(in tableView: UITableView) -> Int {
+     func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
 
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return orderViewModel.numberOfItems
     }
 
-    /*
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+    
+     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "OrderTableViewCell", for: indexPath) as! OrderTableViewCell
 
-        // Configure the cell...
+        cell.item = orderViewModel.getData(index: indexPath.row)
 
         return cell
     }
-    */
+    
 
     /*
     // Override to support conditional editing of the table view.

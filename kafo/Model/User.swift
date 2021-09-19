@@ -18,4 +18,5 @@ class User {
     var location = ""
     var city = ""
     var country = ""
+    var token = ""
 }

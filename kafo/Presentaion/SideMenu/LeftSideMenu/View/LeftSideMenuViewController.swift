@@ -29,6 +29,11 @@ class LeftSideMenuViewController: UITableViewController {
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
         
     }
+    
+    @IBAction func ordersBtnDidTapped(_ sender: Any) {
+        navigateToOrdersViewController()
+    }
+    
     func navigateToServiceViewController() {
         let servicesViewStoryboard = UIStoryboard.init(name: "ServicesView", bundle: nil)
         let servicesViewController = servicesViewStoryboard.instantiateViewController(withIdentifier: "ServicesTableViewController")
@@ -41,6 +46,13 @@ class LeftSideMenuViewController: UITableViewController {
         servicesViewController.modalPresentationStyle = .fullScreen
         self.navigationController?.present(servicesViewController, animated: true)
     }
+    func navigateToOrdersViewController() {
+        let servicesViewStoryboard = UIStoryboard.init(name: "MyOrderView", bundle: nil)
+        let servicesViewController = servicesViewStoryboard.instantiateViewController(withIdentifier: "MyOrderTableViewController")
+        servicesViewController.modalPresentationStyle = .fullScreen
+        self.navigationController?.present(servicesViewController, animated: true)
+    }
+    
     @IBAction func profileBtnDidTapped(_ sender: Any) {
         let profileViewStoryboard = UIStoryboard(name: "ProfileView", bundle: nil)
         let profileViewController = profileViewStoryboard.instantiateViewController(identifier: "ProfileTableViewController") as! ProfileTableViewController
@@ -59,7 +71,8 @@ class LeftSideMenuViewController: UITableViewController {
         UserDefaults.standard.removeObject(forKey: "gender")
         UserDefaults.standard.removeObject(forKey: "mobileNumber")
         UserDefaults.standard.removeObject(forKey: "userType")
-        
+        UserDefaults.standard.removeObject(forKey: "userId")
+
         navigateToLoginViewController()
 
     }

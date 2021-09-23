@@ -14,6 +14,7 @@ class MyOrderTableViewController: UIViewController,UITableViewDataSource,UITable
     override func viewDidLoad() {
         super.viewDidLoad()
         UserDefaults.standard.string(forKey: "userId")
+        print(UserDefaults.standard.string(forKey: "userId"))
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false/
         ordersTableView.delegate = self
@@ -54,7 +55,9 @@ class MyOrderTableViewController: UIViewController,UITableViewDataSource,UITable
 
         return cell
     }
-    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 100
+    }
 
     /*
     // Override to support conditional editing of the table view.

@@ -56,7 +56,7 @@
             <connections>
                 <outlet property="dateLbl" destination="wIs-BS-vBB" id="DE4-Pa-Jl6"/>
                 <outlet property="moneyLbl" destination="Xcz-ZM-4R8" id="A3u-Sd-AOO"/>
-                <outlet property="numberOfHoursLblb" destination="h0F-rU-Yjz" id="pID-Iz-Duw"/>
+                <outlet property="numberOfHoursLbl" destination="h0F-rU-Yjz" id="gYI-Se-7ea"/>
                 <outlet property="orderTimeLbl" destination="YJg-nS-Y9L" id="rql-vW-1hN"/>
             </connections>
             <point key="canvasLocation" x="142.02898550724638" y="100.11160714285714"/>

@@ -601,7 +601,6 @@
 			isa = PBXGroup;
 			children = (
 				328320C826E159400040FD60 /* ListOfBodyGuardsFirabaseManager.swift */,
-				323B674126C7355F005CA819 /* BodyguardGenderView.storyboard */,
 			);
 			path = FirebaseManager;
 			sourceTree = "<group>";
@@ -791,6 +790,7 @@
 			children = (
 				32DDC4F6269C798100969823 /* Cell */,
 				32DDC4F1269C78F200969823 /* ListOfBodyGuards.storyboard */,
+				323B674126C7355F005CA819 /* BodyguardGenderView.storyboard */,
 				32DDC4FE269C7CDE00969823 /* ListOfBodyGuardsViewController.swift */,
 				328320D826E175890040FD60 /* BodyGuardProfileViewControll.swift */,
 				328320E826E1A29B0040FD60 /* BodyGaurdNumberOfHoursViewController.swift */,
@@ -1418,8 +1418,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = FL6L6BVPSN;
+				DEVELOPMENT_TEAM = P87F87R44Y;
 				INFOPLIST_FILE = kafo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1427,6 +1428,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = anas.kafo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -1438,8 +1440,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = FL6L6BVPSN;
+				DEVELOPMENT_TEAM = P87F87R44Y;
 				INFOPLIST_FILE = kafo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1447,6 +1450,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = anas.kafo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

@@ -14,7 +14,6 @@ class MyOrderTableViewController: UIViewController,UITableViewDataSource,UITable
     override func viewDidLoad() {
         super.viewDidLoad()
         UserDefaults.standard.string(forKey: "userId")
-        print(UserDefaults.standard.string(forKey: "userId"))
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false/
         ordersTableView.delegate = self

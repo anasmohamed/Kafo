@@ -38,7 +38,14 @@ class ListOfBodyGuardsFirebaseManager {
     func sendUserData(order:Order )  {
         // 1
         let rootRef = Database.database()
-        
+        let date = Date()
+        let formatter = DateFormatter()
+        formatter.dateFormat = "dd.MM.yyyy"
+        let result = formatter.string(from: date)
+        let calendar = Calendar.current
+        let hour = calendar.component(.hour, from: date)
+        let minutes = calendar.component(.minute, from: date)
+        let time = String(hour) + " " + String(minutes)
         // 2
         let childRef = rootRef.reference(withPath: "ImmdiateOrder")
         let orderId = childRef.childByAutoId().key
@@ -53,6 +60,9 @@ class ListOfBodyGuardsFirebaseManager {
             "clientName":order.clientName,
             "clientEmail":order.clientEmail,
             "clientMobileNumber":order.clientMobileNumber,
+            "numberOfHours":order.numberOfHours,
+            "orderDate":result,
+            "orderTime":time
 //            "city": user.city,
 //            "country":user.country,
 //            "mobileNumbr":user.mobileNumber

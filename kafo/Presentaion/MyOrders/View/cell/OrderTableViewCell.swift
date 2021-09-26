@@ -15,10 +15,10 @@ class OrderTableViewCell: UITableViewCell {
     @IBOutlet weak var orderTimeLbl: UILabel!
     var item = Order(){
           didSet{
-            moneyLbl.text = item.totalMoney
-            numberOfHoursLbl.text = item.numberOfHours
-            dateLbl.text = item.orderDate
-            orderTimeLbl.text = item.orderTime
+            moneyLbl.text = " \(item.totalMoney)المبلغ الكلى"
+            numberOfHoursLbl.text = "عدد الساعات \(item.numberOfHours)"
+            dateLbl.text = "تاريخ الطلب \(item.orderDate)"
+            orderTimeLbl.text = "وقت الطلب \(item.orderTime)"
             
           }
       }

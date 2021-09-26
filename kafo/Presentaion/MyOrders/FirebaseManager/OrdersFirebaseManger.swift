@@ -19,14 +19,17 @@ class OrdersFirebaseManger {
             let order = Order()
             var orderTotalMoney = ""
             var orderDate = ""
-//            var orderTime = ""
-//            var numberOfHours = ""
+            var orderTime = ""
+            var numberOfHours = ""
             for child in snapshot.children {
                 let snap = child as! DataSnapshot
                 let userDict = snap.value as! [String: Any]
                 print(userDict["totalMoney"])
                 if userDict["clientId"] as! String == id{
                     orderTotalMoney = userDict["totalMoney"] as! String
+                    orderDate = userDict["orderDate"] as! String
+                    orderTime = userDict["orderTime"] as! String
+                    numberOfHours = userDict["numberOfHours"] as! String
 ////                    orderDate = userDict["Date"] as! String
 ////                    orderTime = userDict["time"] as! String
 ////                    numberOfHours = userDict["dateOfBirth"] as! String
@@ -38,7 +41,7 @@ class OrdersFirebaseManger {
 ////                    numberOfHours = userDict["dateOfBirth"] as! String
 //                    
                 }
-                order.numberOfHours = ""
+                order.numberOfHours = numberOfHours
                 order.totalMoney = orderTotalMoney
                 order.orderDate = ""
                 order.orderTime = ""

@@ -22,7 +22,7 @@ class BodyGuardProfileControll: UIViewController {
     var clientName = ""
     var clientEmail = ""
     var clientMobileNumber = ""
-    
+    var bodyguardId = ""
     var user : User?
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -57,6 +57,7 @@ class BodyGuardProfileControll: UIViewController {
         bodyGuardProfileViewControll.bodyGuardEmail = email
         bodyGuardProfileViewControll.bodyGuardLocation = location
         bodyGuardProfileViewControll.bodyGuardMobileNumber = mobile
+        bodyGuardProfileViewControll.bodyguardId = bodyguardId
         bodyGuardProfileViewControll.clientEmail = UserDefaults.standard.string(forKey: "email")!
         bodyGuardProfileViewControll.clientName = UserDefaults.standard.string(forKey: "firstName")!  + " " + UserDefaults.standard.string(forKey: "lastName")!
         bodyGuardProfileViewControll.clientMobileNumber = UserDefaults.standard.string(forKey: "mobileNumber")!

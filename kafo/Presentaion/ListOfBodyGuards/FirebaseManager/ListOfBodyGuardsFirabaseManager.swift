@@ -28,6 +28,7 @@ class ListOfBodyGuardsFirebaseManager {
                     user.mobileNumber = placeDict["mobileNumbr"] as? String ?? ""
                     user.city = placeDict["city"] as? String ?? ""
                     user.country = placeDict["country"] as? String ?? ""
+                    user.token = placeDict["userId"] as? String ?? ""
                     users.append(user)
                 }
                 completionHandler(users)
@@ -35,7 +36,7 @@ class ListOfBodyGuardsFirebaseManager {
                }
            })
     }
-    func sendUserData(order:Order )  {
+    func sendUserData(order:Order,bodyguardId:String )  {
         // 1
         let rootRef = Database.database()
         let date = Date()
@@ -62,7 +63,9 @@ class ListOfBodyGuardsFirebaseManager {
             "clientMobileNumber":order.clientMobileNumber,
             "numberOfHours":order.numberOfHours,
             "orderDate":result,
-            "orderTime":time
+            "orderTime":time,
+            "clientId":UserDefaults.standard.string(forKey: "userId"),
+            "bodyguardId": bodyguardId
 //            "city": user.city,
 //            "country":user.country,
 //            "mobileNumbr":user.mobileNumber

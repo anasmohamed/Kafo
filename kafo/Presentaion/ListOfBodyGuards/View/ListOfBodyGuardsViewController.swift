@@ -51,6 +51,7 @@ class ListOfBodyGuardsViewController: UIViewController ,UITableViewDelegate,UITa
         bodyGuardProfileViewControll.mobile = listOfBodyGuardsViewModel.getData(index: indexPath.row).mobileNumber
         bodyGuardProfileViewControll.location = listOfBodyGuardsViewModel.getData(index: indexPath.row).city + " " + listOfBodyGuardsViewModel.getData(index: indexPath.row).country
         bodyGuardProfileViewControll.bodyGuardName = listOfBodyGuardsViewModel.getData(index: indexPath.row).firstName + " " + listOfBodyGuardsViewModel.getData(index: indexPath.row).lastName
+        bodyGuardProfileViewControll.bodyguardId = listOfBodyGuardsViewModel.getData(index: indexPath.row).token
         bodyGuardProfileViewControll.user = user
             self.navigationController?.pushViewController(bodyGuardProfileViewControll, animated: true)
         }

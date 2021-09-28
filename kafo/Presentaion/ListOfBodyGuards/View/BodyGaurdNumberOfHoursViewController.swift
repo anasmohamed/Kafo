@@ -20,6 +20,7 @@ class BodyGaurdNumberOfHoursViewController: UIViewController ,UITextFieldDelegat
     var clientName = ""
     var clientMobileNumber = ""
     var clientEmail = ""
+    var bodyguardId = ""
     var listOfBodyGuardsViewModel = ListOfBodyGuardsViewModel()
     
     override func viewDidLoad() {
@@ -36,7 +37,7 @@ class BodyGaurdNumberOfHoursViewController: UIViewController ,UITextFieldDelegat
    
     @IBAction func doneBtnDidTapped(_ sender: Any) {
         //Here we check user's credentials input - if it's correct we call login()
-        listOfBodyGuardsViewModel.update(totalMoney: totalMoneyLbl.text!, and: numberOfHoursTextField.text!, bodyGuardName: bodyGuardName, bodygauardMobileNumber: bodyGuardMobileNumber, bodyguardEmail: bodyGuardEmail, bodyguardLocation: bodyGuardLocation, clinetName:clientName , clientMobileNumber: clientMobileNumber, clientEmail: clientEmail)
+        listOfBodyGuardsViewModel.update(totalMoney: totalMoneyLbl.text!, and: numberOfHoursTextField.text!, bodyGuardName: bodyGuardName, bodygauardMobileNumber: bodyGuardMobileNumber, bodyguardEmail: bodyGuardEmail, bodyguardLocation: bodyGuardLocation, clinetName:clientName , clientMobileNumber: clientMobileNumber, clientEmail: clientEmail,bodyguardId: bodyguardId)
         switch listOfBodyGuardsViewModel.credentialsInput() {
         
         case .Correct:

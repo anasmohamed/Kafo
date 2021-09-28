@@ -28,19 +28,21 @@ class ListOfBodyGuardsViewModel{
     var bodyGuardLocation = ""
     var clientName = ""
     var clientMobileNumber = ""
+    var bodyguardId = ""
     
     
-    
-    func update(totalMoney:String,and numberOfHours:String,bodyGuardName:String,bodygauardMobileNumber:String,bodyguardEmail:String,bodyguardLocation:String,clinetName:String,clientMobileNumber:String,clientEmail:String)  {
+    func update(totalMoney:String,and numberOfHours:String,bodyGuardName:String,bodygauardMobileNumber:String,bodyguardEmail:String,bodyguardLocation:String,clinetName:String,clientMobileNumber:String,clientEmail:String,bodyguardId:String)  {
         order.numberOfHours = numberOfHours
         order.totalMoney = totalMoney
         order.bodyGaurdName = bodyGuardName
         order.clientName = clientName
         order.bodyGuardEmail = bodyGuardEmail
         order.location = bodyguardLocation
-        order.clientName = clientName
         order.clientMobileNumber = clientMobileNumber
         order.clientEmail = clientEmail
+        order.bodyGuardMobileNumber = bodyGuardMobileNumber
+        self.bodyguardId = bodyguardId
+        
     }
     var numberOfItems: Int {
         return users.count
@@ -57,7 +59,7 @@ class ListOfBodyGuardsViewModel{
         }
     }
     func setOrder()  {
-        listOfBodyGuardsFirebaseManager.sendUserData(order: order)
+        listOfBodyGuardsFirebaseManager.sendUserData(order: order, bodyguardId:bodyguardId )
     }
     func credentialsInput() -> CredentialsInputStatus {
        

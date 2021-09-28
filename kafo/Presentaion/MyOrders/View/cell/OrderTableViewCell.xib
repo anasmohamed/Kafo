@@ -16,26 +16,26 @@
                 <rect key="frame" x="0.0" y="0.0" width="334" height="183"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wIs-BS-vBB">
-                        <rect key="frame" x="282" y="15" width="42" height="21"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YJg-nS-Y9L">
+                        <rect key="frame" x="20" y="51" width="42" height="21"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YJg-nS-Y9L">
-                        <rect key="frame" x="282" y="51" width="42" height="21"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h0F-rU-Yjz">
+                        <rect key="frame" x="20" y="87" width="42" height="21"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h0F-rU-Yjz">
-                        <rect key="frame" x="282" y="87" width="42" height="21"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xcz-ZM-4R8">
+                        <rect key="frame" x="20" y="123" width="42" height="21"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xcz-ZM-4R8">
-                        <rect key="frame" x="282" y="123" width="42" height="21"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wIs-BS-vBB">
+                        <rect key="frame" x="20" y="15" width="42" height="21"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
@@ -43,12 +43,12 @@
                 </subviews>
                 <constraints>
                     <constraint firstItem="h0F-rU-Yjz" firstAttribute="top" secondItem="YJg-nS-Y9L" secondAttribute="bottom" constant="15" id="LPV-wR-x1k"/>
-                    <constraint firstItem="YJg-nS-Y9L" firstAttribute="trailing" secondItem="wIs-BS-vBB" secondAttribute="trailing" id="MkN-di-l6f"/>
                     <constraint firstItem="Xcz-ZM-4R8" firstAttribute="top" secondItem="h0F-rU-Yjz" secondAttribute="bottom" constant="15" id="QgZ-gX-vms"/>
+                    <constraint firstItem="YJg-nS-Y9L" firstAttribute="leading" secondItem="wIs-BS-vBB" secondAttribute="leading" id="Y4q-uG-w6K"/>
                     <constraint firstItem="Xcz-ZM-4R8" firstAttribute="leading" secondItem="h0F-rU-Yjz" secondAttribute="leading" id="kkH-t7-G8J"/>
                     <constraint firstItem="h0F-rU-Yjz" firstAttribute="leading" secondItem="YJg-nS-Y9L" secondAttribute="leading" id="laS-eH-3GU"/>
                     <constraint firstItem="YJg-nS-Y9L" firstAttribute="top" secondItem="wIs-BS-vBB" secondAttribute="bottom" constant="15" id="maI-nl-weZ"/>
-                    <constraint firstAttribute="trailing" secondItem="wIs-BS-vBB" secondAttribute="trailing" constant="10" id="rjg-U8-Nwq"/>
+                    <constraint firstItem="wIs-BS-vBB" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" symbolic="YES" id="pCe-vn-rpJ"/>
                     <constraint firstItem="wIs-BS-vBB" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="xLq-UM-GrO"/>
                 </constraints>
             </tableViewCellContentView>

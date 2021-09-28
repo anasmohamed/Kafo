@@ -43,8 +43,8 @@ class OrdersFirebaseManger {
                 }
                 order.numberOfHours = numberOfHours
                 order.totalMoney = orderTotalMoney
-                order.orderDate = ""
-                order.orderTime = ""
+                order.orderDate = orderDate
+                order.orderTime = orderTime
                 orders.append(order)
 
             }

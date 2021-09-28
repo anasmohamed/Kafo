@@ -50,7 +50,7 @@ class LeftSideMenuViewController: UITableViewController {
         let servicesViewStoryboard = UIStoryboard.init(name: "MyOrderView", bundle: nil)
         let servicesViewController = servicesViewStoryboard.instantiateViewController(withIdentifier: "MyOrderTableViewController")
         servicesViewController.modalPresentationStyle = .fullScreen
-        self.navigationController?.present(servicesViewController, animated: true)
+        self.navigationController?.pushViewController(servicesViewController, animated: true)
     }
     
     @IBAction func profileBtnDidTapped(_ sender: Any) {

@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -105,7 +106,13 @@
                                                         <userDefinedRuntimeAttribute type="color" keyPath="checkedBorderColor">
                                                             <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="checkmarkStyleIB">
+                                                            <integer key="value" value="1"/>
+                                                        </userDefinedRuntimeAttribute>
                                                     </userDefinedRuntimeAttributes>
+                                                    <connections>
+                                                        <action selector="onMaleCheckboxBtnDidTapped:" destination="O8g-09-yOV" eventType="valueChanged" id="0qr-8t-uwF"/>
+                                                    </connections>
                                                 </view>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8Mi-RC-Lda" customClass="Checkbox" customModule="kafo" customModuleProvider="target">
                                                     <rect key="frame" x="150" y="91" width="25" height="25"/>
@@ -122,7 +129,13 @@
                                                         <userDefinedRuntimeAttribute type="color" keyPath="checkedBorderColor">
                                                             <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="checkmarkStyleIB">
+                                                            <integer key="value" value="1"/>
+                                                        </userDefinedRuntimeAttribute>
                                                     </userDefinedRuntimeAttributes>
+                                                    <connections>
+                                                        <action selector="onFemaleCheckboxBtnDidTapped:" destination="O8g-09-yOV" eventType="valueChanged" id="MGl-np-EYd"/>
+                                                    </connections>
                                                 </view>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Male" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hyo-lD-BC9">
                                                     <rect key="frame" x="83" y="93" width="37" height="21"/>
@@ -201,6 +214,33 @@
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="80" id="vbg-Gs-lbD">
+                                        <rect key="frame" x="0.0" y="698" width="414" height="80"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="vbg-Gs-lbD" id="fZf-R7-GCT">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="80"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ouy-Jf-mw8">
+                                                    <rect key="frame" x="50" y="21" width="314" height="45"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="45" id="u1L-ly-NOM"/>
+                                                    </constraints>
+                                                    <state key="normal" title="Button"/>
+                                                    <connections>
+                                                        <action selector="saveBtnDidTapped:" destination="O8g-09-yOV" eventType="touchUpInside" id="tEQ-pB-3JU"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="ouy-Jf-mw8" firstAttribute="leading" secondItem="fZf-R7-GCT" secondAttribute="leadingMargin" constant="30" id="7gD-Te-mZx"/>
+                                                <constraint firstItem="ouy-Jf-mw8" firstAttribute="top" secondItem="fZf-R7-GCT" secondAttribute="topMargin" constant="10" id="VVp-o4-WLD"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="ouy-Jf-mw8" secondAttribute="trailing" constant="30" id="ebd-LI-vFx"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </tableViewCell>
                                 </cells>
                             </tableViewSection>
                         </sections>
@@ -219,9 +259,12 @@
                     <connections>
                         <outlet property="deteOfBirthTextField" destination="DT1-rN-JGK" id="NZE-fv-0bf"/>
                         <outlet property="emailTextFiled" destination="3Jw-ms-Sm4" id="o53-RH-Lww"/>
+                        <outlet property="femaleCheckbox" destination="8Mi-RC-Lda" id="8sM-Yr-qqa"/>
                         <outlet property="firstNameTextField" destination="7M1-ji-7HZ" id="DMF-Ey-cEe"/>
                         <outlet property="lastNameTextField" destination="3uy-uy-AjI" id="4iR-eM-39o"/>
+                        <outlet property="maleCheckbox" destination="2cd-0r-Dfc" id="hvu-B0-Ulx"/>
                         <outlet property="mobileNameTextField" destination="Dtr-yd-qiZ" id="NF2-KY-Shj"/>
+                        <outlet property="saveBtn" destination="ouy-Jf-mw8" id="PA9-Un-22s"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VU9-ge-yS5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

@@ -17,7 +17,7 @@ class LeftSideMenuViewController: UITableViewController {
     @IBOutlet weak var homePageView: UIView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        connectWIthUsView.layer.cornerRadius = 15
+//        connectWIthUsView.layer.cornerRadius = 15
         profileView.layer.cornerRadius = 15
         ordersView.layer.cornerRadius = 15
         homePageView.layer.cornerRadius = 15

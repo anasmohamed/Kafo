@@ -182,57 +182,8 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="51" id="9Ug-Ob-10p" customClass="UITableViewVibrantCell" customModule="SideMenu">
-                                        <rect key="frame" x="0.0" y="326" width="414" height="51"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="9Ug-Ob-10p" id="1o4-cW-L2h">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="51"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cC0-yq-ccO">
-                                                    <rect key="frame" x="20" y="5" width="374" height="40"/>
-                                                    <subviews>
-                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WRr-LJ-M2G">
-                                                            <rect key="frame" x="0.0" y="0.0" width="320" height="40"/>
-                                                            <color key="backgroundColor" red="0.12126223" green="0.71409296990000004" blue="0.96170288319999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                            <state key="normal" title="connect with us">
-                                                                <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                                            </state>
-                                                            <userDefinedRuntimeAttributes>
-                                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                                    <real key="value" value="20"/>
-                                                                </userDefinedRuntimeAttribute>
-                                                            </userDefinedRuntimeAttributes>
-                                                        </button>
-                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="help" translatesAutoresizingMaskIntoConstraints="NO" id="LaD-Gz-Qkr">
-                                                            <rect key="frame" x="320" y="10" width="30" height="20"/>
-                                                            <constraints>
-                                                                <constraint firstAttribute="width" constant="30" id="1Ji-PM-mw8"/>
-                                                                <constraint firstAttribute="height" constant="20" id="d6c-eR-GNo"/>
-                                                            </constraints>
-                                                        </imageView>
-                                                    </subviews>
-                                                    <color key="backgroundColor" red="0.12126223" green="0.71409296990000004" blue="0.96170288319999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    <constraints>
-                                                        <constraint firstItem="LaD-Gz-Qkr" firstAttribute="centerY" secondItem="cC0-yq-ccO" secondAttribute="centerY" id="1RJ-qW-SJt"/>
-                                                        <constraint firstItem="LaD-Gz-Qkr" firstAttribute="leading" secondItem="WRr-LJ-M2G" secondAttribute="trailing" id="R3W-Ih-oIY"/>
-                                                        <constraint firstAttribute="trailing" secondItem="LaD-Gz-Qkr" secondAttribute="trailing" constant="24" id="S5l-cp-va6"/>
-                                                        <constraint firstItem="WRr-LJ-M2G" firstAttribute="leading" secondItem="cC0-yq-ccO" secondAttribute="leading" id="bU2-zO-lYm"/>
-                                                        <constraint firstItem="WRr-LJ-M2G" firstAttribute="top" secondItem="cC0-yq-ccO" secondAttribute="top" id="dxY-xa-H3t"/>
-                                                        <constraint firstAttribute="bottom" secondItem="WRr-LJ-M2G" secondAttribute="bottom" id="gce-hC-hr0"/>
-                                                    </constraints>
-                                                </view>
-                                            </subviews>
-                                            <constraints>
-                                                <constraint firstAttribute="trailing" secondItem="cC0-yq-ccO" secondAttribute="trailing" constant="20" id="4TT-wo-dSS"/>
-                                                <constraint firstItem="cC0-yq-ccO" firstAttribute="top" secondItem="1o4-cW-L2h" secondAttribute="top" constant="5" id="hwd-Ef-Dtw"/>
-                                                <constraint firstAttribute="bottom" secondItem="cC0-yq-ccO" secondAttribute="bottom" constant="6" id="ljZ-5I-08M"/>
-                                                <constraint firstItem="cC0-yq-ccO" firstAttribute="leading" secondItem="1o4-cW-L2h" secondAttribute="leading" constant="20" id="mza-JV-kPw"/>
-                                            </constraints>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="51" id="xua-dQ-pu9" customClass="UITableViewVibrantCell" customModule="SideMenu">
-                                        <rect key="frame" x="0.0" y="377" width="414" height="51"/>
+                                        <rect key="frame" x="0.0" y="326" width="414" height="51"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="xua-dQ-pu9" id="wsM-gK-UFz">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="51"/>
@@ -293,7 +244,6 @@
                     </tableView>
                     <navigationItem key="navigationItem" id="60r-wZ-M3i"/>
                     <connections>
-                        <outlet property="connectWIthUsView" destination="cC0-yq-ccO" id="VCT-ex-qYt"/>
                         <outlet property="homePageView" destination="uoj-eg-0hc" id="He1-Up-azp"/>
                         <outlet property="logoutView" destination="deQ-JR-m94" id="pmf-OI-V6u"/>
                         <outlet property="ordersView" destination="cql-eM-LSB" id="fUE-IY-1oS"/>
@@ -327,7 +277,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="help" width="32" height="32"/>
         <image name="home" width="32" height="32"/>
         <image name="logout" width="32" height="32"/>
         <image name="menu (4)" width="32" height="32"/>

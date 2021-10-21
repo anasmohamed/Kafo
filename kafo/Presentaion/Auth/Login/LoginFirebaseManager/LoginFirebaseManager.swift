@@ -19,6 +19,7 @@ class LoginManager {
                 print("User signs up successfully")
                 let newUserInfo = authResult?.user
                 let token = newUserInfo?.uid
+                print(token)
                 let user = User()
 
                 userRef.child(token!).observeSingleEvent(of: .value, with: {(snapshot) in

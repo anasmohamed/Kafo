@@ -12,14 +12,15 @@ class SignUpTableViewController: UITableViewController {
     @IBOutlet weak var backBtn: UIButton!
     @IBOutlet weak var confiremPasswordTextField: UITextField!
     @IBOutlet weak var lastNameTextField: UITextField!
-    @IBOutlet weak var deteOfBirthTextField: UITextField!
+//    @IBOutlet weak var deteOfBirthTextField: UITextField!
+    @IBOutlet weak var acceptTermsAndConditionLb: UILabel!
     @IBOutlet weak var mobileNameTextField: UITextField!
     @IBOutlet weak var locationCell: UITableViewCell!
     @IBOutlet weak var emailTextFiled: UITextField!
     @IBOutlet weak var firstNameTextField: UITextField!
     @IBOutlet weak var regiterBtn: UIButton!
-    @IBOutlet weak var femalCheckbox: Checkbox!
-    @IBOutlet weak var maleCheckbox: Checkbox!
+//    @IBOutlet weak var femalCheckbox: Checkbox!
+//    @IBOutlet weak var maleCheckbox: Checkbox!
     @IBOutlet weak var privacyPolicyCheckbox: Checkbox!
     @IBOutlet weak var countryTextField: UITextField!
     @IBOutlet weak var cityTextField: UITextField!
@@ -45,11 +46,15 @@ class SignUpTableViewController: UITableViewController {
         addLeftImageTo(txtField: lastNameTextField, andImage: userImage!)
         addLeftImageTo(txtField: firstNameTextField, andImage: userImage!)
         addLeftImageTo(txtField: mobileNameTextField, andImage: callImage!)
-        addLeftImageTo(txtField: deteOfBirthTextField, andImage: calenderImage!)
+//        addLeftImageTo(txtField: deteOfBirthTextField, andImage: calenderImage!)
         bindData()
         setDelegates()
         createDatePicker()
-        maleCheckbox.isChecked = true
+        
+        let tap = UITapGestureRecognizer(target: self, action: #selector(SignUpTableViewController.tapFunction))
+        acceptTermsAndConditionLb.isUserInteractionEnabled = true
+        acceptTermsAndConditionLb.addGestureRecognizer(tap)
+//        maleCheckbox.isChecked = true
         
         if userType != "client"
         {
@@ -64,15 +69,23 @@ class SignUpTableViewController: UITableViewController {
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
-    
+    @objc
+     func tapFunction(sender:UITapGestureRecognizer) {
+        let servicesViewStoryboard = UIStoryboard.init(name: "SignUpView", bundle: nil)
+        let servicesViewController = servicesViewStoryboard.instantiateViewController(withIdentifier: "TermsAndConditionsViewController")
+//        servicesViewController.modalPresentationStyle = .fullScreen
+        let navViewController = UINavigationController(rootViewController: servicesViewController)
+        navViewController.modalPresentationStyle = .fullScreen
+        self.present(navViewController, animated: true, completion: nil)
+     }
     @IBAction func onFemaleCheckboxBtnDidTapped(_ sender: Any) {
-        maleCheckbox.isChecked = false
-        femalCheckbox.isChecked = true
+//        maleCheckbox.isChecked = false
+//        femalCheckbox.isChecked = true
         gender = "famel"
     }
     @IBAction func onMaleCheckboxBtnDidTapped(_ sender: Any) {
-        maleCheckbox.isChecked = true
-        femalCheckbox.isChecked = false
+//        maleCheckbox.isChecked = true
+//        femalCheckbox.isChecked = false
         gender = "male"
     }
     func createDatePicker()  {
@@ -80,8 +93,8 @@ class SignUpTableViewController: UITableViewController {
         toolBar.sizeToFit()
         let doneBtn = UIBarButtonItem(barButtonSystemItem: .done, target: nil, action: #selector(doneBtnDidTapped))
         toolBar.setItems([doneBtn], animated: true)
-        deteOfBirthTextField.inputAccessoryView = toolBar
-        deteOfBirthTextField.inputView = datePicker
+//        deteOfBirthTextField.inputAccessoryView = toolBar
+//        deteOfBirthTextField.inputView = datePicker
         datePicker.locale = Locale(identifier: "en_US")
         
         datePicker.datePickerMode = .date
@@ -135,9 +148,9 @@ class SignUpTableViewController: UITableViewController {
     
     @IBAction func registerBtnDidTapped(_ sender: Any) {
         if userType != "client"{
-            signupViewModel.updateCredentials(firstName: firstNameTextField.text!,lastName: lastNameTextField.text!, password: passwordTextField.text!,phoneNumber: mobileNameTextField.text!,email: emailTextFiled.text!,userType: userType,gender: gender,date:deteOfBirthTextField.text!,privacyPolicy:privacyPolicyCheckbox.isChecked,city: cityTextField.text!,country: countryTextField.text!)
+            signupViewModel.updateCredentials(firstName: firstNameTextField.text!,lastName: lastNameTextField.text!, password: passwordTextField.text!,phoneNumber: mobileNameTextField.text!,email: emailTextFiled.text!,userType: userType,gender: gender,date:"",privacyPolicy:privacyPolicyCheckbox.isChecked,city: cityTextField.text!,country: countryTextField.text!)
         }else{
-            signupViewModel.updateCredentials(firstName: firstNameTextField.text!,lastName: lastNameTextField.text!, password: passwordTextField.text!,phoneNumber: mobileNameTextField.text!,email: emailTextFiled.text!,userType: userType,gender: gender,date:deteOfBirthTextField.text!,privacyPolicy:privacyPolicyCheckbox.isChecked)
+            signupViewModel.updateCredentials(firstName: firstNameTextField.text!,lastName: lastNameTextField.text!, password: passwordTextField.text!,phoneNumber: mobileNameTextField.text!,email: emailTextFiled.text!,userType: userType,gender: gender,date:"",privacyPolicy:privacyPolicyCheckbox.isChecked)
         }
         
         
@@ -195,6 +208,9 @@ class SignUpTableViewController: UITableViewController {
         return 1
     }
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        if indexPath.row == 2{
+            return 0
+        }
         if userType != "client"{
             if indexPath.row == 5 {
                 return 120
@@ -228,7 +244,7 @@ class SignUpTableViewController: UITableViewController {
         formatter.locale = Locale(identifier: "en_US")
         
         date = datePicker.date
-        deteOfBirthTextField.text = formatter.string(from: datePicker.date)
+//        deteOfBirthTextField.text = formatter.string(from: datePicker.date)
         self.view.endEditing(true)
     }
     func setGradientBackground() {

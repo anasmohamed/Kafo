@@ -138,17 +138,17 @@ class SignupViewModel {
             return .Incorrect
         }
         if user.mobileNumber.isEmpty{
-            
+
             errorMessage.value = "phone number field is empty."
             isPhoneNumberTextFieldHighLighted.value = true
             return .Incorrect
         }
-        if user.dateOfBirth.isEmpty{
-            
-            errorMessage.value = "date of birthfield is empty."
-            isPhoneNumberTextFieldHighLighted.value = true
-            return .Incorrect
-        }
+//        if user.dateOfBirth.isEmpty{
+//
+//            errorMessage.value = "date of birthfield is empty."
+//            isPhoneNumberTextFieldHighLighted.value = true
+//            return .Incorrect
+//        }
         return .Correct
     }
 }

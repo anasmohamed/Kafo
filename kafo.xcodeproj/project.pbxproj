@@ -13,6 +13,7 @@
 		323B673F26C7355F005CA819 /* BodyguardGenderView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 323B674126C7355F005CA819 /* BodyguardGenderView.storyboard */; };
 		323B674726C7363A005CA819 /* KafoServiceView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 323B674926C7363A005CA819 /* KafoServiceView.storyboard */; };
 		323B675226C73C20005CA819 /* NumberOfHoursView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 323B675426C73C20005CA819 /* NumberOfHoursView.storyboard */; };
+		323E09E8275BE3E000B10A44 /* Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323E09E7275BE3E000B10A44 /* Localization.swift */; };
 		3251E6DA26C7D81800F1B95B /* FacilitiesSccurityApplicationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3251E6D926C7D81800F1B95B /* FacilitiesSccurityApplicationViewController.swift */; };
 		3251E6DE26C7D9FA00F1B95B /* FacilitiesSccurityApplicationView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3251E6E026C7D9FA00F1B95B /* FacilitiesSccurityApplicationView.storyboard */; };
 		3251E6EF26C7EFE800F1B95B /* OtherCompaniesView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3251E6EE26C7EFE800F1B95B /* OtherCompaniesView.storyboard */; };
@@ -117,6 +118,7 @@
 		323B674E26C7363E005CA819 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/KafoServiceView.strings; sourceTree = "<group>"; };
 		323B675326C73C20005CA819 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/NumberOfHoursView.storyboard; sourceTree = "<group>"; };
 		323B675626C73C28005CA819 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/NumberOfHoursView.strings; sourceTree = "<group>"; };
+		323E09E7275BE3E000B10A44 /* Localization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Localization.swift; sourceTree = "<group>"; };
 		3251E6D926C7D81800F1B95B /* FacilitiesSccurityApplicationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacilitiesSccurityApplicationViewController.swift; sourceTree = "<group>"; };
 		3251E6DF26C7D9FA00F1B95B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/FacilitiesSccurityApplicationView.storyboard; sourceTree = "<group>"; };
 		3251E6E526C7DA0400F1B95B /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/FacilitiesSccurityApplicationView.strings; sourceTree = "<group>"; };
@@ -659,6 +661,7 @@
 				329B6094267FD87D008AB2DE /* Checkbox.swift */,
 				32F5E13126C59DC100C097DF /* Gridiant.swift */,
 				327BE18226DD7D3F00F46FCB /* Observable.swift */,
+				323E09E7275BE3E000B10A44 /* Localization.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -1128,6 +1131,7 @@
 				32E36C3B26F394BA007BD7D1 /* OrderTableViewCell.swift in Sources */,
 				3275A5E526F4DBD400B84601 /* OrdersFirebaseManger.swift in Sources */,
 				327BE18F26DD7E0500F46FCB /* SignupFirebaseManager.swift in Sources */,
+				323E09E8275BE3E000B10A44 /* Localization.swift in Sources */,
 				326E77F526E2EFAC009CAF9A /* FacilitiesSccurityApplicationModel.swift in Sources */,
 				326A368D267EA6DD00B87D37 /* SignUpTableViewController.swift in Sources */,
 				3277D2022677BDCB00F84C30 /* SceneDelegate.swift in Sources */,

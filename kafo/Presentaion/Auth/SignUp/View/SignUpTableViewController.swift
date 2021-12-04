@@ -107,14 +107,18 @@ class SignUpTableViewController: UITableViewController {
             if user != nil{
 //            guard let email = $0?[1] else { return }
             self.navigateToServiceViewController()
-            UserDefaults.standard.set(user?.email, forKey: "email")
-            UserDefaults.standard.set(user?.mobileNumber, forKey: "mobile")
-            UserDefaults.standard.set(self.userType , forKey: "userType")
+                UserDefaults.standard.set(user?.email, forKey: "email")
+                UserDefaults.standard.set(user?.firstName, forKey: "firstName")
+                UserDefaults.standard.set(user?.lastName, forKey: "lastName")
+                UserDefaults.standard.set(user?.gender, forKey: "gender")
+                UserDefaults.standard.set(user?.mobileNumber, forKey: "mobileNumber")
+                UserDefaults.standard.set(user?.userType, forKey: "userType")
+                UserDefaults.standard.set(user?.token, forKey: "userId")
+//                UserDefaults.standard.set(user?.dateOfBirth, forKey: "birthDate")
 
-            UserDefaults.standard.set(user?.firstName ?? "", forKey: "firstName")
-            UserDefaults.standard.set(user?.lastName ?? "", forKey: "lastName")
 
-            
+                self.view.makeToast("تم التسجيل بنجاح", duration: 3.0, position: .bottom)
+
             }
             
         }

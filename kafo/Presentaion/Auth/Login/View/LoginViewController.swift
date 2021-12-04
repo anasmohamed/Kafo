@@ -145,7 +145,7 @@ class LoginViewController: UIViewController {
             UserDefaults.standard.set(user.mobileNumber, forKey: "mobileNumber")
             UserDefaults.standard.set(user.userType, forKey: "userType")
             UserDefaults.standard.set(user.token, forKey: "userId")
-            UserDefaults.standard.set(user.dateOfBirth, forKey: "birthDate")
+//            UserDefaults.standard.set(user.dateOfBirth, forKey: "birthDate")
 
 //            self.user = user
             self.navigateToServiceViewController()

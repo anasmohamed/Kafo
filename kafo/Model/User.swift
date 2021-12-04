@@ -19,4 +19,5 @@ class User {
     var city = ""
     var country = ""
     var token = ""
+    var confirmPassword = ""
 }

@@ -11,6 +11,7 @@ extension SignUpTableViewController: UITextFieldDelegate {
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         emailTextFiled.resignFirstResponder()
         passwordTextField.resignFirstResponder()
+        confiremPasswordTextField.resignFirstResponder()
         mobileNameTextField.resignFirstResponder()
         firstNameTextField.resignFirstResponder()
         return true
@@ -19,6 +20,7 @@ extension SignUpTableViewController: UITextFieldDelegate {
     func textFieldDidBeginEditing(_ textField: UITextField) {
         emailTextFiled.layer.borderWidth = 0
         passwordTextField.layer.borderWidth = 0
+        confiremPasswordTextField.layer.borderWidth = 0
         firstNameTextField.layer.borderWidth = 0
         mobileNameTextField.layer.borderWidth = 0
         
@@ -35,7 +37,7 @@ extension SignUpTableViewController: UITextFieldDelegate {
         let updatedText = currentText.replacingCharacters(in: stringRange, with: string)
 
         // make sure the result is under 16 characters
-        return updatedText.count <= 8
+        return updatedText.count <= 10
         }
         return true
     }

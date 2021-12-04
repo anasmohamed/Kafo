@@ -14,6 +14,7 @@ class SignupViewModel {
             lastName = user.lastName
             password = user.password
             email = user.email
+            
         }
     }
     private var firstName = ""
@@ -28,6 +29,8 @@ class SignupViewModel {
     var credentialsInputErrorMessage: Observable<String> = Observable("")
     var isUsernameTextFieldHighLighted: Observable<Bool> = Observable(false)
     var isPasswordTextFieldHighLighted: Observable<Bool> = Observable(false)
+    var isConfirmPasswordTextFieldHighLighted: Observable<Bool> = Observable(false)
+
     var isEmailTextFieldHighLighted: Observable<Bool> = Observable(false)
     var isCityTextFieldHighLighted: Observable<Bool> = Observable(false)
     var isCountryTextFieldHighLighted: Observable<Bool> = Observable(false)
@@ -45,7 +48,7 @@ class SignupViewModel {
     //    }
     
     //Here we update our model
-    func updateCredentials(firstName: String,lastName:String, password: String, phoneNumber: String,email: String ,userType: String,gender:String,date:String,privacyPolicy:Bool,city:String = "",country:String = "") {
+    func updateCredentials(firstName: String,lastName:String, password: String, phoneNumber: String,email: String ,userType: String,gender:String,date:String,privacyPolicy:Bool,city:String = "",country:String = "",confirmPassword:String) {
         user.firstName = firstName
         user.lastName = lastName
         user.password = password
@@ -56,9 +59,10 @@ class SignupViewModel {
         privacyPolicyCheckbox = privacyPolicy
         user.city = city
         user.country = country
+        user.confirmPassword = confirmPassword
 //        user.isActive = isActive
 //        user.deviceToken = deviceToken
-        user.mobileNumber = "+973\(phoneNumber)"
+        user.mobileNumber = "+966\(phoneNumber)"
 //        privacyPolicyCheckbox = isPrivacyPolicyChecked
     }
     
@@ -117,6 +121,16 @@ class SignupViewModel {
         if user.password.isEmpty {
             errorMessage.value = "Password field is empty."
             isPasswordTextFieldHighLighted.value = true
+            return .Incorrect
+        }
+        if user.confirmPassword.isEmpty {
+            errorMessage.value = "Confirm Password field is empty."
+            isConfirmPasswordTextFieldHighLighted.value = true
+            return .Incorrect
+        }
+        if user.password != user.confirmPassword{
+            errorMessage.value = "Password and Confirm Password fields Must Be the Same"
+            isConfirmPasswordTextFieldHighLighted.value = true
             return .Incorrect
         }
         if user.userType != "client"{

@@ -104,16 +104,18 @@ class SignUpTableViewController: UITableViewController {
         signupViewModel.signupSuccess.bind {user in
             //               LoadingIndicatorView.hide()
             print("success")
+            if user != nil{
 //            guard let email = $0?[1] else { return }
             self.navigateToServiceViewController()
             UserDefaults.standard.set(user?.email, forKey: "email")
             UserDefaults.standard.set(user?.mobileNumber, forKey: "mobile")
-            
+            UserDefaults.standard.set(self.userType , forKey: "userType")
+
             UserDefaults.standard.set(user?.firstName ?? "", forKey: "firstName")
             UserDefaults.standard.set(user?.lastName ?? "", forKey: "lastName")
 
             
-
+            }
             
         }
         signupViewModel.isEmailTextFieldHighLighted.bind { [weak self] in
@@ -122,6 +124,9 @@ class SignUpTableViewController: UITableViewController {
         
         signupViewModel.isPasswordTextFieldHighLighted.bind { [weak self] in
             if $0 { self?.highlightTextField((self?.passwordTextField)!)}
+        }
+        signupViewModel.isConfirmPasswordTextFieldHighLighted.bind { [weak self] in
+            if $0 { self?.highlightTextField((self?.confiremPasswordTextField)!)}
         }
         signupViewModel.isUsernameTextFieldHighLighted.bind { [weak self] in
             if $0 { self?.highlightTextField((self?.firstNameTextField)!)}
@@ -148,9 +153,9 @@ class SignUpTableViewController: UITableViewController {
     
     @IBAction func registerBtnDidTapped(_ sender: Any) {
         if userType != "client"{
-            signupViewModel.updateCredentials(firstName: firstNameTextField.text!,lastName: lastNameTextField.text!, password: passwordTextField.text!,phoneNumber: mobileNameTextField.text!,email: emailTextFiled.text!,userType: userType,gender: gender,date:"",privacyPolicy:privacyPolicyCheckbox.isChecked,city: cityTextField.text!,country: countryTextField.text!)
+            signupViewModel.updateCredentials(firstName: firstNameTextField.text!,lastName: lastNameTextField.text!, password: passwordTextField.text!,phoneNumber: mobileNameTextField.text!,email: emailTextFiled.text!,userType: userType,gender: gender,date:"",privacyPolicy:privacyPolicyCheckbox.isChecked,city: cityTextField.text!,country: countryTextField.text!,confirmPassword:confiremPasswordTextField.text!)
         }else{
-            signupViewModel.updateCredentials(firstName: firstNameTextField.text!,lastName: lastNameTextField.text!, password: passwordTextField.text!,phoneNumber: mobileNameTextField.text!,email: emailTextFiled.text!,userType: userType,gender: gender,date:"",privacyPolicy:privacyPolicyCheckbox.isChecked)
+            signupViewModel.updateCredentials(firstName: firstNameTextField.text!,lastName: lastNameTextField.text!, password: passwordTextField.text!,phoneNumber: mobileNameTextField.text!,email: emailTextFiled.text!,userType: userType,gender: gender,date:"",privacyPolicy:privacyPolicyCheckbox.isChecked,confirmPassword:confiremPasswordTextField.text!)
         }
         
         
@@ -172,6 +177,7 @@ class SignUpTableViewController: UITableViewController {
     func setDelegates() {
         emailTextFiled.delegate = self
         passwordTextField.delegate = self
+        confiremPasswordTextField.delegate = self
         firstNameTextField.delegate = self
         mobileNameTextField.delegate = self
     }
@@ -187,8 +193,13 @@ class SignUpTableViewController: UITableViewController {
     func navigateToServiceViewController() {
         let servicesViewStoryboard = UIStoryboard.init(name: "ServicesView", bundle: nil)
         let servicesViewController = servicesViewStoryboard.instantiateViewController(withIdentifier: "ServicesTableViewController")
-//        servicesViewController.modalPresentationStyle = .fullScreen
-        self.navigationController?.pushViewController(servicesViewController, animated: true)
+        let nav = UINavigationController(rootViewController: servicesViewController)
+//        let nvc = servicesViewStoryboard.instantiateViewController(withIdentifier: "NVC") as! UINavigationController
+//        nvc.pushViewController(servicesViewController, animated: true)
+        servicesViewController.modalPresentationStyle = .fullScreen
+        nav.modalPresentationStyle = .fullScreen
+//                self.navigationController!.pushViewController(servicesViewController, animated: true)
+                self.present(nav, animated: true,completion: nil)
     }
     func highlightTextField(_ textField: UITextField) {
         textField.resignFirstResponder()

@@ -9,6 +9,7 @@ import UIKit
 
 class SecondViewController: UIViewController {
 
+    @IBOutlet weak var backBtn: UIButton!
     @IBOutlet weak var organizationBtn: UIButton!
     @IBOutlet weak var aloneBtn: UIButton!
     var userType = ""
@@ -17,6 +18,10 @@ class SecondViewController: UIViewController {
         organizationBtn.layer.cornerRadius = 20
         organizationBtn.layer.borderWidth = 2
         organizationBtn.layer.borderColor = UIColor.black.cgColor
+        
+        backBtn.layer.cornerRadius = 20
+        backBtn.layer.borderWidth = 2
+        backBtn.layer.borderColor = UIColor.black.cgColor
         
         aloneBtn.layer.cornerRadius = 20
         aloneBtn.layer.borderWidth = 2
@@ -27,11 +32,17 @@ class SecondViewController: UIViewController {
         super.viewWillAppear(animated)
         setGradientBackground()
     }
+    @IBAction func backBtnDidTapped(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+    }
     @IBAction func aloneBtnDidTapped(_ sender: Any) {
         userType = "alone_bodygourd"
         navigateToSignUpViewController()
     }
     
+    @IBAction func bsckBtnDidTapped(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+    }
     @IBAction func organizationBtnDidTapped(_ sender: Any) {
         userType = "organiztion_bodygourd"
         navigateToSignUpViewController()

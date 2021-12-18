@@ -245,11 +245,15 @@ class SignUpTableViewController: UITableViewController {
         if indexPath.row == 2{
             return 130
         }
+        if indexPath.row == 7{
+            return 100
+            
+        }
         return 200
     }
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 7
+        return 8
     }
     @objc func doneBtnDidTapped()  {
         let formatter = DateFormatter()

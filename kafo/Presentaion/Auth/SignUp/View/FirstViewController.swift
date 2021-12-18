@@ -10,12 +10,17 @@ import UIKit
 class FirstViewController: UIViewController {
 
     @IBOutlet weak var clientBtn: UIButton!
+    @IBOutlet weak var backBtn: UIButton!
     @IBOutlet weak var securityBtn: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
         clientBtn.layer.cornerRadius = 20
         clientBtn.layer.borderWidth = 2
         clientBtn.layer.borderColor = UIColor.black.cgColor
+        
+        backBtn.layer.cornerRadius = 20
+        backBtn.layer.borderWidth = 2
+        backBtn.layer.borderColor = UIColor.black.cgColor
         
         securityBtn.layer.cornerRadius = 20
         securityBtn.layer.borderWidth = 2
@@ -32,6 +37,13 @@ class FirstViewController: UIViewController {
         navigateToSecondViewController()
         
     }
+    
+    
+    
+    @IBAction func backBtnDidTapped(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+    }
+    
     
     @IBAction func clientBtnDidTapped(_ sender: Any) {
         navigateToSignUpViewController()

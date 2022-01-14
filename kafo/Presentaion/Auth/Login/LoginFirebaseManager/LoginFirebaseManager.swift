@@ -26,23 +26,23 @@ class LoginManager {
                     //                print(snapshot)
                     let userDict = snapshot.value as! [String: Any]
                     
-                    let email = userDict["email"] as! String
-                    let firstName = userDict["firstName"] as! String
-                    let lastName = userDict["lastName"] as! String
-                    let dateOfBirth = userDict["dateOfBirth"] as! String
-                    let gender = userDict["gender"] as! String
-                    let mobileNumbr = userDict["mobileNumbr"] as! String
-                    let userType = userDict["userType"] as! String
-                    let userId = userDict["userId"] as! String
+                    let email = userDict["email"] as? String
+                    let firstName = userDict["firstName"] as? String
+                    let lastName = userDict["lastName"] as? String
+                    let dateOfBirth = userDict["dateOfBirth"] as? String
+                    let gender = userDict["gender"] as? String
+                    let mobileNumbr = userDict["mobileNumbr"] as? String
+                    let userType = userDict["userType"] as? String
+                    let userId = userDict["userId"] as? String
                     
-                    user.email = email
-                    user.firstName = firstName
-                    user.lastName = lastName
-                    user.dateOfBirth = dateOfBirth
-                    user.gender = gender
-                    user.mobileNumber = mobileNumbr
-                    user.userType = userType
-                    user.token = userId
+                    user.email = email ?? ""
+                    user.firstName = firstName ?? ""
+                    user.lastName = lastName ?? ""
+                    user.dateOfBirth = dateOfBirth ?? ""
+                    user.gender = gender ?? ""
+                    user.mobileNumber = mobileNumbr ?? ""
+                    user.userType = userType ?? ""
+                    user.token = userId ?? ""
                     completionHandler(user,nil)
 
                 })

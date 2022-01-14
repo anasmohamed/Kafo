@@ -350,24 +350,8 @@
             filePath = "kafo/Presentaion/Auth/Login/View/LoginViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "143"
-            endingLineNumber = "143"
-            landmarkName = "unknown"
-            landmarkType = "0">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "2AD4B75B-1053-4439-AC45-8D761E8DA693"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "kafo/Presentaion/Auth/Login/View/LoginViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "141"
-            endingLineNumber = "141"
+            startingLineNumber = "152"
+            endingLineNumber = "152"
             landmarkName = "unknown"
             landmarkType = "0">
          </BreakpointContent>
@@ -382,8 +366,8 @@
             filePath = "kafo/Presentaion/Auth/Login/View/LoginViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "142"
-            endingLineNumber = "142"
+            startingLineNumber = "151"
+            endingLineNumber = "151"
             landmarkName = "unknown"
             landmarkType = "0">
          </BreakpointContent>
@@ -398,8 +382,8 @@
             filePath = "kafo/Presentaion/Auth/Login/View/LoginViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "144"
-            endingLineNumber = "144"
+            startingLineNumber = "153"
+            endingLineNumber = "153"
             landmarkName = "unknown"
             landmarkType = "0">
          </BreakpointContent>
@@ -414,8 +398,8 @@
             filePath = "kafo/Presentaion/Auth/Login/View/LoginViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "146"
-            endingLineNumber = "146"
+            startingLineNumber = "155"
+            endingLineNumber = "155"
             landmarkName = "unknown"
             landmarkType = "0">
          </BreakpointContent>
@@ -430,8 +414,8 @@
             filePath = "kafo/Presentaion/Auth/Login/View/LoginViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "147"
-            endingLineNumber = "147"
+            startingLineNumber = "156"
+            endingLineNumber = "156"
             landmarkName = "unknown"
             landmarkType = "0">
          </BreakpointContent>
@@ -446,8 +430,8 @@
             filePath = "kafo/Presentaion/Auth/Login/View/LoginViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "145"
-            endingLineNumber = "145"
+            startingLineNumber = "154"
+            endingLineNumber = "154"
             landmarkName = "unknown"
             landmarkType = "0">
          </BreakpointContent>
@@ -462,8 +446,8 @@
             filePath = "kafo/Presentaion/Auth/Login/View/LoginViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "151"
-            endingLineNumber = "151"
+            startingLineNumber = "160"
+            endingLineNumber = "160"
             landmarkName = "unknown"
             landmarkType = "0">
          </BreakpointContent>

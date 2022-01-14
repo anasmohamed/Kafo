@@ -7,6 +7,7 @@
 
 import UIKit
 import Toast_Swift
+import JGProgressHUD
 class LoginViewController: UIViewController {
     
     @IBOutlet weak var emailTextField: UITextField!
@@ -15,7 +16,8 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var createAccountStackView: UIStackView!
     @IBOutlet weak var containerView: UIView!
     @IBOutlet weak var newUserBtn: UIButton!
-    
+    let hud = JGProgressHUD()
+ 
     var loginViewModel = LoginViewModel()
     var incomeUser = User()
     
@@ -86,6 +88,10 @@ class LoginViewController: UIViewController {
     
     @IBAction func signinBtnDidTapped(_ sender: Any) {
 //        navigateToServiceViewController()
+    
+        hud.textLabel.text = "Loading"
+        hud.show(in: self.view)
+        
         loginViewModel.updateCredentials(email: emailTextField.text!, password: passwordTextField.text!)
         
         switch loginViewModel.credentialsInput() {
@@ -136,8 +142,11 @@ class LoginViewController: UIViewController {
     func bindData() {
         loginViewModel.loginSuccess.bind { user in
             guard let user = user else {
+                self.hud.dismiss()
+
                 return
             }
+            self.hud.dismiss()
             UserDefaults.standard.set(user.email, forKey: "email")
             UserDefaults.standard.set(user.firstName, forKey: "firstName")
             UserDefaults.standard.set(user.lastName, forKey: "lastName")
@@ -163,6 +172,7 @@ class LoginViewController: UIViewController {
         loginViewModel.errorMessage.bind {
             guard let errorMessage = $0 else { return }
             var style = ToastStyle()
+            self.hud.dismiss()
 
             // this is just one of many style options
             style.messageColor = .white
@@ -190,7 +200,7 @@ class LoginViewController: UIViewController {
         let servicesViewController = servicesViewStoryboard.instantiateViewController(withIdentifier: "ServicesTableViewController") as! ServicesTableViewController
         servicesViewController.user = user
 //        servicesViewController.modalPresentationStyle = .fullScreen
-        self.navigationController?.pushViewController(servicesViewController, animated: true)
+        self.navigationController!.pushViewController(servicesViewController, animated: true)
     }
     func login() {
         loginViewModel.login()

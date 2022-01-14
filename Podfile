@@ -12,6 +12,8 @@ target 'kafo' do
       pod 'Firebase/Auth'
       pod 'Firebase/Database'
       pod 'Toast-Swift', '~> 5.0.1'
+      pod 'JGProgressHUD'
+
 
   target 'kafoTests' do
     inherit! :search_paths

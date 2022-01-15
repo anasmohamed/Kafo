@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -53,7 +54,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XgH-u7-yc1">
-                                <rect key="frame" x="40" y="530.5" width="334" height="50"/>
+                                <rect key="frame" x="40" y="575.5" width="334" height="50"/>
                                 <color key="backgroundColor" systemColor="systemRedColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="Y1F-7u-Cqm"/>
@@ -78,6 +79,12 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="نأسف لعدم توافر الخدمة حاليا" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zy4-BC-dRF">
+                                <rect key="frame" x="108" y="524.5" width="198.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" systemColor="systemRedColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="BvR-n4-RsW"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -85,11 +92,12 @@
                             <constraint firstItem="BvR-n4-RsW" firstAttribute="trailing" secondItem="lW3-A6-EAs" secondAttribute="trailing" constant="20" id="3LY-60-uKz"/>
                             <constraint firstItem="r6c-py-p60" firstAttribute="leading" secondItem="79B-AQ-r5A" secondAttribute="leading" id="8x9-C5-LVP"/>
                             <constraint firstItem="79B-AQ-r5A" firstAttribute="leading" secondItem="BvR-n4-RsW" secondAttribute="leading" constant="20" id="APs-oh-sUC"/>
-                            <constraint firstItem="XgH-u7-yc1" firstAttribute="top" secondItem="ftK-ay-WN5" secondAttribute="bottom" constant="40" id="CZX-xD-IaH"/>
                             <constraint firstItem="lW3-A6-EAs" firstAttribute="top" secondItem="79B-AQ-r5A" secondAttribute="bottom" constant="20" id="DQI-en-53z"/>
                             <constraint firstItem="lW3-A6-EAs" firstAttribute="leading" secondItem="BvR-n4-RsW" secondAttribute="leading" constant="20" id="FXF-48-sxn"/>
                             <constraint firstItem="9kR-zv-UPO" firstAttribute="leading" secondItem="r6c-py-p60" secondAttribute="leading" id="KZz-Fy-9Oc"/>
+                            <constraint firstItem="XgH-u7-yc1" firstAttribute="top" secondItem="Zy4-BC-dRF" secondAttribute="bottom" constant="30" id="OFp-cx-kcf"/>
                             <constraint firstItem="pDL-St-4TE" firstAttribute="top" secondItem="r6c-py-p60" secondAttribute="bottom" constant="20" id="RQ3-sI-5aL"/>
+                            <constraint firstItem="Zy4-BC-dRF" firstAttribute="firstBaseline" secondItem="ftK-ay-WN5" secondAttribute="bottom" constant="50" id="S1s-Bv-bvf"/>
                             <constraint firstItem="pDL-St-4TE" firstAttribute="leading" secondItem="lW3-A6-EAs" secondAttribute="leading" id="VMj-5L-d5G"/>
                             <constraint firstItem="ftK-ay-WN5" firstAttribute="trailing" secondItem="9kR-zv-UPO" secondAttribute="trailing" id="Y5D-ob-OrI"/>
                             <constraint firstItem="pDL-St-4TE" firstAttribute="trailing" secondItem="lW3-A6-EAs" secondAttribute="trailing" id="Ypc-ML-gHM"/>
@@ -105,6 +113,7 @@
                             <constraint firstItem="IMS-iu-RqT" firstAttribute="top" secondItem="djz-dF-aye" secondAttribute="top" constant="70" id="r6j-91-YOa"/>
                             <constraint firstItem="ftK-ay-WN5" firstAttribute="leading" secondItem="pDL-St-4TE" secondAttribute="leading" id="rGQ-hO-fMo"/>
                             <constraint firstItem="XgH-u7-yc1" firstAttribute="centerX" secondItem="djz-dF-aye" secondAttribute="centerX" id="uCd-Tc-itD"/>
+                            <constraint firstItem="Zy4-BC-dRF" firstAttribute="centerX" secondItem="djz-dF-aye" secondAttribute="centerX" id="yqY-sh-ceK"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="hee-4l-fcg">

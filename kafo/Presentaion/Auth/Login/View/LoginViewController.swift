@@ -199,8 +199,12 @@ class LoginViewController: UIViewController {
         let servicesViewStoryboard = UIStoryboard.init(name: "ServicesView", bundle: nil)
         let servicesViewController = servicesViewStoryboard.instantiateViewController(withIdentifier: "ServicesTableViewController") as! ServicesTableViewController
         servicesViewController.user = user
+        let nav = UINavigationController(rootViewController: servicesViewController)
+        nav.modalPresentationStyle = .fullScreen
 //        servicesViewController.modalPresentationStyle = .fullScreen
-        self.navigationController!.pushViewController(servicesViewController, animated: true)
+//        self.present(servicesViewController, animated: true, completion: nil)
+        self.present(nav, animated: true, completion: nil)
+//        self.navigationController!.pushViewController(servicesViewController, animated: true)
     }
     func login() {
         loginViewModel.login()

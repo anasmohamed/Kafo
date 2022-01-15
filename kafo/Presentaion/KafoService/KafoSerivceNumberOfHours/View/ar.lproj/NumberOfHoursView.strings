@@ -3,7 +3,7 @@
 "79B-AQ-r5A.text" = "ادخل عدد الحارسات";
 
 /* Class = "UILabel"; text = "Enter the number of hours"; ObjectID = "9kR-zv-UPO"; */
-"9kR-zv-UPO.text" = "ادخل تاريخ بدأ الخدمة";
+"9kR-zv-UPO.text" = "ادخل تاريخ بداية الخدمة";
 
 /* Class = "UIButton"; normalTitle = "Checkout"; ObjectID = "XgH-u7-yc1"; */
 "XgH-u7-yc1.normalTitle" = "اتمام";

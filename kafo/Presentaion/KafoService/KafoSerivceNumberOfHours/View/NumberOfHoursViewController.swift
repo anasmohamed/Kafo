@@ -28,20 +28,27 @@ class NumberOfHoursViewController: UIViewController {
         if isMale{
             bodygaurdPhoto.image = UIImage(named: "male")
             enterNumberOfBodyGuardsLbl.text = "ادخل عدد الحراس"
+            
             gender = "male"
+            checkoutBtn.layer.cornerRadius = 15
+            checkoutBtn.layer.borderColor = UIColor.black.cgColor
+            checkoutBtn.layer.borderWidth = 1
+            checkoutBtn.backgroundColor = .white
+            checkoutBtn.tintColor = .blue
+            
         }else{
             gender = "femal"
             bodygaurdPhoto.image = UIImage(named: "women")
-            enterNumberOfBodyGuardsLbl.text = "ادخل عدد الحراسات"
-            
+            enterNumberOfBodyGuardsLbl.text = "ادخل عدد الحارسات "
+            checkoutBtn.layer.borderColor = UIColor.black.cgColor
+            checkoutBtn.layer.borderWidth = 2
+            checkoutBtn.layer.cornerRadius = 20
         }
         numberOfHoursTextField.layer.borderColor = UIColor.init(red: 176.0/255.0, green: 173.0/255.0, blue: 108.0/255.0, alpha: 1).cgColor
         numberOfHoursTextField.layer.borderWidth = 1
         numberOfHoursTextField.layer.cornerRadius = 8
         
-        checkoutBtn.layer.borderColor = UIColor.black.cgColor
-        checkoutBtn.layer.borderWidth = 2
-        checkoutBtn.layer.cornerRadius = 20
+       
         bindData()
         setDelegates()
         createDatePicker()

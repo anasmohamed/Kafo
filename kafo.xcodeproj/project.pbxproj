@@ -108,20 +108,21 @@
 
 /* Begin PBXFileReference section */
 		10CBAC4709A94C2A221702BC /* Pods_kafo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_kafo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		321958D52792CB9F00ABD847 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/LoginView.strings; sourceTree = "<group>"; };
+		321958D92792CD3100ABD847 /* ar */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = ar; path = ar.lproj/Main.storyboard; sourceTree = "<group>"; };
+		321958DB2792CD3F00ABD847 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
+		321958DF2792F90100ABD847 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/SignUpView.strings; sourceTree = "<group>"; };
 		323B672D26C72ACD005CA819 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LocationView.storyboard; sourceTree = "<group>"; };
-		323B673326C72AD1005CA819 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/LocationView.strings; sourceTree = "<group>"; };
 		323B673826C7329D005CA819 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/ListOfGuardsTableViewCell.xib; sourceTree = "<group>"; };
 		323B673B26C732A3005CA819 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/ListOfGuardsTableViewCell.strings; sourceTree = "<group>"; };
 		323B674026C7355F005CA819 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/BodyguardGenderView.storyboard; sourceTree = "<group>"; };
 		323B674626C73564005CA819 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/BodyguardGenderView.strings; sourceTree = "<group>"; };
 		323B674826C7363A005CA819 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/KafoServiceView.storyboard; sourceTree = "<group>"; };
-		323B674E26C7363E005CA819 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/KafoServiceView.strings; sourceTree = "<group>"; };
 		323B675326C73C20005CA819 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/NumberOfHoursView.storyboard; sourceTree = "<group>"; };
 		323B675626C73C28005CA819 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/NumberOfHoursView.strings; sourceTree = "<group>"; };
 		323E09E7275BE3E000B10A44 /* Localization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Localization.swift; sourceTree = "<group>"; };
 		3251E6D926C7D81800F1B95B /* FacilitiesSccurityApplicationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacilitiesSccurityApplicationViewController.swift; sourceTree = "<group>"; };
 		3251E6DF26C7D9FA00F1B95B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/FacilitiesSccurityApplicationView.storyboard; sourceTree = "<group>"; };
-		3251E6E526C7DA0400F1B95B /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/FacilitiesSccurityApplicationView.strings; sourceTree = "<group>"; };
 		3251E6EE26C7EFE800F1B95B /* OtherCompaniesView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = OtherCompaniesView.storyboard; sourceTree = "<group>"; };
 		3251E6F326C7F06800F1B95B /* OtherCompaniesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtherCompaniesViewController.swift; sourceTree = "<group>"; };
 		3251E6F926C7F0DD00F1B95B /* OtherCompaniesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtherCompaniesTableViewCell.swift; sourceTree = "<group>"; };
@@ -148,15 +149,12 @@
 		327689B4269CA4B700CC61C0 /* KafoServiceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KafoServiceViewController.swift; sourceTree = "<group>"; };
 		327689C9269CC10100CC61C0 /* BodyGuardGenderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BodyGuardGenderViewController.swift; sourceTree = "<group>"; };
 		327689D6269CCA1D00CC61C0 /* NumberOfHoursViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberOfHoursViewController.swift; sourceTree = "<group>"; };
-		327745FF26C0642900B7A9C8 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/LoginView.strings; sourceTree = "<group>"; };
-		3277460026C0642900B7A9C8 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Main.strings; sourceTree = "<group>"; };
 		3277460126C0642900B7A9C8 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		3277461426C089C000B7A9C8 /* LeftSideMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftSideMenuViewController.swift; sourceTree = "<group>"; };
 		3277D1FC2677BDCA00F84C30 /* kafo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = kafo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3277D1FF2677BDCA00F84C30 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3277D2012677BDCB00F84C30 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		3277D2032677BDCB00F84C30 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		3277D2062677BDCB00F84C30 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3277D2082677BDCD00F84C30 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3277D20B2677BDCD00F84C30 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3277D20D2677BDCD00F84C30 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -202,7 +200,6 @@
 		32E36C3926F394BA007BD7D1 /* OrderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderTableViewCell.swift; sourceTree = "<group>"; };
 		32E36C3A26F394BA007BD7D1 /* OrderTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OrderTableViewCell.xib; sourceTree = "<group>"; };
 		32F5E12726C5924400C097DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/SignUpView.storyboard; sourceTree = "<group>"; };
-		32F5E12D26C5924C00C097DF /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/SignUpView.strings; sourceTree = "<group>"; };
 		32F5E13126C59DC100C097DF /* Gridiant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gridiant.swift; sourceTree = "<group>"; };
 		46F0118B6043FB520B1263E9 /* Pods-kafo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kafo.debug.xcconfig"; path = "Target Support Files/Pods-kafo/Pods-kafo.debug.xcconfig"; sourceTree = "<group>"; };
 		5C8DDD3CD63E84AA43B16114 /* Pods-kafoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kafoTests.debug.xcconfig"; path = "Target Support Files/Pods-kafoTests/Pods-kafoTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -1186,7 +1183,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				323B672D26C72ACD005CA819 /* Base */,
-				323B673326C72AD1005CA819 /* ar */,
 			);
 			name = LocationView.storyboard;
 			sourceTree = "<group>";
@@ -1213,7 +1209,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				323B674826C7363A005CA819 /* Base */,
-				323B674E26C7363E005CA819 /* ar */,
 			);
 			name = KafoServiceView.storyboard;
 			sourceTree = "<group>";
@@ -1231,7 +1226,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				3251E6DF26C7D9FA00F1B95B /* Base */,
-				3251E6E526C7DA0400F1B95B /* ar */,
 			);
 			name = FacilitiesSccurityApplicationView.storyboard;
 			sourceTree = "<group>";
@@ -1266,8 +1260,8 @@
 		3277D2052677BDCB00F84C30 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				3277D2062677BDCB00F84C30 /* Base */,
-				3277460026C0642900B7A9C8 /* ar */,
+				321958D92792CD3100ABD847 /* ar */,
+				321958DB2792CD3F00ABD847 /* en */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -1285,7 +1279,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				3277D2552677C08F00F84C30 /* Base */,
-				327745FF26C0642900B7A9C8 /* ar */,
+				321958D52792CB9F00ABD847 /* ar */,
 			);
 			name = LoginView.storyboard;
 			sourceTree = "<group>";
@@ -1294,7 +1288,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				32F5E12726C5924400C097DF /* Base */,
-				32F5E12D26C5924C00C097DF /* ar */,
+				321958DF2792F90100ABD847 /* ar */,
 			);
 			name = SignUpView.storyboard;
 			sourceTree = "<group>";

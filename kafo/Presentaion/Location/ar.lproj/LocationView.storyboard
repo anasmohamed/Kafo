@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="03Z-l3-RUN">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Location View Controller-->
+        <scene sceneID="PCo-19-5Cg">
+            <objects>
+                <viewController storyboardIdentifier="LocationViewController" id="lQg-Lr-ank" customClass="LocationViewController" customModule="kafo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="n4a-yB-rtD">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please Add your current location" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mle-fN-UcI">
+                                <rect key="frame" x="83.5" y="192" width="247" height="25.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="247" id="GfI-sn-sA4"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H1M-7G-GIR">
+                                <rect key="frame" x="87" y="413.5" width="240" height="50"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="MLw-VS-KiG"/>
+                                    <constraint firstAttribute="width" constant="240" id="lEl-vn-Le1"/>
+                                </constraints>
+                                <state key="normal" title="NEARBY BODY GUARDS ">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="nearbyLocationBtnDidTapped:" destination="lQg-Lr-ank" eventType="touchUpInside" id="qPX-rN-dop"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nsZ-ge-NvG" customClass="SwiftyMenu" customModule="SwiftyMenu">
+                                <rect key="frame" x="20" y="237.5" width="374" height="45"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="vA6-ta-1cF"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="0.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" systemColor="systemGray4Color"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <outlet property="heightConstraint" destination="vA6-ta-1cF" id="EZ6-zM-WTh"/>
+                                </connections>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LXm-rY-rmC" customClass="SwiftyMenu" customModule="SwiftyMenu">
+                                <rect key="frame" x="20" y="309.5" width="374" height="45"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="cX4-DA-J3O"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="0.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" systemColor="systemGray4Color"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <outlet property="heightConstraint" destination="cX4-DA-J3O" id="mhW-lz-Kgd"/>
+                                </connections>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Oud-ee-zbq"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Oud-ee-zbq" firstAttribute="trailing" secondItem="nsZ-ge-NvG" secondAttribute="trailing" constant="20" id="4Q3-sg-Jxs"/>
+                            <constraint firstItem="H1M-7G-GIR" firstAttribute="centerX" secondItem="Oud-ee-zbq" secondAttribute="centerX" id="8xr-BR-j9X"/>
+                            <constraint firstItem="LXm-rY-rmC" firstAttribute="top" secondItem="nsZ-ge-NvG" secondAttribute="bottom" constant="27" id="MVa-WF-PbI"/>
+                            <constraint firstItem="mle-fN-UcI" firstAttribute="top" secondItem="Oud-ee-zbq" secondAttribute="top" constant="104" id="OPr-g4-GfE"/>
+                            <constraint firstItem="LXm-rY-rmC" firstAttribute="leading" secondItem="nsZ-ge-NvG" secondAttribute="leading" id="hPB-FD-3sf"/>
+                            <constraint firstItem="LXm-rY-rmC" firstAttribute="trailing" secondItem="nsZ-ge-NvG" secondAttribute="trailing" id="jBh-Hp-PsC"/>
+                            <constraint firstItem="nsZ-ge-NvG" firstAttribute="leading" secondItem="Oud-ee-zbq" secondAttribute="leading" constant="20" id="t06-j7-wvc"/>
+                            <constraint firstItem="nsZ-ge-NvG" firstAttribute="top" secondItem="mle-fN-UcI" secondAttribute="bottom" constant="20" id="xcF-Rt-N87"/>
+                            <constraint firstItem="H1M-7G-GIR" firstAttribute="top" secondItem="LXm-rY-rmC" secondAttribute="bottom" constant="59" id="yif-Xp-dKW"/>
+                            <constraint firstItem="mle-fN-UcI" firstAttribute="centerX" secondItem="Oud-ee-zbq" secondAttribute="centerX" id="zZ9-5Z-xvt"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="vmc-56-DS4"/>
+                    <connections>
+                        <outlet property="cityDropDownMenu" destination="nsZ-ge-NvG" id="cEw-sN-2id"/>
+                        <outlet property="countryDropDownMenu" destination="LXm-rY-rmC" id="agh-eD-gsd"/>
+                        <outlet property="nearbyLocationBtn" destination="H1M-7G-GIR" id="paE-KS-KFd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EA7-xm-8eR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1026.0869565217392" y="67.633928571428569"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="W8j-gz-euY">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="03Z-l3-RUN" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="bvA-5i-zuR">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="lQg-Lr-ank" kind="relationship" relationship="rootViewController" id="79n-7G-jds"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ICN-Li-kOZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="115.94202898550725" y="67.633928571428569"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray4Color">
+            <color red="0.81960784313725488" green="0.81960784313725488" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

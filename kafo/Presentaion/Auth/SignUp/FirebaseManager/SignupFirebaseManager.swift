@@ -35,22 +35,39 @@ class SignupManager{
         // 2
         let childRef = rootRef.reference(withPath: "Users")
         let userId = Auth.auth().currentUser?.uid
-        
         var userDict : [String:Any?]?
+        if user.userType == "client"{
+            let childRef = rootRef.reference(withPath: "Users")
+            let userId = Auth.auth().currentUser?.uid
         userDict = [
             "email":user.email,
-            "userId":userId,
-            "firstName":user.firstName,
-            "lastName":user.lastName,
+            "fname":user.firstName,
+            "lname":user.lastName,
             "password":user.password,
-            "userType":user.userType,
-            "gender":user.gender,
-            "dateOfBirth":user.dateOfBirth,
+            "date":user.dateOfBirth,
             "city": user.city,
             "country":user.country,
-            "mobileNumbr":user.mobileNumber]
-        
-        childRef.child(userId!).setValue(userDict)
+            "phone":user.mobileNumber]
+            childRef.child(userId!).setValue(userDict)
+
+        }
+        else{
+            let childRef = rootRef.reference(withPath: "BdUserBd")
+            let userId = Auth.auth().currentUser?.uid
+        userDict = [
+            "email":user.email,
+            "fname":user.firstName,
+            "lname":user.lastName,
+            "password":user.password,
+            "date":user.dateOfBirth,
+            "city": user.city,
+            "country":user.country,
+            "phone":user.mobileNumber]
+            childRef.child(userId!).setValue(userDict)
+
+        }
+
+        }
     }
     
-}
+

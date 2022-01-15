@@ -10,27 +10,24 @@ import FirebaseDatabase
 class ListOfBodyGuardsFirebaseManager {
     var ref = Database.database().reference()
     func getListOfBodyGuards(completionHandler: @escaping ([User]?) -> Void)  {
-        let allPlaces = self.ref.child("Users")
+        let allPlaces = self.ref.child("BdUserBd")
         var users = [User]()
            allPlaces.observeSingleEvent(of: .value, with: { snapshot in
                for child in snapshot.children {
                    let snap = child as! DataSnapshot
                    let placeDict = snap.value as! [String: Any]
-                   let userType = placeDict["userType"] as? String
-                if userType == "alone_bodygourd" {
+//                   let userType = placeDict["userType"] as? String
+//                if userType == "alone_bodygourd" {
                     
                     let user = User()
                     user.email = placeDict["email"] as? String ?? ""
-                    user.dateOfBirth = placeDict["dateOfBirth"] as? String ?? ""
-                    user.firstName = placeDict["firsName"] as? String ?? ""
-                    user.lastName = placeDict["lastName"] as? String ?? ""
+                    user.dateOfBirth = placeDict["date"] as? String ?? ""
+                    user.firstName = placeDict["fName"] as? String ?? ""
+                    user.lastName = placeDict["lName"] as? String ?? ""
                     user.gender = placeDict["gender"] as? String ?? ""
-                    user.mobileNumber = placeDict["mobileNumbr"] as? String ?? ""
-                    user.city = placeDict["city"] as? String ?? ""
-                    user.country = placeDict["country"] as? String ?? ""
-                    user.token = placeDict["userId"] as? String ?? ""
+                    user.mobileNumber = placeDict["phone"] as? String ?? ""
                     users.append(user)
-                }
+//                }
                 completionHandler(users)
 //                   let 1moreInfo = placeDict["moreinfo"] as! String
                }
@@ -48,24 +45,23 @@ class ListOfBodyGuardsFirebaseManager {
         let minutes = calendar.component(.minute, from: date)
         let time = String(hour) + " " + String(minutes)
         // 2
-        let childRef = rootRef.reference(withPath: "ImmdiateOrder")
+        let childRef = rootRef.reference(withPath: "FasOrder")
         let orderId = childRef.childByAutoId().key
         var userDict : [String:Any?]?
         userDict = [
-            "totalMoney":order.totalMoney,
-            "orderId":orderId,
-            "bodyguardName":order.bodyGaurdName,
-            "bodyguardEmail":order.bodyGuardEmail,
-            "bodyguardLocation":order.location,
-            "bodyguardMoblieNumber":order.bodyGuardMobileNumber,
-            "clientName":order.clientName,
-            "clientEmail":order.clientEmail,
-            "clientMobileNumber":order.clientMobileNumber,
-            "numberOfHours":order.numberOfHours,
-            "orderDate":result,
-            "orderTime":time,
-            "clientId":UserDefaults.standard.string(forKey: "userId"),
-            "bodyguardId": bodyguardId
+            "buildingnum":"",
+            "city":"",
+            "contract":"",
+            "fasname":"",
+            "fasphone":"",
+            "fax":"",
+            "mananame":"",
+            "manaphone":"",
+            "numofguards":"",
+            "numofshift":"",
+            "startdate":"",
+            "street":"",
+            
 //            "city": user.city,
 //            "country":user.country,
 //            "mobileNumbr":user.mobileNumber

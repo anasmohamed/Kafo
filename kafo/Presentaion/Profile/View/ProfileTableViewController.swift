@@ -71,7 +71,7 @@ class ProfileTableViewController: UITableViewController,UITextFieldDelegate {
         emailTextFiled.text = UserDefaults.standard.string(forKey: "email")
         mobileNameTextField.text = UserDefaults.standard.string(forKey: "mobileNumber")
         deteOfBirthTextField.text = UserDefaults.standard.string(forKey: "birthDate")
-        token = UserDefaults.standard.string(forKey: "userId") ?? ""
+//        token = UserDefaults.standard.string(forKey: "userId") ?? ""
        
         if UserDefaults.standard.string(forKey: "gender") == "male"{
             maleCheckbox.isChecked = true

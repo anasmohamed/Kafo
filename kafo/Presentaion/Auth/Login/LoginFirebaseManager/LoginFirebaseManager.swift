@@ -11,6 +11,8 @@ import FirebaseDatabase
 class LoginManager {
     func loginWithCredentials(email:String,password:String, completionHandler: @escaping (User?,Error?) -> Void) {
         let userRef = Database.database().reference(withPath: "Users")
+        let bodyguardRef = Database.database().reference(withPath: "BdUserBd")
+
         Auth.auth().signIn(withEmail: email, password: password) { [weak self] authResult, error in
             if let error = error as? NSError {
                 completionHandler(nil,error)
@@ -27,13 +29,13 @@ class LoginManager {
                     let userDict = snapshot.value as! [String: Any]
                     
                     let email = userDict["email"] as? String
-                    let firstName = userDict["firstName"] as? String
-                    let lastName = userDict["lastName"] as? String
+                    let firstName = userDict["fName"] as? String
+                    let lastName = userDict["lName"] as? String
                     let dateOfBirth = userDict["dateOfBirth"] as? String
                     let gender = userDict["gender"] as? String
-                    let mobileNumbr = userDict["mobileNumbr"] as? String
-                    let userType = userDict["userType"] as? String
-                    let userId = userDict["userId"] as? String
+                    let mobileNumbr = userDict["phone"] as? String
+//                    let userType = userDict["userType"] as? String
+//                    let userId = userDict["userId"] as? String
                     
                     user.email = email ?? ""
                     user.firstName = firstName ?? ""
@@ -41,8 +43,8 @@ class LoginManager {
                     user.dateOfBirth = dateOfBirth ?? ""
                     user.gender = gender ?? ""
                     user.mobileNumber = mobileNumbr ?? ""
-                    user.userType = userType ?? ""
-                    user.token = userId ?? ""
+//                    user.userType = userType ?? ""
+//                    user.token = userId ?? ""
                     completionHandler(user,nil)
 
                 })

@@ -3,7 +3,7 @@
 "1JM-qY-shZ.normalTitle" = "حارس أمن";
 
 /* Class = "UITextField"; placeholder = "Confirm Password"; ObjectID = "1ac-DY-oaC"; */
-"1ac-DY-oaC.placeholder" = "كلمة المرور";
+"1ac-DY-oaC.placeholder" = "تأكيد كلمة المرور";
 
 /* Class = "UITextField"; placeholder = "Password"; ObjectID = "43u-2b-G6p"; */
 "43u-2b-G6p.placeholder" = "كلمة المرور";
@@ -58,3 +58,7 @@
 
 
 "CP4-P9-N9s.normalTitle" = "رجوع";
+
+"Lwc-uo-ysE.placeholder" = "المدينة";
+
+"fLr-L9-FrF.placeholder" = "البلد";

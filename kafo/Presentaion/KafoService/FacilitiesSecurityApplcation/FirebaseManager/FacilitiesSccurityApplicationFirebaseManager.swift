@@ -18,18 +18,18 @@ class FacilitiesSccurityApplicationFirebaseManager {
         let orderId = childRef.childByAutoId().key
         var userDict : [String:Any?]?
         userDict = [
-            "facilityName":order.facilityName,
-            "city":order.city ,
-            "street":order.street,
-            "buildingNumber":order.buildingNumber,
-            "responsiblePerson":order.responsiblePerson,
-            "mobile":order.mobile,
-            "facilityMobileNumber":order.facilityMobileNumber,
-            "fax":order.fax,
-            "numberOfBodyGuard":order.numberOfBodyGuard,
-            "startDate":order.startDate,
-            "numberOfDays":order.numberOfDays,
-            "numberOfShift":order.numberOfShift
+            "facilityName":"",
+            "city":"" ,
+            "street":"",
+            "buildingNumber":"",
+            "responsiblePerson":"",
+            "mobile":"",
+            "facilityMobileNumber":"",
+            "fax":"",
+            "numberOfBodyGuard":"",
+            "startDate":"",
+            "numberOfDays":"",
+            "numberOfShift":""
         ]
         
         childRef.child(orderId!).setValue(userDict)

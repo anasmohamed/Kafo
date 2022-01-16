@@ -17,7 +17,7 @@ class LeftSideMenuViewController: UITableViewController {
     @IBOutlet weak var homePageView: UIView!
     override func viewDidLoad() {
         super.viewDidLoad()
-//        connectWIthUsView.layer.cornerRadius = 15
+        connectWIthUsView.layer.cornerRadius = 15
         profileView.layer.cornerRadius = 15
         ordersView.layer.cornerRadius = 15
         homePageView.layer.cornerRadius = 15
@@ -62,6 +62,12 @@ class LeftSideMenuViewController: UITableViewController {
         navigateToServiceViewController()
     }
     
+    @IBAction func connectWithUsBtnDidTapped(_ sender: Any) {
+        let profileViewStoryboard = UIStoryboard(name: "LeftSideMenuView", bundle: nil)
+
+        let profileViewController = profileViewStoryboard.instantiateViewController(identifier: "ContacWithUsViewController") as! ContacWithUsViewController
+        self.navigationController?.pushViewController(profileViewController, animated: true)
+    }
     
     @IBAction func signoutBrnDidTapped(_ sender: Any) {
         try! Auth.auth().signOut()

@@ -72,6 +72,7 @@
 		329B6095267FD87D008AB2DE /* Checkbox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329B6094267FD87D008AB2DE /* Checkbox.swift */; };
 		329B60A0267FE9C4008AB2DE /* MainCustomerView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 329B609F267FE9C4008AB2DE /* MainCustomerView.storyboard */; };
 		329B60AC267FED7D008AB2DE /* PersonalBodyguardView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 329B60AB267FED7D008AB2DE /* PersonalBodyguardView.storyboard */; };
+		329DE4082794B309006CFDC7 /* ContacWithUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329DE4072794B309006CFDC7 /* ContacWithUsViewController.swift */; };
 		32ADEFBB26E2787A00D11201 /* KafoServiceFIrebaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32ADEFBA26E2787A00D11201 /* KafoServiceFIrebaseManager.swift */; };
 		32ADEFC026E27B2E00D11201 /* KafoBodyGuardOrder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32ADEFBF26E27B2E00D11201 /* KafoBodyGuardOrder.swift */; };
 		32ADEFC526E27C2800D11201 /* KafoServiceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32ADEFC426E27C2800D11201 /* KafoServiceViewModel.swift */; };
@@ -188,6 +189,8 @@
 		329B6094267FD87D008AB2DE /* Checkbox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Checkbox.swift; sourceTree = "<group>"; };
 		329B609F267FE9C4008AB2DE /* MainCustomerView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainCustomerView.storyboard; sourceTree = "<group>"; };
 		329B60AB267FED7D008AB2DE /* PersonalBodyguardView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PersonalBodyguardView.storyboard; sourceTree = "<group>"; };
+		329DE4072794B309006CFDC7 /* ContacWithUsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContacWithUsViewController.swift; sourceTree = "<group>"; };
+		329DE40C2794BBF7006CFDC7 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/FacilitiesSccurityApplicationView.strings; sourceTree = "<group>"; };
 		32ADEFBA26E2787A00D11201 /* KafoServiceFIrebaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KafoServiceFIrebaseManager.swift; sourceTree = "<group>"; };
 		32ADEFBF26E27B2E00D11201 /* KafoBodyGuardOrder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KafoBodyGuardOrder.swift; sourceTree = "<group>"; };
 		32ADEFC426E27C2800D11201 /* KafoServiceViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KafoServiceViewModel.swift; sourceTree = "<group>"; };
@@ -425,6 +428,7 @@
 			children = (
 				3251E70B26C8156800F1B95B /* LeftSideMenuView.storyboard */,
 				3277461426C089C000B7A9C8 /* LeftSideMenuViewController.swift */,
+				329DE4072794B309006CFDC7 /* ContacWithUsViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1129,6 +1133,7 @@
 				3275A5E526F4DBD400B84601 /* OrdersFirebaseManger.swift in Sources */,
 				327BE18F26DD7E0500F46FCB /* SignupFirebaseManager.swift in Sources */,
 				323E09E8275BE3E000B10A44 /* Localization.swift in Sources */,
+				329DE4082794B309006CFDC7 /* ContacWithUsViewController.swift in Sources */,
 				326E77F526E2EFAC009CAF9A /* FacilitiesSccurityApplicationModel.swift in Sources */,
 				326A368D267EA6DD00B87D37 /* SignUpTableViewController.swift in Sources */,
 				3277D2022677BDCB00F84C30 /* SceneDelegate.swift in Sources */,
@@ -1226,6 +1231,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				3251E6DF26C7D9FA00F1B95B /* Base */,
+				329DE40C2794BBF7006CFDC7 /* ar */,
 			);
 			name = FacilitiesSccurityApplicationView.storyboard;
 			sourceTree = "<group>";

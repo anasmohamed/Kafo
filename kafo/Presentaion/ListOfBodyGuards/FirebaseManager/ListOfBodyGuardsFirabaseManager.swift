@@ -22,8 +22,8 @@ class ListOfBodyGuardsFirebaseManager {
                     let user = User()
                     user.email = placeDict["email"] as? String ?? ""
                     user.dateOfBirth = placeDict["date"] as? String ?? ""
-                    user.firstName = placeDict["fName"] as? String ?? ""
-                    user.lastName = placeDict["lName"] as? String ?? ""
+                    user.firstName = placeDict["fname"] as? String ?? ""
+                    user.lastName = placeDict["lname"] as? String ?? ""
                     user.gender = placeDict["gender"] as? String ?? ""
                     user.mobileNumber = placeDict["phone"] as? String ?? ""
                     users.append(user)

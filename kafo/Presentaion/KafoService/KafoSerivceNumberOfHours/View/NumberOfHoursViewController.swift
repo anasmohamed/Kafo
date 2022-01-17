@@ -9,6 +9,7 @@ import UIKit
 import Toast_Swift
 class NumberOfHoursViewController: UIViewController {
     
+    @IBOutlet weak var servicAaliablityLbl: UILabel!
     @IBOutlet weak var checkoutBtn: UIButton!
     @IBOutlet weak var bodygaurdPhoto: UIImageView!
     @IBOutlet weak var enterNumberOfBodyGuardsLbl: UILabel!
@@ -28,16 +29,20 @@ class NumberOfHoursViewController: UIViewController {
         if isMale{
             bodygaurdPhoto.image = UIImage(named: "male")
             enterNumberOfBodyGuardsLbl.text = "ادخل عدد الحراس"
-            
+            servicAaliablityLbl.isHidden = true
             gender = "male"
+            checkoutBtn.isEnabled = true
+
             checkoutBtn.layer.cornerRadius = 15
             checkoutBtn.layer.borderColor = UIColor.black.cgColor
             checkoutBtn.layer.borderWidth = 1
             checkoutBtn.backgroundColor = .white
             checkoutBtn.tintColor = .blue
-            
+            checkoutBtn.setTitleColor(.black, for: .normal)
         }else{
             gender = "femal"
+            servicAaliablityLbl.isHidden = false
+            checkoutBtn.isEnabled = false
             bodygaurdPhoto.image = UIImage(named: "women")
             enterNumberOfBodyGuardsLbl.text = "ادخل عدد الحارسات "
             checkoutBtn.layer.borderColor = UIColor.black.cgColor

@@ -54,7 +54,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XgH-u7-yc1">
-                                <rect key="frame" x="40" y="575.5" width="334" height="50"/>
+                                <rect key="frame" x="40" y="574.5" width="334" height="50"/>
                                 <color key="backgroundColor" systemColor="systemRedColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="Y1F-7u-Cqm"/>
@@ -80,8 +80,8 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="نأسف لعدم توافر الخدمة حاليا" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zy4-BC-dRF">
-                                <rect key="frame" x="108" y="524.5" width="198.5" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <rect key="frame" x="102" y="523.5" width="210" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <color key="textColor" systemColor="systemRedColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -129,6 +129,7 @@
                         <outlet property="enterNumberOfBodyGuardsLbl" destination="79B-AQ-r5A" id="oX8-51-B5c"/>
                         <outlet property="numberOfDaysTextField" destination="pDL-St-4TE" id="JKn-wT-kqT"/>
                         <outlet property="numberOfHoursTextField" destination="lW3-A6-EAs" id="I9W-nL-zUU"/>
+                        <outlet property="servicAaliablityLbl" destination="Zy4-BC-dRF" id="a0J-Wm-o7K"/>
                         <outlet property="serviceStartDateTextField" destination="ftK-ay-WN5" id="Joj-PS-T5r"/>
                     </connections>
                 </viewController>

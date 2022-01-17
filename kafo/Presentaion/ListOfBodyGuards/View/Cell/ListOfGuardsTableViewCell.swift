@@ -15,8 +15,12 @@ class ListOfGuardsTableViewCell: UITableViewCell {
     @IBOutlet weak var bodyGaurdImageView: UIImageView!
     var item = User(){
           didSet{
+          var names = item.firstName.split(separator: " ")
+            if names.count < 2{
             bodyguardNameLbl.text = item.firstName + " " + item.lastName
-            
+            }else{
+                bodyguardNameLbl.text = item.firstName
+            }
           }
       }
     override func awakeFromNib() {

@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -28,7 +29,7 @@
                         <rect key="frame" x="113" y="10" width="209" height="96"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ahemd Taher" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Otq-J1-CMH">
-                                <rect key="frame" x="18" y="16" width="101.5" height="21"/>
+                                <rect key="frame" x="18" y="16" width="102" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -56,6 +57,7 @@
                     <constraint firstAttribute="trailing" secondItem="Lle-Vs-lGk" secondAttribute="trailing" constant="10" id="hPj-Uc-DYK"/>
                     <constraint firstAttribute="bottom" secondItem="Lle-Vs-lGk" secondAttribute="bottom" constant="10" id="qXN-BN-3qt"/>
                     <constraint firstItem="Otq-J1-CMH" firstAttribute="leading" secondItem="xVl-lj-vcT" secondAttribute="trailing" constant="26" id="sOb-4y-M53"/>
+                    <constraint firstItem="EGB-8u-YEb" firstAttribute="leading" secondItem="xVl-lj-vcT" secondAttribute="trailing" constant="43" id="xtF-Av-RX1"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>

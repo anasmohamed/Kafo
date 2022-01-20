@@ -89,7 +89,7 @@ class LoginViewController: UIViewController {
     @IBAction func signinBtnDidTapped(_ sender: Any) {
 //        navigateToServiceViewController()
     
-        hud.textLabel.text = "Loading"
+        hud.textLabel.text = "تحميل"
         hud.show(in: self.view)
         
         loginViewModel.updateCredentials(email: emailTextField.text!, password: passwordTextField.text!)

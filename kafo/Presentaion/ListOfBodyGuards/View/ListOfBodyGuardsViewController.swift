@@ -6,13 +6,15 @@
 //
 
 import UIKit
-
+import JGProgressHUD
 class ListOfBodyGuardsViewController: UIViewController ,UITableViewDelegate,UITableViewDataSource{
     
     @IBOutlet weak var tableView: UITableView!
     
     var user : User?
     var listOfBodyGuardsViewModel = ListOfBodyGuardsViewModel()
+    let hud = JGProgressHUD()
+
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.delegate = self
@@ -23,8 +25,11 @@ class ListOfBodyGuardsViewController: UIViewController ,UITableViewDelegate,UITa
         // Do any additional setup after loading the view.
     }
     func bindData() {
+        hud.textLabel.text = "تحميل"
+        hud.show(in: self.view)
         listOfBodyGuardsViewModel.getUsersSuccess.bind{
             users in
+            self.hud.dismiss()
             self.tableView.reloadData()
         }
        }

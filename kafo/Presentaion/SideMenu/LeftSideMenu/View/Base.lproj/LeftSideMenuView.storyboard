@@ -312,7 +312,7 @@
         <!--Side Menu Navigation Controller-->
         <scene sceneID="Mqn-Qp-1Tw">
             <objects>
-                <navigationController storyboardIdentifier="LeftSideMenuNavigationController" automaticallyAdjustsScrollViewInsets="NO" id="Xq6-Gj-qfz" customClass="SideMenuNavigationController" customModule="SideMenu" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="LeftSideMenuNavigationController" automaticallyAdjustsScrollViewInsets="NO" modalTransitionStyle="crossDissolve" modalPresentationStyle="overCurrentContext" id="Xq6-Gj-qfz" customClass="SideMenuNavigationController" customModule="SideMenu" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="djX-0j-r4e">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -340,9 +340,9 @@
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="diF-xm-d1V">
                                 <rect key="frame" x="10" y="54" width="394" height="284.5"/>
-                                <mutableString key="text">حول كفو للحراسات الأمنية إن كفو للحراسات الأمنية هو التطبيق الرائد الذي ينفرد بتقديم الخدمات الأمنية الفورية على مدار الساعة ( 24 / 7 ) وكما يقدم كفو خدمات الحراسات الأمنية في جميع أنحاء المملكة العربية السعودية فيقوم بتوفير الحماية الشخصية للأفراد و وتوفير الحماية للمنازل و الشركات والمراكز والمولات والأسواق قبل وأثناء وبعد النشاط . وتقوم كفو بتقديم خدمات الحراسات بأعلى جودة وخبرة و إلتزام لتوفير الأمان لعملائها سواء بتقديم خدمة حراسة الأشخاص أو المنشآت أو خدمات الحراسات الفورية بإحترافية بالغة للوقاية من الحوادث ومنع حدوثها بوضع خطط وبرامج تدريبية لرفع مستوى الأمن والحماية والسلامة لعملائنا الكرام .
+                                <string key="text">حول كفو للحراسات الأمنية إن كفو للحراسات الأمنية هو التطبيق الرائد الذي ينفرد بتقديم الخدمات الأمنية الفورية على مدار الساعة ( 24 / 7 ) وكما يقدم كفو خدمات الحراسات الأمنية في جميع أنحاء المملكة العربية السعودية فيقوم بتوفير الحماية الشخصية للأفراد و وتوفير الحماية للمنازل و الشركات والمراكز والمولات والأسواق قبل وأثناء وبعد النشاط . وتقوم كفو بتقديم خدمات الحراسات بأعلى جودة وخبرة و إلتزام لتوفير الأمان لعملائها سواء بتقديم خدمة حراسة الأشخاص أو المنشآت أو خدمات الحراسات الفورية بإحترافية بالغة للوقاية من الحوادث ومنع حدوثها بوضع خطط وبرامج تدريبية لرفع مستوى الأمن والحماية والسلامة لعملائنا الكرام .
 Email : NASALJARALLAH@KSU.EDU.SA
-Phone : 0506638075</mutableString>
+Phone : 0506638075</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>

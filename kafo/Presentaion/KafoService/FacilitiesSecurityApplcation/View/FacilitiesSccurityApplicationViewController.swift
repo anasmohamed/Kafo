@@ -210,6 +210,7 @@ class FacilitiesSccurityApplicationViewController: UITableViewController {
         let leftSideMenuStoryboard = UIStoryboard(name: "LeftSideMenuView", bundle: nil)
         
         let sideMenuViewController = leftSideMenuStoryboard.instantiateViewController(identifier: "LeftSideMenuNavigationController") as! UINavigationController
+        sideMenuViewController.modalPresentationStyle = .formSheet
         self.present(sideMenuViewController, animated: true)
     }
     /*
@@ -251,18 +252,18 @@ extension FacilitiesSccurityApplicationViewController: UITextFieldDelegate {
         datePicker.datePickerMode = .date
     }
     func textFieldDidBeginEditing(_ textField: UITextField) {
-        startDateTextField.layer.borderWidth = 0
-        facilityMobileNumberTextField.layer.borderWidth = 0
-        numberOfDaysTextField.layer.borderWidth = 0
-        numberOfShiftTextField.layer.borderWidth = 0
-        numberOfBodyguarsTextField.layer.borderWidth = 0
-        faxTextField.layer.borderWidth = 0
-        mobileTextField.layer.borderWidth = 0
-        responsiblePersonTextField.layer.borderWidth = 0
-        buildingNumberTextField.layer.borderWidth = 0
-        streetTextField.layer.borderWidth = 0
-        cityTextField.layer.borderWidth = 0
-        facilityNameTextField.layer.borderWidth = 0
+//        startDateTextField.layer.borderWidth = 0
+//        facilityMobileNumberTextField.layer.borderWidth = 0
+//        numberOfDaysTextField.layer.borderWidth = 0
+//        numberOfShiftTextField.layer.borderWidth = 0
+//        numberOfBodyguarsTextField.layer.borderWidth = 0
+//        faxTextField.layer.borderWidth = 0
+//        mobileTextField.layer.borderWidth = 0
+//        responsiblePersonTextField.layer.borderWidth = 0
+//        buildingNumberTextField.layer.borderWidth = 0
+//        streetTextField.layer.borderWidth = 0
+//        cityTextField.layer.borderWidth = 0
+//        facilityNameTextField.layer.borderWidth = 0
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {

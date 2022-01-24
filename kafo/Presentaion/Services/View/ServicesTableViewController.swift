@@ -145,6 +145,7 @@ class ServicesTableViewController: UITableViewController {
         let leftSideMenuStoryboard = UIStoryboard(name: "LeftSideMenuView", bundle: nil)
 
         let sideMenuViewController = leftSideMenuStoryboard.instantiateViewController(identifier: "LeftSideMenuNavigationController") as! UINavigationController
+
         self.present(sideMenuViewController, animated: true)
     }
     

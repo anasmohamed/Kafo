@@ -15,6 +15,7 @@ class OtherCompaniesViewController: UIViewController ,UITableViewDelegate,UITabl
         super.viewDidLoad()
         setupTableView()
         setGradientBackground()
+        tableView.backgroundColor = .black
         // Do any additional setup after loading the view.
     }
     func setupTableView() {
@@ -43,8 +44,8 @@ class OtherCompaniesViewController: UIViewController ,UITableViewDelegate,UITabl
         let gradientLayer = CAGradientLayer()
         gradientLayer.colors = [colorTop, colorBottom]
         gradientLayer.locations = [0.0, 1.0]
-        gradientLayer.frame = self.tableView.bounds
-                
+        gradientLayer.frame = self.view.bounds
+        
         let backgroundView = UIView(frame: tableView.bounds)
         backgroundView.layer.insertSublayer(gradientLayer, at: 0)
         tableView.backgroundView = backgroundView

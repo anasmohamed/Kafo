@@ -8,6 +8,7 @@
 import UIKit
 import SwiftyMenu
 import SnapKit
+import Toast_Swift
 class LocationViewController: UIViewController ,UIPickerViewDataSource,UIPickerViewDelegate{
    
     
@@ -141,10 +142,18 @@ class LocationViewController: UIViewController ,UIPickerViewDataSource,UIPickerV
         setGradientBackground()
     }
     @IBAction func nearbyLocationBtnDidTapped(_ sender: Any) {
+        if !cityTextField.text!.isEmpty || !countryTextField.text!.isEmpty{
         let locationViewStoryboard = UIStoryboard(name: "ListOfBodyGuards", bundle: nil)
         let locationViewController = locationViewStoryboard.instantiateViewController(identifier: "ListOfBodyGuardsViewController") as! ListOfBodyGuardsViewController
         locationViewController.user = user
-        self.navigationController?.pushViewController(locationViewController, animated: true)
+            self.navigationController?.pushViewController(locationViewController, animated: true)}else{
+                var style = ToastStyle()
+                
+                // this is just one of many style options
+                style.messageColor = .white
+                style.backgroundColor = .black
+                self.view.makeToast("يرجى ادخال المدينة والحى", duration: 3.0, position: .bottom,style:style)
+            }
     }
     func setGradientBackground() {
         let colorTop =  UIColor(red: 0.0/255.0, green: 0.0/255.0, blue: 55.0/255.0, alpha: 1.0).cgColor

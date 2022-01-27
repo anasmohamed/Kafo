@@ -45,8 +45,9 @@ class BodyGuardProfileControll: UIViewController {
         let gradientLayer = CAGradientLayer()
         gradientLayer.colors = [colorTop, colorBottom]
         gradientLayer.locations = [0.0, 1.0]
-        gradientLayer.frame = self.topView.bounds
-                
+        gradientLayer.frame.size.width = self.view.frame.size.width
+        gradientLayer.frame.size.height = self.topView.frame.size.height
+
         self.topView.layer.insertSublayer(gradientLayer, at:0)
     }
     

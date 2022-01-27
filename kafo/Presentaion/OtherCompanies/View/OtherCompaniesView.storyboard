@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="7tn-pX-7v6">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -28,10 +29,10 @@
                         <viewLayoutGuide key="safeArea" id="W5s-Tk-pBe"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="xqW-LW-oyG" firstAttribute="leading" secondItem="W5s-Tk-pBe" secondAttribute="leading" id="1Y5-Qz-LOR"/>
+                            <constraint firstItem="xqW-LW-oyG" firstAttribute="leading" secondItem="4Vc-JJ-1mX" secondAttribute="leading" id="1Y5-Qz-LOR"/>
                             <constraint firstItem="W5s-Tk-pBe" firstAttribute="bottom" secondItem="xqW-LW-oyG" secondAttribute="bottom" id="Ki4-Ne-336"/>
                             <constraint firstItem="xqW-LW-oyG" firstAttribute="top" secondItem="W5s-Tk-pBe" secondAttribute="top" id="QJL-Yp-yOa"/>
-                            <constraint firstItem="W5s-Tk-pBe" firstAttribute="trailing" secondItem="xqW-LW-oyG" secondAttribute="trailing" id="TkO-AY-UDj"/>
+                            <constraint firstAttribute="trailing" secondItem="xqW-LW-oyG" secondAttribute="trailing" id="TkO-AY-UDj"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Epe-vM-C2K"/>

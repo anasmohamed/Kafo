@@ -7,6 +7,7 @@
 
 import UIKit
 import Firebase
+import MOLH
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
@@ -20,7 +21,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         UINavigationBar.appearance().titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
         UINavigationBar.appearance().isTranslucent = false
         UIView.appearance().semanticContentAttribute = .forceRightToLeft
-
+        MOLH.setLanguageTo("ar")
         return true
     }
 

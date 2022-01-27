@@ -104,7 +104,7 @@ class ProfileTableViewController: UITableViewController,UITextFieldDelegate {
         let gradientLayer = CAGradientLayer()
         gradientLayer.colors = [colorTop, colorBottom]
         gradientLayer.locations = [0.0, 1.0]
-        gradientLayer.frame = self.tableView.bounds
+        gradientLayer.frame = self.view.bounds
                 
         let backgroundView = UIView(frame: tableView.bounds)
         backgroundView.layer.insertSublayer(gradientLayer, at: 0)

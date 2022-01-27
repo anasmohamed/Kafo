@@ -40,7 +40,7 @@
                                     <action selector="nearbyLocationBtnDidTapped:" destination="lQg-Lr-ank" eventType="touchUpInside" id="qPX-rN-dop"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qe6-8r-Cl7">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="ادخل المدينة" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qe6-8r-Cl7">
                                 <rect key="frame" x="20" y="183" width="374" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="WlG-Ue-tMa"/>
@@ -51,7 +51,7 @@
                                     <action selector="countryTextFiled:" destination="lQg-Lr-ank" eventType="editingDidEnd" id="8dt-0F-9vk"/>
                                 </connections>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wSE-cG-lae">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="ادخل الحى" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wSE-cG-lae">
                                 <rect key="frame" x="20" y="263" width="374" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="DlX-vm-tmn"/>

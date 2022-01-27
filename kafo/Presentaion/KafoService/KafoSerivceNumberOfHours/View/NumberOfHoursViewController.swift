@@ -68,7 +68,7 @@ class NumberOfHoursViewController: UIViewController {
         toolBar.sizeToFit()
         let doneBtn = UIBarButtonItem(barButtonSystemItem: .done, target: nil, action: #selector(doneBtnDidTapped))
         toolBar.setItems([doneBtn], animated: true)
-        serviceStartDateTextField.inputAccessoryView = toolBar
+//        serviceStartDateTextField.inputAccessoryView = toolBar
         serviceStartDateTextField.inputView = datePicker
         datePicker.locale = Locale(identifier: "en_US")
         

@@ -14,6 +14,7 @@ target 'kafo' do
       pod 'Toast-Swift', '~> 5.0.1'
       pod 'JGProgressHUD'
       pod 'iOSDropDown'
+      pod 'MOLH'
   target 'kafoTests' do
     inherit! :search_paths
     # Pods for testing

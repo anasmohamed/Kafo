@@ -42,7 +42,8 @@ class BodyGaurdNumberOfHoursViewController: UIViewController ,UITextFieldDelegat
         
         case .Correct:
             listOfBodyGuardsViewModel.setOrder()
-            navigateToServiceViewController()
+            if !totalMoneyLbl.text!.isEmpty || Int(totalMoneyLbl.text!) != 0{
+                navigateToServiceViewController()}
             
         case .Incorrect:
             return
@@ -80,7 +81,7 @@ extension UILabel {
     @objc
     
     func input(textField: UITextField) {
+        self.text =  String( Int(textField.text!) ?? 0 * 100)
        
-        self.text =  String( Int(textField.text!)! * 100)
     }
 }

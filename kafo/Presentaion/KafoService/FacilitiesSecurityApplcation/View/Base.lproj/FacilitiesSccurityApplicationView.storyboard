@@ -37,6 +37,7 @@
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="40" id="8h8-i0-Voy"/>
                                                     </constraints>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits"/>
                                                 </textField>

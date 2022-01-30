@@ -117,6 +117,14 @@ class ProfileTableViewController: UITableViewController,UITextFieldDelegate {
         let doneBtn = UIBarButtonItem(barButtonSystemItem: .done, target: nil, action: #selector(doneBtnDidTapped))
         toolBar.setItems([doneBtn], animated: true)
         deteOfBirthTextField.inputAccessoryView = toolBar
+        if #available(iOS 13.4, *) {
+            datePicker.preferredDatePickerStyle = .wheels
+        } else {
+            // Fallback on earlier versions
+        }
+        datePicker.minimumDate = Date.yesterday
+
+        datePicker.frame.size = CGSize(width: 0, height: 300)
         deteOfBirthTextField.inputView = datePicker
         datePicker.locale = Locale(identifier: "en_US")
         

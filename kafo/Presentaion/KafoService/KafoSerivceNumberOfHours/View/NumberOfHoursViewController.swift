@@ -68,8 +68,16 @@ class NumberOfHoursViewController: UIViewController {
         toolBar.sizeToFit()
         let doneBtn = UIBarButtonItem(barButtonSystemItem: .done, target: nil, action: #selector(doneBtnDidTapped))
         toolBar.setItems([doneBtn], animated: true)
-//        serviceStartDateTextField.inputAccessoryView = toolBar
+        serviceStartDateTextField.inputAccessoryView = toolBar
         serviceStartDateTextField.inputView = datePicker
+        if #available(iOS 13.4, *) {
+            datePicker.preferredDatePickerStyle = .wheels
+        } else {
+            // Fallback on earlier versions
+        }
+        datePicker.minimumDate = Date.yesterday
+
+        datePicker.frame.size = CGSize(width: 0, height: 300)
         datePicker.locale = Locale(identifier: "en_US")
         
         datePicker.datePickerMode = .date

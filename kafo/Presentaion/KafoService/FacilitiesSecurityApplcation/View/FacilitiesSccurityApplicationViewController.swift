@@ -120,7 +120,8 @@ class FacilitiesSccurityApplicationViewController: UITableViewController {
         formatter.timeStyle = .none
         formatter.dateFormat = "yyyy-MM-dd"
         formatter.locale = Locale(identifier: "en_US")
-        
+        datePicker.minimumDate = Date.yesterday
+
         date = datePicker.date
         startDateTextField.text = formatter.string(from: datePicker.date)
         self.view.endEditing(true)
@@ -247,6 +248,12 @@ extension FacilitiesSccurityApplicationViewController: UITextFieldDelegate {
         toolBar.setItems([doneBtn], animated: true)
         startDateTextField.inputAccessoryView = toolBar
         startDateTextField.inputView = datePicker
+        if #available(iOS 13.4, *) {
+            datePicker.preferredDatePickerStyle = .wheels
+        } else {
+            // Fallback on earlier versions
+        }
+        datePicker.frame.size = CGSize(width: 0, height: 300)
         datePicker.locale = Locale(identifier: "en_US")
         
         datePicker.datePickerMode = .date

@@ -95,6 +95,14 @@ class SignUpTableViewController: UITableViewController {
         toolBar.setItems([doneBtn], animated: true)
 //        deteOfBirthTextField.inputAccessoryView = toolBar
 //        deteOfBirthTextField.inputView = datePicker
+        if #available(iOS 13.4, *) {
+            datePicker.preferredDatePickerStyle = .wheels
+        } else {
+            // Fallback on earlier versions
+        }
+      
+        datePicker.minimumDate = Date.yesterday
+        datePicker.frame.size = CGSize(width: 0, height: 300)
         datePicker.locale = Locale(identifier: "en_US")
         
         datePicker.datePickerMode = .date
@@ -280,5 +288,25 @@ class SignUpTableViewController: UITableViewController {
         backgroundView.layer.insertSublayer(gradientLayer, at: 0)
         tableView.backgroundView = backgroundView
         //        self.tableView.layer.insertSublayer(gradientLayer, at:0)
+    }
+}
+
+extension Date {
+    static var yesterday: Date { return Date().dayBefore }
+    static var tomorrow:  Date { return Date().dayAfter }
+    var dayBefore: Date {
+        return Calendar.current.date(byAdding: .day, value: -1, to: noon)!
+    }
+    var dayAfter: Date {
+        return Calendar.current.date(byAdding: .day, value: 1, to: noon)!
+    }
+    var noon: Date {
+        return Calendar.current.date(bySettingHour: 12, minute: 0, second: 0, of: self)!
+    }
+    var month: Int {
+        return Calendar.current.component(.month,  from: self)
+    }
+    var isLastDayOfMonth: Bool {
+        return dayAfter.month != month
     }
 }
